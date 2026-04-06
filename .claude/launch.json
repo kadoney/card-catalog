@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "card-catalog-viewer",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4200", "--directory", "viewer"],
+      "port": 4200
+    }
+  ]
+}

@@ -2,3 +2,8 @@ node_modules/
 .wrangler/
 dist/
 *.local
+
+# ETL generated data (can be regenerated)
+scripts/chipstone_raw.json
+scripts/chipstone_cards.json
+scripts/batches/
