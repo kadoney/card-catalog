@@ -1,0 +1,47 @@
+{
+  "metadata": "Page ranges for Met Museum publication chapters, for display on card tiles.",
+  "chapters": [
+    {
+      "title": "Introduction: Nineteenth-Century American Decorative Arts, 1800–1910",
+      "pub": "tracy_1970",
+      "pages": "3–32",
+      "page_count": 30
+    },
+    {
+      "title": "Introduction: Early Colonial Furniture in America",
+      "pub": "safford_2007",
+      "pages": "1–11",
+      "page_count": 11
+    },
+    {
+      "title": "Seating Furniture: Turned, Joined, and Upholstered Chairs",
+      "pub": "safford_2007",
+      "pages": "12–55",
+      "page_count": 44
+    },
+    {
+      "title": "Tables: Stationary and Hinged-Leaf Forms",
+      "pub": "safford_2007",
+      "pages": "120–150",
+      "page_count": 31
+    },
+    {
+      "title": "Case Furniture: Chests, Cupboards, and High Chests",
+      "pub": "safford_2007",
+      "pages": "168–210",
+      "page_count": 43
+    },
+    {
+      "title": "Introduction: The American Wing — History and Collections",
+      "pub": "walk_2002",
+      "pages": "1–15",
+      "page_count": 15
+    },
+    {
+      "title": "Decorative Arts: American Wing Galleries and Period Rooms",
+      "pub": "walk_2002",
+      "pages": "16–100",
+      "page_count": 85
+    }
+  ]
+}

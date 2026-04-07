@@ -95,12 +95,31 @@ Extend `chipstone-vocabulary.md` to match — it is the editorial reference.
 2. Member submits → `submissions` table (status: pending)
 3. Admin reviews in moderation queue → approves → writes to `library_cards`
 
-## Next Corpus Steps
+## Corpus Status (2026-04-07)
 
-- Remaining Chipstone issues 1997–2023 (~300 cards) — scrape TOC, draft descriptions
-- Met Publications American Wing titles — chapter-level cards, free PDF
+### Loaded & Complete
+- **Chipstone**: 187 articles + 120 reviews = 307 cards (1993–2023), all metadata fixed ✓
+- **Met Museum**: 26 chapters across 5 publications:
+  - Heckscher Vol. II (Queen Anne/Chippendale): 10 chapters
+  - Davidson American Wing (1630–1910): 9 chapters
+  - Tracy 1970 (19th-Century America): 1 introduction
+  - Safford Vol. I (Early Colonial): 4 chapters
+  - Walk Through American Wing (2002): 2 essays
+  - Plus 4 Bulletin essays (Englund, Frelinghuysen, Heckscher, Bordes)
+  - **Total**: 30 Met cards
+
+- **Total corpus**: 337 cards
+
+### Next Corpus Steps
 - Winterthur trade catalogs — Internet Archive, public domain
 - MESDA Journal — freely online
+- Additional Met Bulletin essays (Davis, others)
+
+## Pending UI/UX Improvements (2026-04-07)
+
+1. **Page counts on tiles**: Reference file `met-chapters-page-reference.json` created; viewer integration pending
+2. **Description formatting**: All 26 met chapter descriptions reformatted with paragraph breaks (3-sentence paragraphs) for readability ✓
+3. **Virtual guided tours**: Concept documented in `project-virtual-museum-tours.md`; design pending. Would integrate Met API IIIF images with chapter cards by era/form
 
 ## Viewer
 

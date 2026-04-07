@@ -6,4 +6,13 @@ dist/
 # ETL generated data (can be regenerated)
 scripts/chipstone_raw.json
 scripts/chipstone_cards.json
+scripts/met_catalog_raw.json
+scripts/met_catalog_cards.json
+scripts/met_bulletin_raw.json
+scripts/met_bulletin_cards.json
 scripts/batches/
+scripts/__pycache__/
+scripts/*.sql
+scripts/met_pdfs/
+scripts/ocr_*.txt
+scripts/archive_*.txt
