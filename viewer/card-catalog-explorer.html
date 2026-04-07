@@ -469,7 +469,7 @@ function renderCardList() {
 
     item.innerHTML = `
       <div class="card-title">${escHtml(title)}</div>
-      <div class="card-byline">${escHtml(displayAuthor)} · ${c.year ?? '—'}</div>
+      <div class="card-byline">${displayAuthor ? escHtml(displayAuthor) + ' · ' : ''}${c.year ?? '—'}</div>
       <div class="card-tags">${periodTags}${formTags}</div>
     `;
     item.onclick = () => selectCard(c.id);
@@ -572,7 +572,8 @@ document.getElementById('searchInput').addEventListener('input', e => {
 function splitAuthorTitle(raw) {
   if (!raw) return { author: '', title: raw };
   const slice = raw.slice(5); // skip first 5 chars to avoid splitting short names
-  const m = slice.match(/[a-z,\.](?=[A-Z])/);
+  // Match: lowercase/comma/period immediately before uppercase OR opening quote mark
+  const m = slice.match(/[a-z,\.](?=[A-Z\u201C\u2018"])/);
   if (m) {
     const pos = m.index + 5 + 1; // +1: split after the lowercase char
     return { author: raw.slice(0, pos).trim(), title: raw.slice(pos).trim() };
