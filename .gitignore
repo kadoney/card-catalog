@@ -16,3 +16,6 @@ scripts/*.sql
 scripts/met_pdfs/
 scripts/ocr_*.txt
 scripts/archive_*.txt
+scripts/mesda_journal_raw.json
+scripts/mesda_journal_cards.json
+scripts/mesda_journal_insert.sql
