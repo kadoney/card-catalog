@@ -113,7 +113,7 @@ CONTROLLED VOCABULARIES — use ONLY these exact strings:
 
 OUTPUT FORMAT (JSON only, no other text):
 {{
-  "description": "3-5 sentences of original SAPFM prose. Tell a furniture maker what this article covers and why it matters. Do NOT reproduce sentences from the article — paraphrase and synthesize. Focus on: what objects/makers/region are studied, what method is used, what the key finding is.",
+  "description": "3-5 sentences. See description rules below.",
   "period": ["exact period string", ...],
   "form": ["exact form string", ...],
   "region": ["exact region string", ...],
@@ -122,7 +122,17 @@ OUTPUT FORMAT (JSON only, no other text):
 }}
 
 RULES:
-- description: 3-5 original sentences, present tense, written for a furniture maker deciding whether to read this article
+- description: 3-5 sentences written by one furniture scholar for another — peer to peer, not
+  popularized. The reader is a skilled craftsman who also reads deeply: they know their Chippendale
+  from their Federal, they've held a card scraper, and they want to know whether this piece of
+  scholarship is worth their time.
+  HARD RULE — NEVER open with "This article", "The article", "In this article", "This study",
+  "The study", "The author", or any variant. NEVER use hedging phrases: "seeks to", "aims to",
+  "attempts to", "looks at", "explores". NEVER use the passive construction "is examined" or
+  "is analyzed" in the opening clause.
+  Lead with the subject itself: the object, the craftsman, the shop, the technique, the argument.
+  Be specific — name the pieces, the makers, the towns, the joints, the woods.
+  Match the register of the journal: serious, precise, collegial. Not breathless, not textbook.
 - makers: only named craftsmen/cabinetmakers/carvers studied in depth (not every person mentioned)
 - Use "Survey / Multiple" for period/form/region only when the article genuinely spans multiple without focusing on one
 - Book reviews: treat as the article being reviewed's subject matter
@@ -320,7 +330,7 @@ def phase_generate():
     if cards_path.exists():
         with open(cards_path, encoding="utf-8") as f:
             cards = json.load(f)
-        done_urls = {c["url"] for c in cards}
+        done_urls = {c["view_url"] for c in cards}
         print(f"Resuming: {len(cards)} cards already generated")
     else:
         cards = []
@@ -337,7 +347,7 @@ def phase_generate():
         if rec["url"] in done_urls:
             continue
 
-        print(f"[{i+1}/{len(raw)}] {rec['year']} — {rec['title'][:70]}")
+        print(f"[{i+1}/{len(raw)}] {rec['year']} — {rec['title'][:70]}", flush=True)
 
         prompt = CARD_PROMPT.format(
             vocab=CONTROLLED_VOCAB,
@@ -385,10 +395,10 @@ def phase_generate():
             }
             cards.append(card)
             done_urls.add(rec["url"])
-            print(f"  OK — period={card['period'][:2]}, topic={card['topic'][:2]}")
+            print(f"  OK — period={card['period'][:2]}, topic={card['topic'][:2]}", flush=True)
 
         except json.JSONDecodeError as e:
-            print(f"  JSON parse error: {e} — response: {text[:200]}")
+            print(f"  JSON parse error: {e} — response: {text[:200]}", flush=True)
             continue
         except Exception as e:
             print(f"  API error: {e}")
@@ -449,7 +459,7 @@ def phase_sql():
         is_free = 1 if c.get("is_free") else 0
 
         lines.append(
-            f"INSERT OR IGNORE INTO library_cards "
+            f"INSERT OR REPLACE INTO library_cards"
             f"(title, authors, year, source, source_key, card_type, "
             f"description, period, form, region, topic, makers, "
             f"is_free, view_url, status, created_at, updated_at) VALUES "

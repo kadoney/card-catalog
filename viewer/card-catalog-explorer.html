@@ -134,8 +134,20 @@
   .card-item .card-title {
     font-size: 0.88rem;
     line-height: 1.35;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     color: var(--text);
+  }
+  .card-item .card-byline {
+    font-size: 0.73rem;
+    font-family: Arial, sans-serif;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  .card-item .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
   }
   .card-item .card-meta {
     font-size: 0.75rem;
@@ -450,17 +462,15 @@ function renderCardList() {
     item.className = 'card-item' + (c.id === selectedId ? ' selected' : '');
     item.dataset.id = c.id;
 
-    const authors = c.authors.join(', ');
+    const { author, title } = splitAuthorTitle(c.title);
+    const displayAuthor = c.authors.length ? c.authors.join(', ') : author;
     const periodTags = c.period.slice(0, 2).map(p => `<span class="tag period">${p}</span>`).join('');
     const formTags = c.form.slice(0, 1).map(f => `<span class="tag form">${f}</span>`).join('');
 
     item.innerHTML = `
-      <div class="card-title">${escHtml(c.title)}</div>
-      <div class="card-meta">
-        <span class="year">${c.year ?? '—'}</span>
-        <span>${escHtml(authors)}</span>
-      </div>
-      <div class="card-meta" style="margin-top:4px">${periodTags}${formTags}</div>
+      <div class="card-title">${escHtml(title)}</div>
+      <div class="card-byline">${escHtml(displayAuthor)} · ${c.year ?? '—'}</div>
+      <div class="card-tags">${periodTags}${formTags}</div>
     `;
     item.onclick = () => selectCard(c.id);
     el.appendChild(item);
@@ -493,7 +503,8 @@ async function selectCard(id) {
 function renderDetail(c) {
   const panel = document.getElementById('detailPanel');
 
-  const authors = c.authors.join(', ') || '—';
+  const { author: parsedAuthor, title: cleanTitle } = splitAuthorTitle(c.title);
+  const authors = c.authors.length ? c.authors.join(', ') : (parsedAuthor || '—');
   const source = [c.source, c.year].filter(Boolean).join(', ');
 
   const tagsRow = (label, values, dim) => {
@@ -525,7 +536,7 @@ function renderDetail(c) {
     : '';
 
   panel.innerHTML = `<div class="detail-card">
-    <div class="dc-title">${escHtml(c.title)}</div>
+    <div class="dc-title">${escHtml(cleanTitle)}</div>
     <div class="dc-authors">${escHtml(authors)}</div>
     <div class="dc-source">${escHtml(source)}</div>
     <div class="dc-description">${escHtml(c.description)}</div>
@@ -553,6 +564,21 @@ document.getElementById('searchInput').addEventListener('input', e => {
   searchQ = e.target.value;
   searchTimer = setTimeout(() => resetAndFetch(), 350);
 });
+
+// ── Author/title split ────────────────────────────────────────────────────────
+// Chipstone titles were scraped with author name concatenated onto the title.
+// Detect the CamelCase junction (lowercase immediately before uppercase) to split.
+
+function splitAuthorTitle(raw) {
+  if (!raw) return { author: '', title: raw };
+  const slice = raw.slice(5); // skip first 5 chars to avoid splitting short names
+  const m = slice.match(/[a-z,\.](?=[A-Z])/);
+  if (m) {
+    const pos = m.index + 5 + 1; // +1: split after the lowercase char
+    return { author: raw.slice(0, pos).trim(), title: raw.slice(pos).trim() };
+  }
+  return { author: '', title: raw };
+}
 
 // ── Utilities ───────────────────────────────────────────────────────────────
 
