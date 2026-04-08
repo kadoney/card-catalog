@@ -1,0 +1,18 @@
+name = "sapfm-card-catalog"
+type = "javascript"
+compatibility_date = "2024-01-01"
+account_id = "ebe622eaa5b3a3581cf5664272f26f30"
+
+[env.production]
+routes = [
+  { pattern = "sapfm-card-catalog.pages.dev", zone_name = "sapfm.org" }
+]
+
+[build]
+command = "npm install && npm run build"
+cwd = "."
+watch_paths = ["src/**/*.tsx", "src/**/*.ts", "src/**/*.css"]
+
+[build.upload]
+format = "service-worker"
+dir = "dist"

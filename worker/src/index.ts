@@ -222,6 +222,58 @@ function formatCard(row: CardRow) {
 // Route handlers
 // =============================================================================
 
+// Compute facet counts: for each dimension, count how many matching cards
+// contain each vocab value. This shows users how many results they'll get
+// if they add/change a facet.
+async function computeFacetCounts(
+  url: URL,
+  allVocab: Record<string, Array<{ value: string; label: string; notes: string | null }>>,
+  env: Env
+): Promise<Record<string, Array<{ value: string; count: number }>>> {
+  const facets: Record<string, Array<{ value: string; count: number }>> = {};
+  const dimensions = ['period', 'form', 'region', 'topic'];
+
+  for (const dim of dimensions) {
+    // Build WHERE clause EXCLUDING this dimension
+    const urlNoThisDim = new URL(url);
+    urlNoThisDim.searchParams.delete(dim);
+    const { where, params } = buildCardFilter(urlNoThisDim);
+
+    // Fetch all cards matching filters (except this dim)
+    const hasJoins = urlNoThisDim.searchParams.has('period') || urlNoThisDim.searchParams.has('form') ||
+                     urlNoThisDim.searchParams.has('region') || urlNoThisDim.searchParams.has('topic');
+    const distinct = hasJoins ? 'DISTINCT ' : '';
+    const sql = `SELECT ${distinct}c.${dim} ${where}`;
+
+    const result = await env.DB.prepare(sql).bind(...params).all<{ [key: string]: string }>();
+
+    // Count occurrences of each vocab value
+    const counts: Record<string, number> = {};
+    for (const vocab of allVocab[dim] ?? []) {
+      counts[vocab.value] = 0;
+    }
+
+    for (const row of result.results) {
+      const arr = parseArray(row[dim] ?? '[]');
+      for (const val of arr) {
+        if (val in counts) counts[val]++;
+      }
+    }
+
+    // Return in vocab order, with "Survey / Multiple" always last
+    const vocab = allVocab[dim] ?? [];
+    facets[dim] = vocab
+      .map(v => ({ value: v.value, count: counts[v.value] ?? 0 }))
+      .sort((a, b) => {
+        if (a.value === 'Survey / Multiple') return 1;
+        if (b.value === 'Survey / Multiple') return -1;
+        return 0; // maintain vocab order
+      });
+  }
+
+  return facets;
+}
+
 // GET /api/library/cards
 async function listCards(request: Request, env: Env): Promise<Response> {
   const url = new URL(request.url);
@@ -238,9 +290,21 @@ async function listCards(request: Request, env: Env): Promise<Response> {
   const countSql = `SELECT COUNT(${distinct}c.id) as total ${where}`;
   const rowsSql  = `SELECT ${distinct}c.* ${where} ORDER BY c.year DESC, c.title ASC LIMIT ? OFFSET ?`;
 
-  const [countResult, rowsResult] = await Promise.all([
+  // Fetch vocab first (needed for facet counting)
+  const vocabResult = await env.DB.prepare(
+    'SELECT dimension, value, label, notes FROM vocab_terms ORDER BY dimension'
+  ).all<{ dimension: string; value: string; label: string; notes: string | null }>();
+
+  const allVocab: Record<string, Array<{ value: string; label: string; notes: string | null }>> = {};
+  for (const row of vocabResult.results) {
+    if (!allVocab[row.dimension]) allVocab[row.dimension] = [];
+    allVocab[row.dimension].push({ value: row.value, label: row.label, notes: row.notes });
+  }
+
+  const [countResult, rowsResult, facets] = await Promise.all([
     env.DB.prepare(countSql).bind(...params).first<{ total: number }>(),
     env.DB.prepare(rowsSql).bind(...params, limit, offset).all<CardRow>(),
+    computeFacetCounts(url, allVocab, env),
   ]);
 
   return json({
@@ -248,6 +312,7 @@ async function listCards(request: Request, env: Env): Promise<Response> {
     total: countResult?.total ?? 0,
     limit,
     offset,
+    facets,
   });
 }
 
@@ -520,15 +585,21 @@ export default {
         return adminAddVocab(request, env);
       }
 
-      // Public / member routes
+      // Member routes (require JWT)
       if (path === '/api/library/cards' && method === 'GET') {
+        const user = await verifyJWT(request, env);
+        if (!user) return err('Unauthorized', 401);
         return listCards(request, env);
       }
       const cardMatch = path.match(/^\/api\/library\/cards\/(\d+)$/);
       if (cardMatch && method === 'GET') {
+        const user = await verifyJWT(request, env);
+        if (!user) return err('Unauthorized', 401);
         return getCard(parseInt(cardMatch[1]), env);
       }
       if (path === '/api/library/vocab' && method === 'GET') {
+        const user = await verifyJWT(request, env);
+        if (!user) return err('Unauthorized', 401);
         return getVocab(env);
       }
       if (path === '/api/library/submissions' && method === 'POST') {
