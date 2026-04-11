@@ -1,0 +1,63 @@
+name = "sapfm-embedder"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+account_id = "ebe622eaa5b3a3581cf5664272f26f30"
+
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "sapfm-catalog-vectors"
+
+# --- D1 Databases ---
+
+[[d1_databases]]
+binding = "DB_SAPFM"
+database_name = "sapfm"
+database_id = "5cdb7abc-6f1e-4b76-906b-d6ac64a11239"
+
+[[d1_databases]]
+binding = "DB_CATALOG"
+database_name = "card-catalog"
+database_id = "eb944e67-5fcc-4587-8fe1-eae2a9fe3476"
+
+[[d1_databases]]
+binding = "DB_MET"
+database_name = "met-furniture"
+database_id = "f8b0511f-16a1-45ff-ba15-299e13783a0b"
+
+[[d1_databases]]
+binding = "DB_YALE"
+database_name = "yale-furniture"
+database_id = "3f9d8a12-6aab-4436-9556-e462e9ddcfb8"
+
+[[d1_databases]]
+binding = "DB_RIJKS"
+database_name = "rijks-furniture"
+database_id = "c2f93831-e96e-48ab-a56c-76b1af862dde"
+
+[[d1_databases]]
+binding = "DB_CLEVELAND"
+database_name = "cleveland-furniture"
+database_id = "3fdf5de1-4545-405a-a196-20c49e16b7ae"
+
+[[d1_databases]]
+binding = "DB_CHICAGO"
+database_name = "chicago-furniture"
+database_id = "b54696a6-8571-4633-8247-dfa4827e89f8"
+
+[[d1_databases]]
+binding = "DB_PMA"
+database_name = "pma-furniture"
+database_id = "34af3071-cba0-4e46-a80e-3214c22e035b"
+
+[[d1_databases]]
+binding = "DB_SLAM"
+database_name = "slam-furniture"
+database_id = "b56658dd-5d4c-4e6d-908d-1ceb16ad6fdf"
+
+[[d1_databases]]
+binding = "DB_WINTERTHUR"
+database_name = "winterthur-furniture"
+database_id = "5bda484f-3ba4-4c91-b818-d123a1dd016c"

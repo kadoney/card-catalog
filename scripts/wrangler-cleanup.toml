@@ -1,0 +1,8 @@
+name = "vectorize-cleanup"
+main = "vectorize_cleanup.js"
+compatibility_date = "2024-09-23"
+account_id = "ebe622eaa5b3a3581cf5664272f26f30"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "sapfm-catalog-vectors"
