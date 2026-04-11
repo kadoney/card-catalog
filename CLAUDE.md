@@ -9,20 +9,31 @@ Human-curated reference index for the SAPFM Member Desktop. Part of the broader 
 | Account | SAPFM | ebe622eaa5b3a3581cf5664272f26f30 |
 | D1 Database | card-catalog | eb944e67-5fcc-4587-8fe1-eae2a9fe3476 |
 | Worker | library-api | (deploy via `npm run deploy` in worker/) |
+| Worker | sapfm-catalog-api | Serves Bench UI (deployed separately) |
+| Worker | sapfm-embedder | Embedding pipeline + semantic search |
+| Vectorize | sapfm-catalog-vectors | 9,039 vectors, 768-dim, cosine |
 
 ## Project Structure
 
 ```
 card-catalog/
-  worker/           ← Cloudflare Worker (TypeScript)
+  worker/           ← library-api Worker (TypeScript) — card catalog CRUD
     src/index.ts    ← All API endpoints
     wrangler.toml
-    package.json
-    tsconfig.json
+  embedder/         ← sapfm-embedder Worker (JS) — embedding pipeline + search
+    src/index.js    ← Embed + search endpoints, binds all 10 D1 databases
+    wrangler.toml   ← AI + Vectorize + all D1 bindings
+  scripts/          ← ETL pipelines (Python) + maintenance tools
+    chipstone_etl.py
+    met_catalog_etl.py
+    mesda_website_scraper.py
+    vectorize_audit.py      ← Index audit/cleanup tool
+    vectorize_cleanup.js    ← Temporary cleanup Worker (used once)
   sql/
     01_create_tables.sql   ← library_cards, submissions, vocab_terms
     02_seed_vocab.sql      ← Full controlled vocabulary (all 5 dimensions)
     03_seed_cards.sql      ← 8 Chipstone 1996 pilot cards
+  ui/               ← Card Catalog React UI (integrated into Bench)
   viewer/
     card-catalog-explorer.html  ← Standalone HTML browse UI
   seed-cards.json          ← Source JSON for pilot batch (Chipstone 1996)
@@ -95,34 +106,32 @@ Extend `chipstone-vocabulary.md` to match — it is the editorial reference.
 2. Member submits → `submissions` table (status: pending)
 3. Admin reviews in moderation queue → approves → writes to `library_cards`
 
-## Corpus Status (2026-04-07)
+## Corpus Status (2026-04-11)
 
-### Loaded & Complete
-- **Chipstone**: 187 articles + 120 reviews = 307 cards (1993–2023), all metadata fixed ✓
-- **Met Museum**: 26 chapters across 5 publications:
-  - Heckscher Vol. II (Queen Anne/Chippendale): 10 chapters
-  - Davidson American Wing (1630–1910): 9 chapters
-  - Tracy 1970 (19th-Century America): 1 introduction
-  - Safford Vol. I (Early Colonial): 4 chapters
-  - Walk Through American Wing (2002): 2 essays
-  - Plus 4 Bulletin essays (Englund, Frelinghuysen, Heckscher, Bordes)
-  - **Total**: 30 Met cards
-
-- **Total corpus**: 337 cards
+### Loaded & Complete — 429 cards total
+- **Chipstone**: 187 articles + 120 reviews = 307 cards (1993–2023), all metadata fixed
+- **Met Museum**: 44 cards — 8 publications + 4 bulletin essays (Heckscher, Davidson, Tracy, Safford, Walk, Phyfe, Lannuier, Rococo)
+- **MESDA Journal**: 78 articles (all 10 batches, 1996–2025) — web-scraped from mesdajournal.org
 
 ### Next Corpus Steps
 - Winterthur trade catalogs — Internet Archive, public domain
-- MESDA Journal — freely online
-- Additional Met Bulletin essays (Davis, others)
+- American Period Furniture (SAPFM's own journal)
+- Additional Met Bulletin essays
 
-## Pending UI/UX Improvements (2026-04-07)
+## Semantic Search (2026-04-11)
 
-1. **Page counts on tiles**: Reference file `met-chapters-page-reference.json` created; viewer integration pending
-2. **Description formatting**: All 26 met chapter descriptions reformatted with paragraph breaks (3-sentence paragraphs) for readability ✓
-3. **Virtual guided tours**: Concept documented in `project-virtual-museum-tours.md`; design pending. Would integrate Met API IIIF images with chapter cards by era/form
+The `sapfm-embedder` Worker provides semantic search across all SAPFM content:
+
+- **Model:** `@cf/baai/bge-base-en-v1.5` (Workers AI) — 768-dim text embeddings
+- **Index:** `sapfm-catalog-vectors` on Cloudflare Vectorize (cosine metric)
+- **9,039 vectors:** 8,155 museum objects + 429 card catalog + 455 video chapters
+- **Search endpoint:** `GET /search?q=...&k=20&type=object|card_catalog|video_chapter`
+- **Re-embed:** `POST /embed/all` (or `/embed/museum`, `/embed/cards`, `/embed/videos`)
+- Idempotent — safe to re-run when content changes
+- Deployed at `https://sapfm-embedder.sapfm-admin.workers.dev`
+- UI: Search page in Members Desktop at `/search`
 
 ## Viewer
 
-`viewer/card-catalog-explorer.html` — standalone, no build, points to production API.
-For local testing, change `API` const to `http://localhost:8787`.
-Will be deployed to Bench Pages as `public/card-catalog.html`.
+`viewer/card-catalog-explorer.html` — standalone HTML browse UI, points to production API.
+Card Catalog is also integrated as a React page in the Members Desktop (`/card-catalog`).
