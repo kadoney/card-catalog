@@ -300,27 +300,55 @@ async function embedVideos(env) {
   return [{ source: "Video Chapters", rows: rows.results.length, embedded: count }];
 }
 
-function json(data, status = 200) {
-  return new Response(JSON.stringify(data, null, 2), {
-    status,
-    headers: { "Content-Type": "application/json" },
-  });
+function json(data, status = 200, corsOrigin = "*") {
+  const headers = {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": corsOrigin,
+  };
+  return new Response(JSON.stringify(data, null, 2), { status, headers });
 }
+
+function cors(response, origin) {
+  const headers = new Headers(response.headers);
+  headers.set("Access-Control-Allow-Origin", origin);
+  headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  headers.set("Access-Control-Allow-Headers", "Content-Type");
+  return new Response(response.body, { status: response.status, headers });
+}
+
+const ALLOWED_ORIGINS = [
+  "https://sapfm-bench.pages.dev",
+  "https://bench.sapfm.org",
+  "https://sapfm.org",
+  "https://www.sapfm.org",
+];
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname;
+    const origin = request.headers.get("Origin") || "";
+    const isAllowed = ALLOWED_ORIGINS.includes(origin)
+      || origin.startsWith("http://localhost")
+      || origin.startsWith("http://127.0.0.1");
+    const corsOrigin = isAllowed ? origin : ALLOWED_ORIGINS[0];
+
+    if (request.method === "OPTIONS") {
+      return cors(new Response(null, { status: 204 }), corsOrigin);
+    }
+
+    // Helper that includes CORS on all JSON responses
+    const j = (data, status = 200) => json(data, status, corsOrigin);
 
     if (path === "/health") {
-      return json({ status: "ok", service: "sapfm-embedder" });
+      return j({ status: "ok", service: "sapfm-embedder" });
     }
 
     if (path === "/search" && request.method === "GET") {
       const q = url.searchParams.get("q");
       const topK = parseInt(url.searchParams.get("k") || "10");
       const typeFilter = url.searchParams.get("type"); // object, card_catalog, video_chapter
-      if (!q) return json({ error: "?q= required" }, 400);
+      if (!q) return j({ error: "?q= required" }, 400);
 
       try {
         const aiResult = await env.AI.run(AI_MODEL, { text: [q] });
@@ -334,7 +362,7 @@ export default {
         if (typeFilter) opts.filter = { record_type: typeFilter };
 
         const results = await env.VECTORIZE.query(queryVec, opts);
-        return json({
+        return j({
           query: q,
           count: results.matches.length,
           matches: results.matches.map((m) => ({
@@ -344,7 +372,7 @@ export default {
           })),
         });
       } catch (e) {
-        return json({ error: e.message }, 500);
+        return j({ error: e.message }, 500);
       }
     }
 
@@ -352,15 +380,15 @@ export default {
       try {
         const vec = new Array(768).fill(0.01);
         const r = await env.VECTORIZE.query(vec, { topK: 1, returnMetadata: "none" });
-        return json({ index: "sapfm-catalog-vectors", vectors: "query works", note: "Use wrangler vectorize info for exact count" });
+        return j({ index: "sapfm-catalog-vectors", vectors: "query works", note: "Use wrangler vectorize info for exact count" });
       } catch (e) {
-        return json({ error: e.message }, 500);
+        return j({ error: e.message }, 500);
       }
     }
 
     // All embed endpoints require POST
     if (request.method !== "POST") {
-      return json({
+      return j({
         endpoints: [
           "POST /embed/museum          — all 8 museum collections",
           "POST /embed/museum?only=Met  — single museum",
@@ -389,13 +417,13 @@ export default {
         const videos = await embedVideos(env);
         results = [...museum, ...cards, ...videos];
       } else {
-        return json({ error: "Unknown endpoint" }, 404);
+        return j({ error: "Unknown endpoint" }, 404);
       }
 
       const total = results.reduce((s, r) => s + r.embedded, 0);
-      return json({ success: true, total_embedded: total, sources: results });
+      return j({ success: true, total_embedded: total, sources: results });
     } catch (e) {
-      return json({ error: e.message, stack: e.stack }, 500);
+      return j({ error: e.message, stack: e.stack }, 500);
     }
   },
 };
