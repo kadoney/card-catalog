@@ -42,7 +42,8 @@ function museumText(row, source) {
 }
 
 function museumMeta(row, source, collection, idField) {
-  const refId = `${source}:${row[idField] ?? row.id}`;
+  const sourceId = String(row[idField] ?? row.id);
+  const refId = `${source}:${sourceId}`;
   return {
     id: `ref:${refId}`,
     metadata: {
@@ -52,6 +53,8 @@ function museumMeta(row, source, collection, idField) {
       collection,
       title: (row.title || "").slice(0, 200),
       year: row.date_begin || 0,
+      source_id: sourceId,
+      url: row.collection_url || "",
     },
   };
 }
@@ -134,7 +137,8 @@ const MUSEUM_CONFIGS = [
     query: `SELECT id, title, objectName, objectNameNorm AS form_type,
                    formBucket AS form_bucket, artistName AS maker_name,
                    medium, date AS date_display, dateBegin AS date_begin,
-                   culture, department, country AS origin
+                   culture, department, country AS origin,
+                   objectURL AS collection_url
             FROM furniture`,
   },
   {
@@ -145,7 +149,8 @@ const MUSEUM_CONFIGS = [
     idField: "source_id",
     query: `SELECT id, source_id, title, specific_form AS form_type,
                    form_bucket, maker_name, medium,
-                   date_display, date_begin, place_primary AS origin
+                   date_display, date_begin, place_primary AS origin,
+                   canonical_url AS collection_url
             FROM furniture`,
   },
   {
@@ -156,7 +161,7 @@ const MUSEUM_CONFIGS = [
     idField: "rijks_id",
     query: `SELECT id, rijks_id, title, specific_form AS form_type,
                    form_bucket, maker_name, medium, date_display,
-                   date_begin, description
+                   date_begin, description, collection_url
             FROM furniture`,
   },
   {
@@ -167,7 +172,8 @@ const MUSEUM_CONFIGS = [
     idField: "cma_id",
     query: `SELECT id, cma_id, title, form_type, form_bucket,
                    maker_name, technique AS medium, culture, origin,
-                   date_display, date_begin, description, did_you_know
+                   date_display, date_begin, description, did_you_know,
+                   collection_url
             FROM furniture`,
   },
   {
@@ -177,7 +183,8 @@ const MUSEUM_CONFIGS = [
     collection: "Art Institute of Chicago",
     idField: "aic_id",
     query: `SELECT id, aic_id, title, form_type, form_bucket,
-                   maker_name, medium, origin, date_display, date_begin
+                   maker_name, medium, origin, date_display, date_begin,
+                   collection_url
             FROM furniture`,
   },
   {
@@ -187,7 +194,8 @@ const MUSEUM_CONFIGS = [
     collection: "Philadelphia Museum of Art",
     idField: "pma_id",
     query: `SELECT id, pma_id, title, form_type, form_bucket,
-                   maker_name, medium, style, origin, date_display, date_begin
+                   maker_name, medium, style, origin, date_display, date_begin,
+                   collection_url
             FROM furniture`,
   },
   {
@@ -198,7 +206,7 @@ const MUSEUM_CONFIGS = [
     idField: "slam_id",
     query: `SELECT id, slam_id, title, form_type, form_bucket,
                    maker_name, material, culture, origin,
-                   date_display, date_begin
+                   date_display, date_begin, collection_url
             FROM furniture`,
   },
   {
@@ -209,7 +217,7 @@ const MUSEUM_CONFIGS = [
     idField: "recid",
     query: `SELECT id, recid, title, form_type, form_bucket,
                    maker_name, materials, techniques AS technique,
-                   origin, date_display, date_begin
+                   origin, date_display, date_begin, collection_url
             FROM furniture`,
   },
 ];
@@ -255,6 +263,7 @@ async function embedCards(env) {
       collection: "SAPFM Card Catalog",
       title: (row.title || "").slice(0, 200),
       year: row.year || 0,
+      url: row.view_url || "",
     },
     text: cardText(row),
   }));
@@ -267,7 +276,7 @@ async function embedVideos(env) {
   // Join chapters with video title
   const rows = await env.DB_SAPFM.prepare(
     `SELECT vc.chapter_id, vc.title, vc.summary, vc.chapter_transcript,
-            v.title AS video_title
+            vc.start_seconds, v.title AS video_title, v.slug AS video_slug
      FROM video_chapter vc
      JOIN video v ON vc.video_id = v.video_id`
   ).all();
@@ -281,6 +290,8 @@ async function embedVideos(env) {
       collection: "SAPFM",
       title: (row.title || "").slice(0, 200),
       year: 0,
+      video_slug: row.video_slug || "",
+      start_seconds: row.start_seconds || 0,
     },
     text: chapterText(row),
   }));
