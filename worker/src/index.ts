@@ -59,6 +59,8 @@ interface CardRow {
   status: string;
   created_at: string;
   updated_at: string;
+  language: string | null;
+  title_en: string | null;
 }
 
 // =============================================================================
@@ -215,6 +217,8 @@ function formatCard(row: CardRow) {
     download_url: row.download_url,
     contributor_name: row.contributor_name,
     created_at: row.created_at,
+    language: row.language,
+    title_en: row.title_en,
   };
 }
 

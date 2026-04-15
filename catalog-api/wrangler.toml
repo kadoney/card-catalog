@@ -1,0 +1,14 @@
+name = "sapfm-catalog-api"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+account_id = "ebe622eaa5b3a3581cf5664272f26f30"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "card-catalog"
+database_id = "eb944e67-5fcc-4587-8fe1-eae2a9fe3476"
+
+# Auth secrets — set via wrangler secret before first deploy:
+#   wrangler secret put JWT_SECRET        # Shared secret from WordPress Simple-JWT-Login plugin
+#   wrangler secret put DEV_BYPASS        # Set to any value to enable Bearer DEV bypass (dev only)
+#   wrangler secret put ANTHROPIC_API_KEY # For teaser generation (optional)
