@@ -76,6 +76,33 @@ function cardText(row) {
   return parts.filter(Boolean).join(". ");
 }
 
+function ptIssueText(row) {
+  // Issue-level embedding: title, edition, issue-ness, and the quarterly-publication context.
+  // UI search for "Spring 2016 issue" or "Pins & Tales 2020" should land on covers.
+  const parts = [
+    row.title,                                               // "Pins & Tales — Spring 2016"
+    row.edition || "",                                       // "Spring 2016"
+    "Pins & Tales quarterly eMagazine of SAPFM",
+    "Society of American Period Furniture Makers newsletter issue",
+  ];
+  return parts.filter(Boolean).join(". ");
+}
+
+function ptArticleText(row) {
+  // Article-level embedding: title + author + edition + topic facets.
+  // No body text yet (Phase 2); title+author carries a lot for P&T's relatively short descriptive titles.
+  const parts = [row.title];
+  if (row.authors) {
+    try { parts.push(`by ${JSON.parse(row.authors).join(", ")}`); } catch {}
+  }
+  if (row.edition) parts.push(`Pins & Tales ${row.edition}`);
+  if (row.topic) {
+    try { parts.push(JSON.parse(row.topic).join(", ")); } catch {}
+  }
+  parts.push("Pins & Tales article");
+  return parts.filter(Boolean).join(". ");
+}
+
 function chapterText(row) {
   const parts = [];
   if (row.video_title) parts.push(row.video_title);
@@ -225,28 +252,11 @@ const MUSEUM_CONFIGS = [
 // ─── Route handlers ─────────────────────────────────────────────────
 
 async function embedMuseum(env, configFilter) {
-  const results = [];
-  const configs = configFilter
-    ? MUSEUM_CONFIGS.filter((c) => c.name.toLowerCase() === configFilter.toLowerCase())
-    : MUSEUM_CONFIGS;
-
-  for (const cfg of configs) {
-    const db = env[cfg.binding];
-    const rows = await db.prepare(cfg.query).all();
-    const items = rows.results.map((row) => {
-      const meta = museumMeta(row, cfg.source, cfg.collection, cfg.idField);
-      return {
-        id: meta.id,
-        metadata: meta.metadata,
-        text: museumText(row, cfg.source),
-      };
-    });
-
-    const count = await embedAndUpsert(env, items);
-    results.push({ source: cfg.name, rows: rows.results.length, embedded: count });
-  }
-
-  return results;
+  // STALE: per-museum D1 bindings were removed 2026-04-13 (consolidated into
+  // museum-furniture D1). Museum vectors already in sapfm-catalog-vectors from
+  // the last run against the old bindings. This path is a no-op until refactored
+  // against the unified museum-furniture.objects table.
+  return [{ source: "museum (stale)", rows: 0, embedded: 0, note: "refactor pending consolidation" }];
 }
 
 async function embedCards(env) {
@@ -254,19 +264,32 @@ async function embedCards(env) {
     `SELECT * FROM library_cards WHERE status = 'approved'`
   ).all();
 
-  const items = rows.results.map((row) => ({
-    id: `card:${row.id}`,
-    metadata: {
-      ref_id: `card:${row.id}`,
-      source: row.source || "card_catalog",
-      record_type: "card_catalog",
-      collection: "SAPFM Card Catalog",
-      title: (row.title || "").slice(0, 200),
-      year: row.year || 0,
-      url: row.view_url || "",
-    },
-    text: cardText(row),
-  }));
+  const items = rows.results.map((row) => {
+    const isPtIssue = row.card_type === "pt-issue";
+    const isPtArticle = row.card_type === "pt-article";
+    // Keep record_type=card_catalog for all library_cards rows; the `source` field
+    // differentiates P&T (source="SAPFM — Pins & Tales") from other cards.
+    return {
+      id: `card:${row.id}`,
+      metadata: {
+        ref_id: `card:${row.id}`,
+        source: row.source || "card_catalog",
+        record_type: "card_catalog",
+        collection: "SAPFM Card Catalog",
+        title: (row.title || "").slice(0, 200),
+        year: row.year || 0,
+        url: row.view_url || "",
+        card_type: row.card_type || "article",
+        edition: row.edition || "",
+        thumbnail_url: row.thumbnail_url || "",
+        parent_id: row.parent_id || 0,
+        page_start: row.page_start || 0,
+      },
+      text: isPtIssue ? ptIssueText(row)
+          : isPtArticle ? ptArticleText(row)
+          : cardText(row),
+    };
+  });
 
   const count = await embedAndUpsert(env, items);
   return [{ source: "Card Catalog", rows: rows.results.length, embedded: count }];

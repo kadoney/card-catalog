@@ -22,42 +22,16 @@ binding = "DB_CATALOG"
 database_name = "card-catalog"
 database_id = "eb944e67-5fcc-4587-8fe1-eae2a9fe3476"
 
+# NOTE: Per-museum D1 databases (DB_MET, DB_YALE, DB_RIJKS, DB_CLEVELAND, DB_CHICAGO,
+# DB_PMA, DB_SLAM, DB_WINTERTHUR) were deleted 2026-04-13 when the 8 museum D1s were
+# consolidated into a single `museum-furniture` D1 (d71edf59-7f68-4595-958c-7a9eb6708c23).
+# The /embed/museum endpoint is stale and will need refactoring against the unified schema.
+# For now, museum vectors are already present in sapfm-catalog-vectors — re-embedding via
+# this Worker requires updating MUSEUM_CONFIGS + queries in src/index.js against the new
+# consolidated `objects` table in museum-furniture D1.
+#
+# Binding the consolidated DB so /embed/museum can be refactored later:
 [[d1_databases]]
-binding = "DB_MET"
-database_name = "met-furniture"
-database_id = "f8b0511f-16a1-45ff-ba15-299e13783a0b"
-
-[[d1_databases]]
-binding = "DB_YALE"
-database_name = "yale-furniture"
-database_id = "3f9d8a12-6aab-4436-9556-e462e9ddcfb8"
-
-[[d1_databases]]
-binding = "DB_RIJKS"
-database_name = "rijks-furniture"
-database_id = "c2f93831-e96e-48ab-a56c-76b1af862dde"
-
-[[d1_databases]]
-binding = "DB_CLEVELAND"
-database_name = "cleveland-furniture"
-database_id = "3fdf5de1-4545-405a-a196-20c49e16b7ae"
-
-[[d1_databases]]
-binding = "DB_CHICAGO"
-database_name = "chicago-furniture"
-database_id = "b54696a6-8571-4633-8247-dfa4827e89f8"
-
-[[d1_databases]]
-binding = "DB_PMA"
-database_name = "pma-furniture"
-database_id = "34af3071-cba0-4e46-a80e-3214c22e035b"
-
-[[d1_databases]]
-binding = "DB_SLAM"
-database_name = "slam-furniture"
-database_id = "b56658dd-5d4c-4e6d-908d-1ceb16ad6fdf"
-
-[[d1_databases]]
-binding = "DB_WINTERTHUR"
-database_name = "winterthur-furniture"
-database_id = "5bda484f-3ba4-4c91-b818-d123a1dd016c"
+binding = "DB_MUSEUM_FURNITURE"
+database_name = "museum-furniture"
+database_id = "d71edf59-7f68-4595-958c-7a9eb6708c23"
