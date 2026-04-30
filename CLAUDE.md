@@ -9,7 +9,7 @@ Human-curated reference index for the SAPFM Member Desktop. Part of the broader 
 | Account | SAPFM | ebe622eaa5b3a3581cf5664272f26f30 |
 | D1 Database | card-catalog | eb944e67-5fcc-4587-8fe1-eae2a9fe3476 |
 | Worker | library-api | (deploy via `npm run deploy` in worker/) |
-| Worker | sapfm-catalog-api | Serves Bench UI (deployed separately) |
+| Worker | sapfm-catalog-api | Serves Bench UI — source at `/c/dev/sapfm-catalog-api/` (separate repo, deployed separately) |
 | Worker | sapfm-embedder | Embedding pipeline + semantic search |
 | Vectorize | sapfm-catalog-vectors | ~10,900 vectors, 768-dim, cosine |
 
