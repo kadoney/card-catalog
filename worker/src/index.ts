@@ -18,7 +18,6 @@
 interface Env {
   DB: D1Database;
   JWT_SECRET: string;
-  DEV_BYPASS?: string;
 }
 
 interface JWTPayload {
@@ -80,10 +79,6 @@ async function verifyJWT(request: Request, env: Env): Promise<JWTPayload | null>
   const authHeader = request.headers.get('Authorization');
   if (!authHeader?.startsWith('Bearer ')) return null;
   const token = authHeader.slice(7);
-
-  if (env.DEV_BYPASS && token === 'DEV') {
-    return { user_id: 1, membership_type: 'admin', dev: true };
-  }
 
   const parts = token.split('.');
   if (parts.length !== 3) return null;

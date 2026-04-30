@@ -71,7 +71,6 @@ Local dev:  `http://localhost:8787` (wrangler dev)
 ## Auth
 
 Same JWT pattern as bench-api (HS256, Web Crypto):
-- `Bearer DEV` works in dev if `DEV_BYPASS` secret is set
 - `membership_type: "admin"` required for admin routes
 - Set secrets: `wrangler secret put JWT_SECRET` (from WordPress Simple-JWT-Login)
 
