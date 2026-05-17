@@ -11,7 +11,7 @@ Human-curated reference index for the SAPFM Member Desktop. Part of the broader 
 | Worker | library-api | (deploy via `npm run deploy` in worker/) |
 | Worker | sapfm-catalog-api | Serves Bench UI — source at `/c/dev/sapfm-catalog-api/` (separate repo, deployed separately) |
 | Worker | sapfm-embedder | Embedding pipeline + semantic search |
-| Vectorize | sapfm-catalog-vectors | ~10,900 vectors, 768-dim, cosine |
+| Vectorize | sapfm-catalog-vectors | 9,039 deployed vectors (per workspace CLAUDE.md 2026-04-30); 768-dim, cosine — re-embed when corpus grows |
 
 ## Project Structure
 
@@ -105,7 +105,9 @@ Extend `chipstone-vocabulary.md` to match — it is the editorial reference.
 2. Member submits → `submissions` table (status: pending)
 3. Admin reviews in moderation queue → approves → writes to `library_cards`
 
-## Corpus Status (2026-04-14)
+## Corpus Status
+
+> Snapshot taken 2026-04-14; counts below match workspace `CLAUDE.md` as of 2026-05-17. Verify via D1 query before citing.
 
 ### Loaded & Complete — 2,269 cards total
 - **Chipstone**: 307 cards (1993–2023)
@@ -125,13 +127,13 @@ Extend `chipstone-vocabulary.md` to match — it is the editorial reference.
 - Winterthur trade catalogs — Internet Archive, public domain
 - 45 non-English titles still untranslated (API limit)
 
-## Semantic Search (2026-04-14)
+## Semantic Search
 
 The `sapfm-embedder` Worker provides semantic search across all SAPFM content:
 
 - **Model:** `@cf/baai/bge-base-en-v1.5` (Workers AI) — 768-dim text embeddings
 - **Index:** `sapfm-catalog-vectors` on Cloudflare Vectorize (cosine metric)
-- **~10,900 vectors:** 8,186 museum objects + 2,269 card catalog + 455 video chapters
+- **Source pool:** 8,186 museum objects + 2,269 card catalog + 455 video chapters = 10,910 candidates; **9,039 currently deployed** as of the last `/embed/all` run (per workspace CLAUDE.md). Run `vectorize_audit.py` to reconcile.
 - **Search endpoint:** `GET /search?q=...&k=20&type=object|card_catalog|video_chapter`
 - **Re-embed:** `POST /embed/all` (or `/embed/museum`, `/embed/cards`, `/embed/videos`)
 - Idempotent — safe to re-run when content changes
