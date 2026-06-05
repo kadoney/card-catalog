@@ -8,8 +8,7 @@ Human-curated reference index for the SAPFM Member Desktop. Part of the broader 
 |----------|------|----|
 | Account | SAPFM | ebe622eaa5b3a3581cf5664272f26f30 |
 | D1 Database | card-catalog | eb944e67-5fcc-4587-8fe1-eae2a9fe3476 |
-| Worker | library-api | (deploy via `npm run deploy` in worker/) |
-| Worker | sapfm-catalog-api | Serves Bench UI — source at `/c/dev/sapfm-catalog-api/` (separate repo, deployed separately) |
+| Worker | sapfm-catalog-api | **Live catalog API** — serves the Bench UI; source at `/c/dev/sapfm-catalog-api/` (separate repo, deployed separately) |
 | Worker | sapfm-embedder | Embedding pipeline + semantic search |
 | Vectorize | sapfm-catalog-vectors | 9,039 deployed vectors (per workspace CLAUDE.md 2026-04-30); 768-dim, cosine — re-embed when corpus grows |
 
@@ -17,9 +16,6 @@ Human-curated reference index for the SAPFM Member Desktop. Part of the broader 
 
 ```
 card-catalog/
-  worker/           ← library-api Worker (TypeScript) — card catalog CRUD
-    src/index.ts    ← All API endpoints
-    wrangler.toml
   embedder/         ← sapfm-embedder Worker (JS) — embedding pipeline + search
     src/index.js    ← Embed + search endpoints, binds all 10 D1 databases
     wrangler.toml   ← AI + Vectorize + all D1 bindings
@@ -34,32 +30,21 @@ card-catalog/
     02_seed_vocab.sql      ← Full controlled vocabulary (all 5 dimensions)
     03_seed_cards.sql      ← 8 Chipstone 1996 pilot cards
   ui/               ← Card Catalog React UI (integrated into Bench)
-  viewer/
-    card-catalog-explorer.html  ← Standalone HTML browse UI
   seed-cards.json          ← Source JSON for pilot batch (Chipstone 1996)
   chipstone-vocabulary.md  ← Controlled vocabulary reference
   card-catalog-schema.md   ← Schema + endpoint spec
 ```
 
-## API Base URL
+## API
 
-Production: `https://library-api.sapfm-admin.workers.dev`
-Local dev:  `http://localhost:8787` (wrangler dev)
+The live card-catalog API is **`sapfm-catalog-api`** (separate repo at `/c/dev/sapfm-catalog-api/`) —
+it serves the Members Desktop Card Catalog UI via `publications.sapfm.org` and the `/catalog-api`
+proxy, reading this same `card-catalog` D1.
 
-## Endpoints
-
-| Method | Path | Auth | Description |
-|--------|------|------|-------------|
-| GET | /api/library/cards | None | List cards — faceted filter + text search |
-| GET | /api/library/cards/:id | None | Single card detail |
-| GET | /api/library/vocab | None | All vocab terms grouped by dimension |
-| POST | /api/library/submissions | Member JWT | Submit a new card |
-| GET | /api/library/submissions/:id | Member JWT | Own submission status |
-| GET | /api/library/admin/submissions | Admin JWT | List submission queue |
-| PATCH | /api/library/admin/submissions/:id | Admin JWT | Approve / reject / revise |
-| PUT | /api/library/admin/cards/:id | Admin JWT | Edit approved card |
-| POST | /api/library/admin/vocab | Admin JWT | Add vocab term |
-| GET | /api/health | None | Health check |
+> **`library-api` decommissioned 2026-06-04.** The old `worker/` in this repo (the `library-api`
+> Worker, `/api/library/*`) was never deployed and was superseded by `sapfm-catalog-api`. Source
+> removed; recoverable from git history. Its member card-submission + admin-moderation endpoints
+> were never wired to a UI — if card submission is built later, it belongs in `sapfm-catalog-api`.
 
 ## Filter Logic
 
@@ -68,27 +53,14 @@ Local dev:  `http://localhost:8787` (wrangler dev)
 - `source_key`, `card_type` — direct column match
 - `q` — LIKE search on title, description, makers
 
-## Auth
-
-Same JWT pattern as bench-api (HS256, Web Crypto):
-- `membership_type: "admin"` required for admin routes
-- Set secrets: `wrangler secret put JWT_SECRET` (from WordPress Simple-JWT-Login)
-
-## First-Time Setup
+## Corpus D1 setup
 
 ```bash
-cd worker && npm install
-
-# Apply migrations
-wrangler d1 execute card-catalog --file=../sql/01_create_tables.sql
-wrangler d1 execute card-catalog --file=../sql/02_seed_vocab.sql
-wrangler d1 execute card-catalog --file=../sql/03_seed_cards.sql
-
-# Set auth secret
-wrangler secret put JWT_SECRET
-
-# Deploy
-npm run deploy
+# Apply schema + seed to the card-catalog D1. The corpus lives here; the live
+# API (auth, endpoints) is sapfm-catalog-api in its own repo.
+wrangler d1 execute card-catalog --file=sql/01_create_tables.sql
+wrangler d1 execute card-catalog --file=sql/02_seed_vocab.sql
+wrangler d1 execute card-catalog --file=sql/03_seed_cards.sql
 ```
 
 ## Controlled Vocabulary
@@ -96,14 +68,15 @@ npm run deploy
 Dimensions: `period`, `form`, `region`, `topic`, `source_key`, `card_type`
 
 All values defined in `chipstone-vocabulary.md` and seeded in `02_seed_vocab.sql`.
-To add a term: `POST /api/library/admin/vocab` (admin) or INSERT into `vocab_terms`.
+To add a term: INSERT into `vocab_terms` (or via a sapfm-catalog-api admin route if/when one is added).
 Extend `chipstone-vocabulary.md` to match — it is the editorial reference.
 
 ## Card Entry Flow
 
-1. Staff seed via SQL (current approach for Chipstone corpus)
-2. Member submits → `submissions` table (status: pending)
-3. Admin reviews in moderation queue → approves → writes to `library_cards`
+1. Staff seed via SQL (current approach for the whole corpus)
+2. Member-submission + moderation flow lived only in the decommissioned `library-api` and is **not
+   currently wired to any UI**. The `submissions` table still exists in D1; rebuild the flow in
+   `sapfm-catalog-api` if member contribution is wanted.
 
 ## Corpus Status
 
@@ -142,5 +115,6 @@ The `sapfm-embedder` Worker provides semantic search across all SAPFM content:
 
 ## Viewer
 
-`viewer/card-catalog-explorer.html` — standalone HTML browse UI, points to production API.
-Card Catalog is also integrated as a React page in the Members Desktop (`/card-catalog`).
+Card Catalog is integrated as a React page in the Members Desktop (`/card-catalog`), served by
+`sapfm-catalog-api`. (The old standalone `viewer/card-catalog-explorer.html` was removed with the
+`library-api` decommission on 2026-06-04.)

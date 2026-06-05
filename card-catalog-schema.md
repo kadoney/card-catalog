@@ -101,6 +101,10 @@ Seed from `chipstone-vocabulary.md`. All values in that file should have a corre
 
 ## Worker Endpoints
 
+> **Historical (design-era) spec.** The live catalog API is `sapfm-catalog-api` (separate repo)
+> under `/api/catalog/*`. The `/api/library/*` paths below were `library-api`, **decommissioned
+> 2026-06-04**. Kept for the data model + endpoint shapes; do not treat the paths as live.
+
 Base path: `/api/library/`  
 Auth: PMPro JWT for member routes. Admin token for moderation routes.  
 Follow existing SAPFM Worker auth pattern — do not invent new auth.

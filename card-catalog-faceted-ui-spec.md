@@ -212,6 +212,10 @@ All facet fields in `library_cards` store JSON arrays. Values must exactly match
 
 ## Worker API Endpoints
 
+> **Historical (design-era) spec.** The live catalog API is `sapfm-catalog-api` (separate repo)
+> under `/api/catalog/*`. The `/api/library/*` paths below were `library-api`, **decommissioned
+> 2026-06-04**. Kept for reference; do not treat the paths as live.
+
 **Worker name:** `sapfm-card-catalog` (or integrated into existing `sapfm` Worker)
 **Base path:** `/api/library/`
 
