@@ -9,16 +9,13 @@ Human-curated reference index for the SAPFM Member Desktop. Part of the broader 
 | Account | SAPFM | ebe622eaa5b3a3581cf5664272f26f30 |
 | D1 Database | card-catalog | eb944e67-5fcc-4587-8fe1-eae2a9fe3476 |
 | Worker | sapfm-catalog-api | **Live catalog API** — serves the Bench UI; source at `/c/dev/sapfm-catalog-api/` (separate repo, deployed separately) |
-| Worker | sapfm-embedder | Embedding pipeline + semantic search |
+| Worker | sapfm-embedder | Embedding pipeline + semantic search — **source at `sapfm-platform/workers/sapfm-embedder/`** (separate repo, deployed via its CI) |
 | Vectorize | sapfm-catalog-vectors | 9,039 deployed vectors (per workspace CLAUDE.md 2026-04-30); 768-dim, cosine — re-embed when corpus grows |
 
 ## Project Structure
 
 ```
 card-catalog/
-  embedder/         ← sapfm-embedder Worker (JS) — embedding pipeline + search
-    src/index.js    ← Embed + search endpoints, binds all 10 D1 databases
-    wrangler.toml   ← AI + Vectorize + all D1 bindings
   scripts/          ← ETL pipelines (Python) + maintenance tools
     chipstone_etl.py
     met_catalog_etl.py
@@ -108,9 +105,9 @@ The `sapfm-embedder` Worker provides semantic search across all SAPFM content:
 - **Index:** `sapfm-catalog-vectors` on Cloudflare Vectorize (cosine metric)
 - **Source pool:** 8,186 museum objects + 2,269 card catalog + 455 video chapters = 10,910 candidates; **9,039 currently deployed** as of the last `/embed/all` run (per workspace CLAUDE.md). Run `vectorize_audit.py` to reconcile.
 - **Search endpoint:** `GET /search?q=...&k=20&type=object|card_catalog|video_chapter`
-- **Re-embed:** `POST /embed/all` (or `/embed/museum`, `/embed/cards`, `/embed/videos`)
+- **Re-embed:** `POST /embed/all` (or `/embed/museums`, `/embed/cards`, `/embed/videos`) — gated by the `EMBED_TRIGGER_SECRET` header
 - Idempotent — safe to re-run when content changes
-- Deployed at `https://sapfm-embedder.sapfm-admin.workers.dev`
+- **Source:** `sapfm-platform/workers/sapfm-embedder/` (the stale duplicate that used to live in this repo's `embedder/` was removed 2026-06-04). Deployed at `https://sapfm-embedder.sapfm-admin.workers.dev`
 - UI: Search page in Members Desktop at `/search`
 
 ## Viewer
