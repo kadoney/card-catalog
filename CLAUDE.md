@@ -79,7 +79,7 @@ Extend `chipstone-vocabulary.md` to match — it is the editorial reference.
 
 > Snapshot taken 2026-04-14; counts below match workspace `CLAUDE.md` as of 2026-05-17. Verify via D1 query before citing.
 
-### Loaded & Complete — 2,269 cards total
+### Loaded & Complete — 2,269 via the ETL batches below (live D1 total: 2,428 as of 2026-06-12)
 - **Chipstone**: 307 cards (1993–2023)
 - **Met Museum**: 44 cards — 8 publications + 4 bulletin essays
 - **MESDA Journal**: 78 articles (1996–2025)

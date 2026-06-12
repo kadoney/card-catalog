@@ -9,7 +9,7 @@ The Card Catalog is a human-curated, annotated bibliography of American period f
 
 The UI lives at a Cloudflare Pages URL and calls a Cloudflare Worker API. It is a member-gated app on the SAPFM Member Desktop.
 
-**415 cards** are currently in D1, all `status = 'approved'`. Cards span Chipstone/American Furniture journal articles, APF journal content, and a Southern decorative arts corpus.
+**2,428 cards** are currently in D1 (live count 2026-06-12; this spec's original figure was 415, design-era). Cards span Chipstone/*American Furniture*, Met Museum publications, MESDA Journal, the Yale corpus, and public-domain books.
 
 ---
 
