@@ -1,6 +1,6 @@
 # SAPFM Card Catalog — C:\dev\card-catalog\
 
-Human-curated reference index for the SAPFM Member Desktop. Part of the broader Members Desktop alongside the Bench.
+Human-curated reference index for the SAPFM Bench. Part of the broader Bench alongside the Bench.
 
 ## Cloudflare Resources
 
@@ -35,7 +35,7 @@ card-catalog/
 ## API
 
 The live card-catalog API is **`sapfm-catalog-api`** (separate repo at `/c/dev/sapfm-catalog-api/`) —
-it serves the Members Desktop Card Catalog UI via `publications.sapfm.org` and the `/catalog-api`
+it serves the Bench Card Catalog UI via `publications.sapfm.org` and the `/catalog-api`
 proxy, reading this same `card-catalog` D1.
 
 > **`library-api` decommissioned 2026-06-04.** The old `worker/` in this repo (the `library-api`
@@ -108,10 +108,10 @@ The `sapfm-embedder` Worker provides semantic search across all SAPFM content:
 - **Re-embed:** `POST /embed/all` (or `/embed/museums`, `/embed/cards`, `/embed/videos`) — gated by the `EMBED_TRIGGER_SECRET` header
 - Idempotent — safe to re-run when content changes
 - **Source:** `sapfm-platform/workers/sapfm-embedder/` (the stale duplicate that used to live in this repo's `embedder/` was removed 2026-06-04). Deployed at `https://sapfm-embedder.sapfm-admin.workers.dev`
-- UI: Search page in Members Desktop at `/search`
+- UI: Search page in Bench at `/search`
 
 ## Viewer
 
-Card Catalog is integrated as a React page in the Members Desktop (`/card-catalog`), served by
+Card Catalog is integrated as a React page in the Bench (`/card-catalog`), served by
 `sapfm-catalog-api`. (The old standalone `viewer/card-catalog-explorer.html` was removed with the
 `library-api` decommission on 2026-06-04.)
