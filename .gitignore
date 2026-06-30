@@ -4,6 +4,8 @@ dist/
 *.local
 
 # ETL generated data (can be regenerated)
+# Published PDFs/covers staged locally by the P&T ingest — canonical copies live in R2
+pins-and-tales/
 scripts/chipstone_raw.json
 scripts/chipstone_cards.json
 scripts/met_catalog_raw.json
