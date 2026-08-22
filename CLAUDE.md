@@ -12,26 +12,6 @@ Human-curated reference index for the SAPFM Bench. Part of the broader Bench alo
 | Worker | sapfm-embedder | Embedding pipeline + semantic search — **source at `sapfm-platform/workers/sapfm-embedder/`** (separate repo, deployed via its CI) |
 | Vectorize | sapfm-catalog-vectors | 9,039 deployed vectors (per workspace CLAUDE.md 2026-04-30); 768-dim, cosine — re-embed when corpus grows |
 
-## Project Structure
-
-```
-card-catalog/
-  scripts/          ← ETL pipelines (Python) + maintenance tools
-    chipstone_etl.py
-    met_catalog_etl.py
-    mesda_website_scraper.py
-    vectorize_audit.py      ← Index audit/cleanup tool
-    vectorize_cleanup.js    ← Temporary cleanup Worker (used once)
-  sql/
-    01_create_tables.sql   ← library_cards, submissions, vocab_terms
-    02_seed_vocab.sql      ← Full controlled vocabulary (all 5 dimensions)
-    03_seed_cards.sql      ← 8 Chipstone 1996 pilot cards
-  ui/               ← Card Catalog React UI (integrated into Bench)
-  seed-cards.json          ← Source JSON for pilot batch (Chipstone 1996)
-  chipstone-vocabulary.md  ← Controlled vocabulary reference
-  card-catalog-schema.md   ← Schema + endpoint spec
-```
-
 ## API
 
 The live card-catalog API is **`sapfm-catalog-api`** (separate repo at `/c/dev/sapfm-catalog-api/`) —
@@ -52,13 +32,7 @@ proxy, reading this same `card-catalog` D1.
 
 ## Corpus D1 setup
 
-```bash
-# Apply schema + seed to the card-catalog D1. The corpus lives here; the live
-# API (auth, endpoints) is sapfm-catalog-api in its own repo.
-wrangler d1 execute card-catalog --file=sql/01_create_tables.sql
-wrangler d1 execute card-catalog --file=sql/02_seed_vocab.sql
-wrangler d1 execute card-catalog --file=sql/03_seed_cards.sql
-```
+Schema + seed = `sql/01..03_*.sql`, applied with `wrangler d1 execute card-catalog --file=…` after the RUNBOOK §1 prelude (this repo has no `wrangler.toml`, so `cf-env.sh` supplies the account). The live API is `sapfm-catalog-api`, its own repo.
 
 ## Controlled Vocabulary
 
