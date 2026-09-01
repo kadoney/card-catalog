@@ -24,9 +24,28 @@ Run from C:\\dev with the CF env sourced:
     #   ^ does the two R2 puts + the D1 insert, then verifies the public URLs + the row.
 
 Idempotent: aborts if a card with the derived source_key already exists (unless --force).
+
+ARTICLE CITATIONS (added 2026-09-01). An issue card alone makes the quarterly findable
+only as "the Fall 2026 issue" — searching for what is IN it needs one `pt-article`
+citation per piece, parented to the issue card. The 2008-2026 backfill was built by
+reading all 71 issues (sql/06_pt_article_index.sql); every NEW issue needs the same
+pass or the index quietly falls behind the publication.
+
+  # 1. dump the issue text so the contents can be read out of it
+  python card-catalog/scripts/ingest_pt_issue.py <issue.eml> --season Fall --year 2026 --dump-text
+
+  # 2. write the articles JSON, then publish issue + citations together
+  python card-catalog/scripts/ingest_pt_issue.py <issue.eml> --season Fall --year 2026 \\
+      --articles pt-2026-fall-articles.json --execute
+
+`--articles` may be given on its own later to add or correct an existing issue's
+citations. Finding the articles is a reading job, not a parse — see article_index.py.
 """
 import argparse, email, json, os, ssl, subprocess, sys, urllib.request
 from email import policy
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import article_index as ai
 
 SEASONS = ['spring', 'summer', 'fall', 'winter']
 BUCKET = 'publications'
@@ -150,6 +169,34 @@ def http_status(url: str) -> int:
         return 0
 
 
+def dump_issue_text(pdf_path: str, out_path: str):
+    """Page-marked text for the reading pass that produces the articles JSON.
+
+    Deliberately not a parser. A P&T issue's contents cannot be read off its cover
+    box: it lists the features and omits the columns, and the printed page number
+    does not always match the PDF page (the 2011-2012 print-era issues are in
+    imposition order — pdf page 1 is printed page 8).
+    """
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        sys.exit('pypdf not installed: python -m pip install pypdf\n'
+                 '(on OFFICE use `python -m pip`, not pip.exe — RUNBOOK §10a item 6)')
+    r = PdfReader(pdf_path)
+    out = ['# %s — read the contents out of this into the articles JSON.'
+           % os.path.basename(pdf_path)]
+    for n, p in enumerate(r.pages, 1):
+        out.append('\n=== PDF PAGE %d ===' % n)
+        out.append((p.extract_text() or '').strip())
+    open(out_path, 'w', encoding='utf-8').write('\n'.join(out))
+    print('wrote %s (%d pages)' % (out_path, len(r.pages)))
+    print('\nArticles JSON template — one object per article:')
+    print(json.dumps([{'title': 'Exact title as printed', 'authors': ['First Last'],
+                       'printed_page': 12, 'pdf_page': 12}], indent=1))
+    print('\n  Include features and named columns; skip the masthead, the contents')
+    print('  box, event calendars, class listings and house ads. authors [] -> "Staff".')
+
+
 def main():
     ap = argparse.ArgumentParser(description='Ingest a quarterly Pins & Tales issue.')
     ap.add_argument('eml', help='path to the issue .eml from Bob Lang')
@@ -157,11 +204,19 @@ def main():
     ap.add_argument('--year', required=True, type=int)
     ap.add_argument('--execute', action='store_true', help='perform the R2 puts + D1 insert (default: dry run)')
     ap.add_argument('--force', action='store_true', help='proceed even if the source_key already exists')
+    ap.add_argument('--articles', help='JSON list of articles -> pt-article citations')
+    ap.add_argument('--dump-text', action='store_true',
+                    help='write page-marked issue text for the reading pass, then exit')
     a = ap.parse_args()
 
     d = derive(a.season, a.year)
     outdir = os.path.join(HERE, '..', '..', '_scratch', 'pt-ingest', d['slug'])
     pdf_path, cover_path, pdf_fn, cover_fn = extract(a.eml, outdir, a.season, a.year, d)
+
+    if a.dump_text:
+        dump_issue_text(pdf_path, os.path.join(outdir, 'issue-text.txt'))
+        return
+
     sql = build_insert_sql(d)
     sql_path = os.path.join(outdir, 'insert.sql')
     open(sql_path, 'w', encoding='utf-8', newline='').write(sql)
@@ -173,9 +228,26 @@ def main():
     print(f'  card row   : library_cards (card_type=pt-issue, status=approved)')
     print(f'  SQL written: {sql_path}')
 
+    arts = None
+    if a.articles:
+        arts = ai.normalize(json.load(open(a.articles, encoding='utf-8')))
+        unsigned = sum(1 for r in arts if r['authors'] == ['Staff'])
+        print(f'  citations  : {len(arts)} articles'
+              + (f' ({unsigned} unsigned -> "Staff")' if unsigned else ''))
+    else:
+        print('  citations  : NONE — the issue will be findable, its articles will not.'
+              '\n               Re-run with --dump-text, read the contents, then --articles.')
+
+    # An existing issue is only a conflict if we would re-publish it. Adding or
+    # correcting citations on an issue already in the library is a normal errand.
     dup = existing_card_id(d['source_key'])
+    publish_issue = not dup or a.force
     if dup and not a.force:
-        sys.exit(f'\nABORT: a card with source_key={d["source_key"]} already exists (id={dup}). Use --force to override.')
+        if not a.articles:
+            sys.exit(f'\nABORT: a card with source_key={d["source_key"]} already exists '
+                     f'(id={dup}). Use --force to re-publish, or pass --articles to add '
+                     f'its citations.')
+        print(f'\n  NOTE: issue already published (id={dup}) — updating citations only.')
 
     if not a.execute:
         print('\n(dry run — nothing uploaded or inserted. Re-run with --execute to publish.)')
@@ -183,27 +255,51 @@ def main():
 
     need_cf_env()
     print('\n--- executing ---')
-    for key, path, ctype in ((d['pdf_key'], pdf_path, 'application/pdf'),
-                             (d['cover_key'], cover_path, 'image/jpeg')):
+    for key, path, ctype in (((d['pdf_key'], pdf_path, 'application/pdf'),
+                              (d['cover_key'], cover_path, 'image/jpeg')) if publish_issue else ()):
         r = wrangler(['r2', 'object', 'put', f'{BUCKET}/{key}', '--file', path,
                       '--content-type', ctype, '--remote'])
         if r.returncode != 0:
             sys.exit(f'R2 put failed for {key}:\n{r.stderr[:400]}')
         print(f'  uploaded {BUCKET}/{key}')
-    r = wrangler(['d1', 'execute', DB, '--remote', '--file', sql_path])
-    if r.returncode != 0:
-        sys.exit(f'D1 insert failed:\n{r.stderr[:400]}')
-    print('  inserted library_cards row')
+    if publish_issue:
+        r = wrangler(['d1', 'execute', DB, '--remote', '--file', sql_path])
+        if r.returncode != 0:
+            sys.exit(f'D1 insert failed:\n{r.stderr[:400]}')
+        print('  inserted library_cards row')
+
+    card_id = existing_card_id(d['source_key'])
+    if arts:
+        if not card_id:
+            sys.exit('no issue card for %s — publish the issue first' % d['source_key'])
+        art_sql = os.path.join(outdir, 'insert-articles.sql')
+        open(art_sql, 'w', encoding='ascii').write(ai.build_sql(
+            arts, parent_id=card_id, card_type='pt-article', source_sql=ai.SOURCE_PT,
+            year=d['year'], edition=d['edition'], pdf_url=d['view_url'],
+            thumb_url=d['thumb_url'],
+            describe=lambda r: 'Article in Pins & Tales, the SAPFM quarterly, %s issue%s.'
+                               % (d['edition'], ', page %d' % r['printed_page']
+                                  if r['printed_page'] else '')))
+        ai.load(art_sql)
+        print(f'  inserted {len(arts)} article citations')
 
     print('\n--- verify ---')
     cover_status = http_status(PUB_BASE + d['thumb_url'])
     pdf_status = http_status(PUB_BASE + d['view_url'])
-    card_id = existing_card_id(d['source_key'])
     print(f'  cover URL  {PUB_BASE + d["thumb_url"]} -> HTTP {cover_status}')
     print(f'  pdf URL    {PUB_BASE + d["view_url"]} -> HTTP {pdf_status}')
     print(f'  card row   id={card_id}')
     ok = cover_status == 200 and pdf_status == 200 and card_id
-    print('\n' + ('DONE — issue is live.' if ok else 'WARNING: verification incomplete, check above.'))
+    if arts:
+        n = ai.count_for(card_id, 'pt-article')
+        print(f'  citations in D1: {n} (expected {len(arts)})')
+        print(f'  re-embed: {ai.reembed()}')
+        ok = ok and n == len(arts)
+    else:
+        ok = False
+        print('  citations: NONE — this issue is not searchable at article level yet.')
+    print('\n' + ('DONE — issue is live and its articles are searchable.' if ok
+                  else 'INCOMPLETE — see above.'))
 
 
 if __name__ == '__main__':
