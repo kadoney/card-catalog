@@ -163,9 +163,13 @@ def reembed() -> str:
             secret = line.split('=', 1)[1].strip().strip('"\'')
     if not secret:
         return 'SKIPPED — EMBED_TRIGGER_SECRET not found in the secrets file'
+    # ⚠ A User-Agent is REQUIRED: Cloudflare 403s urllib's default agent, and the
+    # 403 reads exactly like a bad secret. Cost a wrong diagnosis on the APF 2024
+    # load, and it is the same trap ingest_pt_issue.http_status() already carries.
     req = urllib.request.Request(
         'https://sapfm-embedder.sapfm-admin.workers.dev/embed/cards',
-        method='POST', headers={'Authorization': 'Bearer ' + secret})
+        method='POST', headers={'Authorization': 'Bearer ' + secret,
+                                'User-Agent': 'sapfm-article-index'})
     try:
         with urllib.request.urlopen(req, timeout=300) as resp:
             d = json.load(resp)
