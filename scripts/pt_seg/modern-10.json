@@ -1,0 +1,102 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2022-spring",
+      "card_id": 3583,
+      "edition": "Spring 2022",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Bob Lang"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "Larry Bilderback", "authors": ["Bob Lang"], "pdf_page": 12, "printed_page": 12, "kind": "news"},
+        {"title": "George Washington's Ferry Farm Open for the Season", "authors": ["Bob Lang"], "pdf_page": 18, "printed_page": 18, "kind": "news"},
+        {"title": "Winterthur Conference", "authors": ["Bob Lang"], "pdf_page": 23, "printed_page": 23, "kind": "news"},
+        {"title": "2022 Midyear Conference", "authors": ["Sam Rhodes"], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+        {"title": "Take the Challenge", "authors": ["Bob Lang"], "pdf_page": 27, "printed_page": 27, "kind": "news"},
+        {"title": "Thanks Journal Sponsors", "authors": ["Bob Lang"], "pdf_page": 28, "printed_page": 28, "kind": "news"},
+        {"title": "New Website Launched", "authors": ["Bob Lang"], "pdf_page": 29, "printed_page": 29, "kind": "feature"},
+        {"title": "It's Simply Show 'n Tell", "authors": ["Bob Lang"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Makers Challenge", "authors": ["Scott Severns"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+        {"title": "Sharpening Assist", "authors": ["Jim Francis"], "pdf_page": 40, "printed_page": 40, "kind": "feature"},
+        {"title": "Essential Marquetry", "authors": ["Bob Lang"], "pdf_page": 41, "printed_page": 41, "kind": "column"},
+        {"title": "The Dietrich Collection", "authors": [], "pdf_page": 43, "printed_page": 43, "kind": "news"},
+        {"title": "Christopher Storb", "authors": [], "pdf_page": 44, "printed_page": 44, "kind": "news"},
+        {"title": "Show Your Stuff", "authors": [], "pdf_page": 45, "printed_page": 45, "kind": "news"},
+        {"title": "Share With Instagram", "authors": [], "pdf_page": 46, "printed_page": 46, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2022-summer",
+      "card_id": 3584,
+      "edition": "Summer 2022",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Scott Severns"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Cartouche Update", "authors": ["Ken Johnson"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "Who's SAPFM", "authors": ["Bob Lang"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "New Place to Learn", "authors": ["Dan Faia"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Winterthur/Philadelphia Conference Update", "authors": ["Dale Ausherman"], "pdf_page": 33, "printed_page": 33, "kind": "news"},
+        {"title": "Waterfall Bookcase", "authors": ["Nicholas J. Vanaria"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "The Humble Candle Box", "authors": ["Julian Peters"], "pdf_page": 40, "printed_page": 40, "kind": "feature"},
+        {"title": "Jointer Upgrade", "authors": ["Chris Haycox"], "pdf_page": 42, "printed_page": 42, "kind": "feature"},
+        {"title": "An Instagram Sequence", "authors": [], "pdf_page": 44, "printed_page": 44, "kind": "news"},
+        {"title": "Get APF Back Issues", "authors": [], "pdf_page": 45, "printed_page": 45, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2022-fall",
+      "card_id": 3585,
+      "edition": "Fall 2022",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["SAPFM Board"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Website Spotlight", "authors": ["Bob Lang"], "pdf_page": 8, "printed_page": 8, "kind": "column"},
+        {"title": "APF Preview", "authors": ["Bob Lang"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+        {"title": "Midyear Update", "authors": ["Dale Ausherman"], "pdf_page": 29, "printed_page": 29, "kind": "news"},
+        {"title": "Annual Cartouche", "authors": ["Bob Lang"], "pdf_page": 35, "printed_page": 35, "kind": "news"},
+        {"title": "Phil Lowe Library Update", "authors": ["Mark Maleski"], "pdf_page": 36, "printed_page": 36, "kind": "news"},
+        {"title": "2022 Makers Challenge", "authors": ["Scott Severns"], "pdf_page": 37, "printed_page": 37, "kind": "news"},
+        {"title": "Northern Woods Exhibition", "authors": ["Bob Lang"], "pdf_page": 38, "printed_page": 38, "kind": "news"},
+        {"title": "Veneer Challenge", "authors": ["Bob Lang"], "pdf_page": 39, "printed_page": 39, "kind": "news"},
+        {"title": "It's Just A Card Table", "authors": ["Steve Quehl"], "pdf_page": 40, "printed_page": 40, "kind": "feature"},
+        {"title": "Spice Chest on Frame", "authors": ["Mark Maleski"], "pdf_page": 42, "printed_page": 42, "kind": "feature"},
+        {"title": "Projects As Samples", "authors": ["Julian Peters"], "pdf_page": 44, "printed_page": 44, "kind": "feature"},
+        {"title": "Sharing Storb", "authors": ["Christopher Storb"], "pdf_page": 45, "printed_page": 45, "kind": "news"},
+        {"title": "Not Always Glamour", "authors": [], "pdf_page": 46, "printed_page": 46, "kind": "news"},
+        {"title": "Get APF Back Issues", "authors": [], "pdf_page": 47, "printed_page": 47, "kind": "news"},
+        {"title": "Visit the SAPFM Store", "authors": [], "pdf_page": 48, "printed_page": 48, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2023-winter",
+      "card_id": 3590,
+      "edition": "Winter 2023",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Keith Smith"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "A Joint Effort", "authors": ["Charlie Driggs"], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 12, "printed_page": 12, "kind": "news"},
+        {"title": "Friendly Smiles", "authors": ["Diane Russo"], "pdf_page": 32, "printed_page": 32, "kind": "news"},
+        {"title": "Best in Show", "authors": ["Bob Lang"], "pdf_page": 33, "printed_page": 33, "kind": "news"},
+        {"title": "2024 Midyear Conference", "authors": ["Sam Rhodes"], "pdf_page": 34, "printed_page": 34, "kind": "news"},
+        {"title": "Cartouche Award", "authors": ["Bob Lang"], "pdf_page": 35, "printed_page": 35, "kind": "news"},
+        {"title": "Living Tools Project", "authors": ["Bonnie Hawke"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "The Future of Your Tools", "authors": ["Brent Richardson"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "Making 3D Models", "authors": ["Tony Kubalak"], "pdf_page": 41, "printed_page": 41, "kind": "feature"},
+        {"title": "What's Your Sign?", "authors": ["Julian Peters"], "pdf_page": 47, "printed_page": 47, "kind": "feature"},
+        {"title": "Get APF Back Issues", "authors": [], "pdf_page": 48, "printed_page": 48, "kind": "news"},
+        {"title": "Visit the SAPFM Store", "authors": [], "pdf_page": 49, "printed_page": 49, "kind": "news"}
+      ]
+    }
+  ]
+}

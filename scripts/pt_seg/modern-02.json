@@ -1,0 +1,102 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2014-spring",
+      "card_id": 3551,
+      "edition": "Spring 2014",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "EC Update", "authors": ["Alyce Englund"], "pdf_page": 8, "printed_page": 8, "kind": "column"},
+        {"title": "Nathan Lombard Exhibition at Old Sturbridge Village", "authors": ["Christie Jackson"], "pdf_page": 15, "printed_page": 15, "kind": "news"},
+        {"title": "Garvan Furniture Study", "authors": ["Gil Tyler"], "pdf_page": 17, "printed_page": 17, "kind": "feature"},
+        {"title": "Tablesaw Joinery", "authors": ["Will Neptune"], "pdf_page": 19, "printed_page": 19, "kind": "feature"},
+        {"title": "SAPFM Chronicles: Tom McMahon, Antique Furniture Restoration", "authors": ["John Borley"], "pdf_page": 21, "printed_page": 21, "kind": "column"},
+        {"title": "The Apprentice", "authors": ["John Borley"], "pdf_page": 23, "printed_page": 23, "kind": "feature"},
+        {"title": "Defining Style: Period and Regional — Queen Anne Part 4", "authors": ["W. Mickey Callahan"], "pdf_page": 25, "printed_page": 25, "kind": "column"},
+        {"title": "It Pays To Focus", "authors": ["Bob Van Dyke"], "pdf_page": 27, "printed_page": 27, "kind": "column"},
+        {"title": "The Flower Medallion Paterae", "authors": ["Jay Stallman"], "pdf_page": 28, "printed_page": 28, "kind": "feature"},
+        {"title": "Antique Hand Tools: Joinery Planes, Part I", "authors": ["Charles Watson"], "pdf_page": 31, "printed_page": 31, "kind": "column"},
+        {"title": "Recommended Reading", "authors": ["Julian Peters"], "pdf_page": 33, "printed_page": 33, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 34, "printed_page": 34, "kind": "column"},
+        {"title": "Take A Photography Class", "authors": ["Michael Pekovich"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+        {"title": "Members' Gallery: My First Period Piece — Massachusetts Block-Front Chest", "authors": ["Rolly Rhodes"], "pdf_page": 36, "printed_page": 36, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2014-summer",
+      "card_id": 3552,
+      "edition": "Summer 2014",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "EC Update", "authors": ["Ken Johnson", "Jim Shapiro"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "SAPFM 2013 Artist Demonstration Program", "authors": ["Dale Ausherman"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "Why Belong to SAPFM", "authors": ["Ken Johnson"], "pdf_page": 15, "printed_page": 15, "kind": "feature"},
+        {"title": "The P4A Resource", "authors": ["Ken Johnson"], "pdf_page": 16, "printed_page": 16, "kind": "feature"},
+        {"title": "Mid-Year Conference", "authors": ["John Borley"], "pdf_page": 17, "printed_page": 17, "kind": "news"},
+        {"title": "Scholarship Awarded", "authors": ["Bob Mustain"], "pdf_page": 19, "printed_page": 19, "kind": "news"},
+        {"title": "Winterthur Furniture Forum", "authors": ["Dale Ausherman"], "pdf_page": 20, "printed_page": 20, "kind": "news"},
+        {"title": "SAPFM Chronicles: Frank Rhodes and the Garbisch Basin", "authors": ["John Borley"], "pdf_page": 22, "printed_page": 22, "kind": "column"},
+        {"title": "Craftsman or Artist", "authors": ["Steve Latta"], "pdf_page": 25, "printed_page": 25, "kind": "feature"},
+        {"title": "Defining Styles: Period and Regional — Queen Anne Tea Table", "authors": ["W. Mickey Callahan"], "pdf_page": 27, "printed_page": 27, "kind": "column"},
+        {"title": "Super Neat Shops", "authors": ["Alf Sharp"], "pdf_page": 29, "printed_page": 29, "kind": "feature"},
+        {"title": "The Windsor Chair", "authors": ["Kevin L. Schroeder"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Greene & Greene", "authors": ["Darrell Peart", "Edward R. Bosley"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+        {"title": "Antique Hand Tools: Joinery Planes, Part II", "authors": ["Charles Watson"], "pdf_page": 35, "printed_page": 35, "kind": "column"},
+        {"title": "Recommended Reading: Ruler & Compass", "authors": ["Robert Lord"], "pdf_page": 37, "printed_page": 37, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 38, "printed_page": 38, "kind": "column"},
+        {"title": "Members' Gallery: New England Turret Top Tea Table", "authors": ["David Boeff"], "pdf_page": 39, "printed_page": 39, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2014-fall",
+      "card_id": 3553,
+      "edition": "Fall 2014",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "EC Update: Why I Chose a SAPFM Life Membership at Age 70+", "authors": ["Tom Sears"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Jay Gaynor, R.I.P.", "authors": ["Mickey Callahan", "Steven Lash"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "Iroquois Chapter Visit to Genesee Country Village & Museum", "authors": ["Jim Altemus"], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+        {"title": "Furniture Databases", "authors": ["Gil Tyler"], "pdf_page": 17, "printed_page": 17, "kind": "feature"},
+        {"title": "WIA and SAPFM", "authors": ["Tom Sears"], "pdf_page": 19, "printed_page": 19, "kind": "news"},
+        {"title": "SAPFM Chronicles: A Life Influenced by the Spirit of Thomas Day", "authors": ["John Borley"], "pdf_page": 20, "printed_page": 20, "kind": "column"},
+        {"title": "Defining Styles: Period and Regional — Rococo and Chippendale", "authors": ["W. Mickey Callahan"], "pdf_page": 22, "printed_page": 22, "kind": "column"},
+        {"title": "My Journey Back to 1750", "authors": ["Joel Goodwin"], "pdf_page": 24, "printed_page": 24, "kind": "feature"},
+        {"title": "The Detroit Institute of Arts", "authors": ["Dale Ausherman"], "pdf_page": 26, "printed_page": 26, "kind": "feature"},
+        {"title": "Antique Hand Tools: Shaping Planes", "authors": ["Charles Watson"], "pdf_page": 30, "printed_page": 30, "kind": "column"},
+        {"title": "Technique: The Case for Waxy Shellac", "authors": ["Tad Fallon"], "pdf_page": 32, "printed_page": 32, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 33, "printed_page": 33, "kind": "column"},
+        {"title": "Members' Gallery: Charles II Era Flap-Front Desk or Scriptor", "authors": ["Steven Lash"], "pdf_page": 34, "printed_page": 34, "kind": "column"},
+        {"title": "'Derby' Commode Sells for $20,910 at Skinner Auction", "authors": [], "pdf_page": 35, "printed_page": null, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2015-winter",
+      "card_id": 3558,
+      "edition": "Winter 2015",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?: What's in a Word?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "EC Update", "authors": ["Dale Ausherman", "Ken Johnson"], "pdf_page": 8, "printed_page": 8, "kind": "column"},
+        {"title": "Identifying Candidates", "authors": ["Ken Johnson"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "Wadsworth Homestead Tour", "authors": ["Jim Altemus"], "pdf_page": 16, "printed_page": 16, "kind": "news"},
+        {"title": "Chronicles: Ronald Young — 2016 Cartouche Recipient", "authors": ["John Borley"], "pdf_page": 23, "printed_page": 23, "kind": "column"},
+        {"title": "Defining Styles: Federal Furniture — George Hepplewhite, Part 2", "authors": ["W. Mickey Callahan"], "pdf_page": 26, "printed_page": 26, "kind": "column"},
+        {"title": "Writing Slopes/Boxes", "authors": ["Nicholas J. V. Vanaria"], "pdf_page": 28, "printed_page": 28, "kind": "feature"},
+        {"title": "Shell Inlay Challenges", "authors": ["Brian Landis"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "Antique Hand Tools: The Period Furniture Maker's Tool Chest", "authors": ["Charles Watson"], "pdf_page": 35, "printed_page": 35, "kind": "column"},
+        {"title": "A Labor of Love — Part III: A Lady Needs Her Drawers", "authors": ["Gil Tyler"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "3 Members Awarded: 2015 Popular Woodworking Excellence Awards", "authors": ["Megan Fitzpatrick"], "pdf_page": 40, "printed_page": 40, "kind": "news"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+        {"title": "Members' Gallery: Chippendale Style Desk in Peruvian Mahogany", "authors": ["Gerald Lauchle"], "pdf_page": 43, "printed_page": 43, "kind": "column"},
+        {"title": "Members' Gallery: 1780's Federal Candle Stand", "authors": ["Jay Stallman"], "pdf_page": 44, "printed_page": 44, "kind": "column"}
+      ]
+    }
+  ]
+}

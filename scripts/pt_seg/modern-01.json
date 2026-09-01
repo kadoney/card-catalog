@@ -1,0 +1,104 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2013-winter",
+      "card_id": 3550,
+      "edition": "Winter 2013",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Ken Johnson"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "EC Update", "authors": ["Tom Sears"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Annual Winter Meeting at CVSW 2014: It's All About Connecticut Furniture", "authors": ["Bob Van Dyke"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "In Recognition of John McAlister", "authors": ["Ken Johnson"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+        {"title": "2014 Cartouche Award Recipient Announced", "authors": [], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "Events/Happenings", "authors": ["Gil Tyler"], "pdf_page": 11, "printed_page": 11, "kind": "column"},
+        {"title": "Visit to the Seward House", "authors": ["Jim Altemus"], "pdf_page": 14, "printed_page": 14, "kind": "feature"},
+        {"title": "Woodworking In America", "authors": ["Mike Siemsen"], "pdf_page": 15, "printed_page": 15, "kind": "news"},
+        {"title": "Mid-Year Conference Refresher: Hammer Veneering", "authors": ["Alf Sharp"], "pdf_page": 16, "printed_page": 16, "kind": "feature"},
+        {"title": "SAPFM Chronicles: David Boeff, Books, Videos, Measurements and Prototypes", "authors": ["John Borley"], "pdf_page": 18, "printed_page": 18, "kind": "column"},
+        {"title": "Defining Style: Period and Regional, Queen Anne Part 3", "authors": ["W. Mickey Callahan"], "pdf_page": 20, "printed_page": 20, "kind": "column"},
+        {"title": "Building A Back Saw", "authors": ["Gary DeManche"], "pdf_page": 22, "printed_page": 22, "kind": "feature"},
+        {"title": "Classical Proportions", "authors": ["Alf Sharp"], "pdf_page": 24, "printed_page": 24, "kind": "feature"},
+        {"title": "Recommended Reading: Woodworker's Guide to Veneering and Inlay", "authors": ["Barry Burke"], "pdf_page": 26, "printed_page": 26, "kind": "column"},
+        {"title": "Antique Hand Tools: A Period Cabinetmaker's Toolbox", "authors": ["Charles Watson"], "pdf_page": 27, "printed_page": 27, "kind": "column"},
+        {"title": "Around the Shop: Tips and Reviews", "authors": ["Philip Rinehart", "Barry Burke"], "pdf_page": 29, "printed_page": 29, "kind": "column"},
+        {"title": "Members' Gallery", "authors": ["Ronald Young", "Marion Smith"], "pdf_page": 30, "printed_page": 30, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2013-summer",
+      "card_id": 3548,
+      "edition": "Summer 2013",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "What's New: Introducing Our E-Newsletter", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Ken Johnson"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "EC Update", "authors": ["Jim Altemus", "Ken Johnson", "Aaron Hall"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "2014 Cartouche Award Nomination", "authors": ["Steve Latta"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "The French Oak Roubo Project", "authors": [], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+        {"title": "Events/Happenings", "authors": ["Gil Tyler"], "pdf_page": 12, "printed_page": 12, "kind": "column"},
+        {"title": "The SAPFM Chronicles: The Challenges of Building the Gene Landon Philadelphia Side Chair", "authors": ["John Borley"], "pdf_page": 14, "printed_page": 14, "kind": "column"},
+        {"title": "Defining Style: Period and Regional", "authors": ["W. Mickey Callahan"], "pdf_page": 16, "printed_page": 16, "kind": "column"},
+        {"title": "2013 SAPFM Artist Demonstration Program", "authors": ["Dale Ausherman"], "pdf_page": 18, "printed_page": 18, "kind": "feature"},
+        {"title": "Technique: Splines for Snake Feet", "authors": ["Will Neptune"], "pdf_page": 20, "printed_page": 20, "kind": "feature"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 21, "printed_page": 21, "kind": "column"},
+        {"title": "A Book Tour: Houses of the Founding Fathers", "authors": [], "pdf_page": 22, "printed_page": 22, "kind": "column"},
+        {"title": "Mahogany: The Cost of Luxury in Early America", "authors": ["Jim Altemus"], "pdf_page": 23, "printed_page": 23, "kind": "column"},
+        {"title": "Member's Gallery: Willard-Style Tall Clock", "authors": ["David Beach"], "pdf_page": 24, "printed_page": 24, "kind": "column"},
+        {"title": "A Gallery Visit: Newport's Whitehorne House", "authors": [], "pdf_page": 25, "printed_page": 25, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2013-fall",
+      "card_id": 3549,
+      "edition": "Fall 2013",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Ken Johnson"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "EC Update", "authors": ["Ken Johnson", "Aaron Hall", "Bob Van Dyke", "JB Alegiani", "Carl Voss"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Why Are There SAPFM Regional Chapters?", "authors": ["Freddy Roman"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "Events/Happenings", "authors": ["Gil Tyler"], "pdf_page": 11, "printed_page": 11, "kind": "column"},
+        {"title": "Four Centuries of Massachusetts Furniture", "authors": [], "pdf_page": 14, "printed_page": 14, "kind": "news"},
+        {"title": "Wood Grain Patterns and Their Effects on the Design, Appearance, and Machining of Furniture Parts", "authors": ["W. Mickey Callahan"], "pdf_page": 15, "printed_page": 15, "kind": "feature"},
+        {"title": "SAPFM Chronicles: Roger Moister, The Student and the Mentors", "authors": ["John Borley"], "pdf_page": 16, "printed_page": 16, "kind": "column"},
+        {"title": "A Diary Entry: On Becoming a Period Furniture Maker", "authors": ["David Rader"], "pdf_page": 18, "printed_page": 18, "kind": "feature"},
+        {"title": "Roubo's Bench: The French Oak Roubo Project (FORP) 2013", "authors": ["Don Williams"], "pdf_page": 20, "printed_page": 20, "kind": "feature"},
+        {"title": "The Dream Client", "authors": ["Alf Sharp"], "pdf_page": 22, "printed_page": 22, "kind": "feature"},
+        {"title": "Defining Style: Period and Regional, Queen Anne", "authors": ["W. Mickey Callahan"], "pdf_page": 24, "printed_page": 24, "kind": "column"},
+        {"title": "Blog, Blog, Blog... The Renaissance Woodworker", "authors": [], "pdf_page": 26, "printed_page": 26, "kind": "column"},
+        {"title": "The Saw Wright", "authors": [], "pdf_page": 27, "printed_page": 27, "kind": "column"},
+        {"title": "Recommended Reading: Of Wheelwrights, Carpenters, and Artisans", "authors": [], "pdf_page": 28, "printed_page": 28, "kind": "column"},
+        {"title": "A Period Resource: American Furniture", "authors": ["Gil Tyler"], "pdf_page": 29, "printed_page": 29, "kind": "column"},
+        {"title": "Antique Hand Tools: Why Use Hand Tools?", "authors": ["Charles Watson"], "pdf_page": 30, "printed_page": 30, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 31, "printed_page": 31, "kind": "column"},
+        {"title": "Technique: The Challenging Demilune Table", "authors": ["Jay Stallman"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "Members' Gallery: Chippendale Boston Serpentine Bombe Chest", "authors": ["Bruce Leonard"], "pdf_page": 33, "printed_page": 33, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2014-winter",
+      "card_id": 3554,
+      "edition": "Winter 2014",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "EC Update", "authors": ["Jim Shapiro"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Events/Happenings", "authors": ["Gil Tyler"], "pdf_page": 13, "printed_page": 13, "kind": "column"},
+        {"title": "2015 Cartouche Award", "authors": [], "pdf_page": 17, "printed_page": 17, "kind": "news"},
+        {"title": "SAPFM Chronicles: Herman Veenendaal, an International Member", "authors": ["John Borley"], "pdf_page": 18, "printed_page": 18, "kind": "column"},
+        {"title": "Defining Styles: Period and Regional, Rococo and Chippendale", "authors": ["W. Mickey Callahan"], "pdf_page": 20, "printed_page": 20, "kind": "column"},
+        {"title": "Crossing Borders: From Bucks County, PA to Upper Canada", "authors": ["John Borley"], "pdf_page": 22, "printed_page": 22, "kind": "feature"},
+        {"title": "Historical Cycles: The Ebb and Flow of Design Aesthetics", "authors": ["Alf Sharp"], "pdf_page": 24, "printed_page": 24, "kind": "feature"},
+        {"title": "Book Inlay: The Bookend Inlay and its Variants", "authors": ["Frank Vucolo"], "pdf_page": 26, "printed_page": 26, "kind": "feature"},
+        {"title": "Antique Hand Tools: Buying Antique Tools", "authors": ["Charles Watson"], "pdf_page": 28, "printed_page": 28, "kind": "column"},
+        {"title": "Technique: The Challenges of Creating Cock Beaded Edging", "authors": ["Jay Stallman"], "pdf_page": 30, "printed_page": 30, "kind": "feature"},
+        {"title": "Snapshot! What's Happening in Your World?", "authors": [], "pdf_page": 32, "printed_page": 32, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 33, "printed_page": 33, "kind": "column"},
+        {"title": "Members' Gallery: SAPFM 2014 Cartouche Award Recipient", "authors": ["W. Patrick Edwards"], "pdf_page": 34, "printed_page": 34, "kind": "column"}
+      ]
+    }
+  ]
+}

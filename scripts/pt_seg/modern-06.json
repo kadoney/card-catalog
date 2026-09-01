@@ -1,0 +1,101 @@
+{
+ "issues": [
+  {
+   "source_key": "pt-2018-spring",
+   "card_id": 3567,
+   "edition": "Spring 2018",
+   "masthead": "Pins & Tales",
+   "articles": [
+    {"title": "So What's News?", "authors": ["Bob Van Dyke", "Greg Pilotti"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+    {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+    {"title": "Board Update", "authors": ["Dale Ausherman"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+    {"title": "Midyear 2018 Update", "authors": ["Bob Van Dyke"], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+    {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 16, "printed_page": 16, "kind": "column"},
+    {"title": "Events/Happenings", "authors": ["Bob Stevenson", "Gil Tyler"], "pdf_page": 22, "printed_page": 22, "kind": "news"},
+    {"title": "Cartouche Banquet", "authors": ["Dale Ausherman"], "pdf_page": 28, "printed_page": 28, "kind": "news"},
+    {"title": "Steve Lash Remarks", "authors": ["Steve Lash"], "pdf_page": 31, "printed_page": 31, "kind": "news"},
+    {"title": "Making An Impression", "authors": ["Ken Johnson"], "pdf_page": 33, "printed_page": 33, "kind": "feature"},
+    {"title": "Take A Photography Lesson", "authors": ["Mike Pekovich"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+    {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+    {"title": "Working Wood...", "authors": ["Bob Mustain"], "pdf_page": 38, "printed_page": 38, "kind": "news"},
+    {"title": "A Book Tour", "authors": ["Martin O'Brien"], "pdf_page": 40, "printed_page": 40, "kind": "column"},
+    {"title": "Video Tours", "authors": [], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+    {"title": "Furniture Study Hiatus", "authors": [], "pdf_page": 43, "printed_page": 43, "kind": "news"}
+   ]
+  },
+  {
+   "source_key": "pt-2018-summer",
+   "card_id": 3568,
+   "edition": "Summer 2018",
+   "masthead": "Pins & Tales",
+   "articles": [
+    {"title": "So What's News?", "authors": ["Bob Van Dyke", "Brock Jobe"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+    {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+    {"title": "Board Update", "authors": ["Dale Ausherman"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+    {"title": "Opportunities To Help", "authors": ["Dale Ausherman"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+    {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 11, "printed_page": 11, "kind": "column"},
+    {"title": "Events/Happenings", "authors": ["Mike Mascelli", "Bob Van Dyke"], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+    {"title": "APF Update", "authors": ["Robert Lang"], "pdf_page": 29, "printed_page": 29, "kind": "column"},
+    {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+    {"title": "Nancy Hiller", "authors": ["Nancy Hiller"], "pdf_page": 33, "printed_page": 33, "kind": "feature"},
+    {"title": "That Soft Stuff", "authors": ["Mike Mascelli"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+    {"title": "It's About The Wood", "authors": ["Nicholas J. V. Vanaria"], "pdf_page": 39, "printed_page": 39, "kind": "feature"},
+    {"title": "Shell Inlay On A Curve", "authors": ["Brian Landis"], "pdf_page": 42, "printed_page": 42, "kind": "feature"},
+    {"title": "A Book Tour", "authors": ["Mike Pekovich"], "pdf_page": 44, "printed_page": 44, "kind": "column"},
+    {"title": "Video Tour", "authors": [], "pdf_page": 45, "printed_page": 45, "kind": "column"},
+    {"title": "Members' Gallery", "authors": ["David Boeff"], "pdf_page": 46, "printed_page": 46, "kind": "column"}
+   ]
+  },
+  {
+   "source_key": "pt-2018-fall",
+   "card_id": 3569,
+   "edition": "Fall 2018",
+   "masthead": "Pins & Tales",
+   "articles": [
+    {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+    {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+    {"title": "Board Update", "authors": ["Michael Holden"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+    {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 9, "printed_page": 9, "kind": "column"},
+    {"title": "Chapter Support Update", "authors": ["Rolly Rhodes"], "pdf_page": 16, "printed_page": 16, "kind": "news"},
+    {"title": "Events/Happenings", "authors": ["Mike Mascelli"], "pdf_page": 17, "printed_page": 17, "kind": "news"},
+    {"title": "CVSW's Value Added", "authors": [], "pdf_page": 20, "printed_page": 20, "kind": "news"},
+    {"title": "New Member", "authors": ["Brad Ormsby"], "pdf_page": 21, "printed_page": 21, "kind": "news"},
+    {"title": "A Midyear Success", "authors": ["Bob Mustain"], "pdf_page": 22, "printed_page": 22, "kind": "news"},
+    {"title": "Scholarship Recipients", "authors": ["Bob Mustain"], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+    {"title": "Member Exhibition", "authors": ["Mickey Callahan"], "pdf_page": 25, "printed_page": 25, "kind": "news"},
+    {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 27, "printed_page": 27, "kind": "feature"},
+    {"title": "Design In Wood", "authors": ["Bob Stevenson"], "pdf_page": 30, "printed_page": 30, "kind": "feature"},
+    {"title": "Celebrate Achievement", "authors": [], "pdf_page": 34, "printed_page": 34, "kind": "news"},
+    {"title": "MJD Open House", "authors": ["Mike Mascelli"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+    {"title": "A Teachable Moment", "authors": ["Allan Breed"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+    {"title": "Video Tours", "authors": [], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+    {"title": "Members' Gallery", "authors": ["Doug Moulder"], "pdf_page": 43, "printed_page": 43, "kind": "column"}
+   ]
+  },
+  {
+   "source_key": "pt-2019-winter",
+   "card_id": 3574,
+   "edition": "Winter 2019",
+   "masthead": "Pins & Tales",
+   "articles": [
+    {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+    {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+    {"title": "Board Update", "authors": ["Dave Redlin"], "pdf_page": 6, "printed_page": 6, "kind": "news"},
+    {"title": "Volunteering", "authors": ["John Rowe"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+    {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 11, "printed_page": 11, "kind": "column"},
+    {"title": "Advance Notice", "authors": ["Charlie Driggs"], "pdf_page": 21, "printed_page": 21, "kind": "news"},
+    {"title": "Events/Happenings", "authors": ["Bob Lang", "Julian Peters"], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+    {"title": "New School To Open", "authors": ["Bob Lang"], "pdf_page": 30, "printed_page": 30, "kind": "news"},
+    {"title": "The Complete Guild", "authors": ["Bob Lang"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+    {"title": "Members Exhibited", "authors": ["Ronnie Young"], "pdf_page": 34, "printed_page": 34, "kind": "news"},
+    {"title": "Researching Online", "authors": ["Bob Lang"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+    {"title": "SAPFM...Looking Back", "authors": ["Bob Lang"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+    {"title": "The Cartouche Process", "authors": ["Ken Johnson"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+    {"title": "2020 Cartouche Award", "authors": ["Bob Lang"], "pdf_page": 40, "printed_page": 40, "kind": "news"},
+    {"title": "Mel's Wax", "authors": ["Don Williams"], "pdf_page": 43, "printed_page": 43, "kind": "feature"},
+    {"title": "Video Tours", "authors": [], "pdf_page": 45, "printed_page": 45, "kind": "column"},
+    {"title": "Following Instagram?", "authors": [], "pdf_page": 46, "printed_page": 46, "kind": "news"}
+   ]
+  }
+ ]
+}

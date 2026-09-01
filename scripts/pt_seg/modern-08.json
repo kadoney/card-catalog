@@ -1,0 +1,104 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2020-spring",
+      "card_id": 3575,
+      "edition": "Spring 2020",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Bob Lang"], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Support SAPFM", "authors": ["Bob Lang"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "Events Cancellations", "authors": [], "pdf_page": 14, "printed_page": 14, "kind": "news"},
+        {"title": "Midyear 2020", "authors": ["Sam Rhodes"], "pdf_page": 23, "printed_page": 23, "kind": "news"},
+        {"title": "2020 Cartouche Banquet", "authors": ["Dale Ausherman"], "pdf_page": 25, "printed_page": 25, "kind": "news"},
+        {"title": "Williams & Webster", "authors": ["Bob Lang"], "pdf_page": 27, "printed_page": 27, "kind": "feature"},
+        {"title": "Fitting A Tenon", "authors": ["Jim Shapiro"], "pdf_page": 28, "printed_page": 28, "kind": "feature"},
+        {"title": "Dot & Dash Banding", "authors": ["Ronnie Young"], "pdf_page": 30, "printed_page": 30, "kind": "feature"},
+        {"title": "A Carved Gilded Frame", "authors": ["Jay Stallman"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "Video Tours", "authors": [], "pdf_page": 35, "printed_page": 35, "kind": "news"},
+        {"title": "Following Instagram?", "authors": [], "pdf_page": 36, "printed_page": 36, "kind": "news"},
+        {"title": "The Veneer Challenge", "authors": [], "pdf_page": 37, "printed_page": 37, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2020-summer",
+      "card_id": 3576,
+      "edition": "Summer 2020",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Sam Rhodes"], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Remembering", "authors": ["Bob Lang"], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+        {"title": "Recommended Reading", "authors": ["Bob Lang"], "pdf_page": 20, "printed_page": 20, "kind": "column"},
+        {"title": "Spessart Oak", "authors": ["Leonard Reinhardt"], "pdf_page": 24, "printed_page": 24, "kind": "feature"},
+        {"title": "Still A Chippendale", "authors": ["David Knuth"], "pdf_page": 26, "printed_page": 26, "kind": "feature"},
+        {"title": "Getting An Edge", "authors": ["Brian Boggs"], "pdf_page": 27, "printed_page": 27, "kind": "news"},
+        {"title": "A Timely Fit", "authors": ["Dale Ausherman"], "pdf_page": 28, "printed_page": 28, "kind": "feature"},
+        {"title": "When To Strop, Or Not", "authors": ["Bob Lang"], "pdf_page": 30, "printed_page": 30, "kind": "feature"},
+        {"title": "Starstruck", "authors": ["Julian Peters"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "Challenging Joinery", "authors": ["Steve Lash"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+        {"title": "Dwarf Tall Case Clock", "authors": ["Ronnie Young"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+        {"title": "Pencil Post Bed", "authors": ["Ronnie Young"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Following Instagram?", "authors": [], "pdf_page": 38, "printed_page": 38, "kind": "news"},
+        {"title": "Visit the SAPFM Store", "authors": ["Bob Lang"], "pdf_page": 39, "printed_page": 39, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2020-fall",
+      "card_id": 3577,
+      "edition": "Fall 2020",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "So They Say...", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Board Update", "authors": ["Dave Redlin"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "MESDA Honors", "authors": ["Dale Ausherman"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+        {"title": "Virtual Conference", "authors": [], "pdf_page": 19, "printed_page": 19, "kind": "news"},
+        {"title": "APF Preview", "authors": ["Bob Lang"], "pdf_page": 20, "printed_page": 20, "kind": "news"},
+        {"title": "A Closer Look", "authors": [], "pdf_page": 21, "printed_page": 21, "kind": "news"},
+        {"title": "All About Veneer", "authors": ["Bob Lang"], "pdf_page": 22, "printed_page": 22, "kind": "news"},
+        {"title": "Case Antiques", "authors": ["Bob Lang"], "pdf_page": 23, "printed_page": 23, "kind": "feature"},
+        {"title": "Recommended Reading", "authors": ["Bob Lang"], "pdf_page": 24, "printed_page": 24, "kind": "column"},
+        {"title": "America's Windsor", "authors": ["Steve Dietrich"], "pdf_page": 25, "printed_page": 25, "kind": "feature"},
+        {"title": "Ever the Student", "authors": ["James (Ray) Journigan"], "pdf_page": 28, "printed_page": 28, "kind": "feature"},
+        {"title": "Game On!", "authors": ["Bob Stevenson"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Progress Report", "authors": ["Bob Lang", "Steve Lash"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+        {"title": "Keeping Busy", "authors": ["Ray Journigan"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+        {"title": "Waste Not", "authors": ["Jeff Justis"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Channel Surfing", "authors": [], "pdf_page": 37, "printed_page": 37, "kind": "news"},
+        {"title": "Following Instagram?", "authors": [], "pdf_page": 38, "printed_page": 38, "kind": "news"},
+        {"title": "Visit the SAPFM Store", "authors": ["Bob Lang"], "pdf_page": 39, "printed_page": 39, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2021-winter",
+      "card_id": 3582,
+      "edition": "Winter 2021",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Bob Lang"], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Williamsburg Conference", "authors": ["Bob Lang"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "APF Is On The Way", "authors": ["Bob Lang"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "James Franklin Conley", "authors": ["Bob Mustain"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "Winterthur Conference", "authors": ["Bob Lang"], "pdf_page": 30, "printed_page": 30, "kind": "news"},
+        {"title": "Midyear Conference", "authors": ["Sam Rhodes"], "pdf_page": 31, "printed_page": 31, "kind": "news"},
+        {"title": "From Forest To Furniture", "authors": ["Bob Lang"], "pdf_page": 33, "printed_page": 33, "kind": "news"},
+        {"title": "E-Furniture Study Tour", "authors": [], "pdf_page": 34, "printed_page": 34, "kind": "news"},
+        {"title": "2022 Cartouche", "authors": [], "pdf_page": 35, "printed_page": 35, "kind": "news"},
+        {"title": "Lowe And Behold", "authors": [], "pdf_page": 36, "printed_page": 36, "kind": "news"},
+        {"title": "Doan Secretary Desk", "authors": ["John Borley"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Miniature Kneehole Desk", "authors": ["Alan Cleven"], "pdf_page": 41, "printed_page": 41, "kind": "feature"},
+        {"title": "Newport Tall Case Clock", "authors": ["Jay Stallman"], "pdf_page": 42, "printed_page": 42, "kind": "feature"},
+        {"title": "My Seymour Secretaries", "authors": ["Chris Haycox"], "pdf_page": 46, "printed_page": 46, "kind": "feature"},
+        {"title": "Sam & Luke", "authors": ["Bob Lang"], "pdf_page": 48, "printed_page": 48, "kind": "feature"},
+        {"title": "Got A Minute?", "authors": [], "pdf_page": 50, "printed_page": 50, "kind": "news"}
+      ]
+    }
+  ]
+}

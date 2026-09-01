@@ -1,0 +1,154 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2008-spring",
+      "card_id": 3530,
+      "edition": "Spring 2008",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "Alf Sharp Receives 2008 Cartouche Award", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Mid-year Conference Dates Set", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "SAPFM Announces Revised Cartouche Award Guidelines", "authors": [], "pdf_page": 2, "printed_page": 2, "kind": "news"},
+        {"title": "President's Message", "authors": ["Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "Phil Lowe Presents at PEM", "authors": [], "pdf_page": 4, "printed_page": 4, "kind": "news"},
+        {"title": "American Period Furniture", "authors": [], "pdf_page": 4, "printed_page": 4, "kind": "news"},
+        {"title": "Traditional Molding Techniques: The Basics", "authors": ["Brad Ormsby"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Making Traditional Side Escapement Planes", "authors": ["Brad Ormsby"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Fine Points of Furniture: Early American", "authors": ["Mark Arnold"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Mission Furniture: How to Make It", "authors": ["Mark Arnold"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "2008 Annual Business Meeting Summary", "authors": ["Bob Mustain"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "From the SAPFM Member Gallery: Philadelphia Queen Anne Side Chair", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2008-summer",
+      "card_id": 3531,
+      "edition": "Summer 2008",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "Mid-year Conference Details Announced", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "SAPFM's Regional Chapters Enjoy an Active Spring", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "About this Year's Presenters", "authors": [], "pdf_page": 2, "printed_page": 2, "kind": "news"},
+        {"title": "President's Message", "authors": ["Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "SAPFM Online", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "From the SAPFM Member Gallery: Salem Secretary", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2008-fall",
+      "card_id": 3532,
+      "edition": "Fall 2008",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "2008 Mid-Year Conference: Furniture Making Education at its Best", "authors": ["Mark Arnold"], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Regional Chapter Members Enjoy Winterthur Exhibit in Toledo", "authors": ["Mark Arnold"], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "President's Message", "authors": ["Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "SAPFM Visits MESDA for the Second Time", "authors": ["Bob Mustain"], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Join Us for Working Wood in the 18th Century", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "2009 MESDA Furniture Seminar: Take a Chair!", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "From the SAPFM Member Gallery: Dressing Table", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2009-winter",
+      "card_id": 3536,
+      "edition": "Winter 2009",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "Dennis Bork Receives the 2009 Cartouche Award", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "2009 Mid-year Conference Details Announced", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Jim Thompson Elected to the Executive Council", "authors": [], "pdf_page": 2, "printed_page": 2, "kind": "news"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "On the Road with SAPFM", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Plans Available to SAPFM Members", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Fine Furnishings Exhibitors' Discount for SAPFM", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Queen Anne Chest", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "American Period Furniture", "authors": [], "pdf_page": 6, "printed_page": 6, "kind": "news"},
+        {"title": "Book Review: Decorative Woodcarving: Accessories for the Home", "authors": ["Mark Arnold"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Annual Business Meeting Report", "authors": ["Robert Mustain"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "Annual Budget Report", "authors": [], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "From the SAPFM Member Gallery: Queen Anne Side Chairs", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2009-spring",
+      "card_id": 3533,
+      "edition": "Spring 2009",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "Join us at the 2009 Mid-year Conference in June", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "On the Road with SAPFM", "authors": [], "pdf_page": 6, "printed_page": 6, "kind": "news"},
+        {"title": "Period Furniture to be Featured at Woodworkers Showcase 2010", "authors": ["Jim Altemus"], "pdf_page": 6, "printed_page": 6, "kind": "news"},
+        {"title": "Nominate your Mentor for the 2010 Cartouche Award", "authors": [], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "From the SAPFM Member Gallery: Newport Tall Case Clock", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2009-summer",
+      "card_id": 3534,
+      "edition": "Summer 2009",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "SAPFM Meets for its Annual Summer Conference", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "SAPFM to Participate at Woodworking In America", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "Showing Our Stuff", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "SAPFM Presents Award for Traditional Furniture at 2009 Design In Wood at San Diego County Fair", "authors": [], "pdf_page": 6, "printed_page": 6, "kind": "news"},
+        {"title": "SAPFM Members Only", "authors": [], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "Review: Unlocking the Secrets of Traditional Design", "authors": ["Mark Arnold"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "From the SAPFM Member Gallery: Federal work table", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2009-fall",
+      "card_id": 3535,
+      "edition": "Fall 2009",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "Society Makes Plans for its Annual Williamsburg Meeting", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Woodworking In America: SAPFM Participates in Themed Events", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Membership Dues to Increase", "authors": [], "pdf_page": 2, "printed_page": 2, "kind": "news"},
+        {"title": "Tom Densmore Makes Bed for the John Chads House", "authors": [], "pdf_page": 2, "printed_page": 2, "kind": "news", "flag": "mangled"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "2010 Executive Council Election", "authors": [], "pdf_page": 4, "printed_page": 4, "kind": "news"},
+        {"title": "SAPFM and American Period Furniture to be Featured at 2010 Woodworkers Showcase", "authors": ["Jim Altemus"], "pdf_page": 6, "printed_page": 6, "kind": "news"},
+        {"title": "From the SAPFM Member Gallery: Newport Tall-Case Clock", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2010-winter",
+      "card_id": 3540,
+      "edition": "Winter 2010",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "SAPFM's Mid-year Conference Presenters Announced", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Steve Lash Wins the 2010 Cartouche Award", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Lash and Callahan Receive Founder's Award", "authors": [], "pdf_page": 2, "printed_page": 2, "kind": "news"},
+        {"title": "SAPFM and American Period Furniture to be Featured at 2010 Woodworker's Showcase", "authors": ["Jim Altemus"], "pdf_page": 2, "printed_page": 2, "kind": "news"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "Period Outreach in Wisconsin", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "New Plans Available for Download", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Demystifying the Townsends and Goddards: An Exploration of Newport Cabinetmakers", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "American Period Furniture", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "Furniture Reference Sources", "authors": ["Bob Compton"], "pdf_page": 6, "printed_page": 6, "kind": "feature"},
+        {"title": "Cure your Classical Molding Dysfunction", "authors": ["Mark Arnold"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Report from the Annual Business Meeting", "authors": ["Bob Mustain"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "From the SAPFM Member Gallery: Chippendale secretary", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2010-spring",
+      "card_id": 3537,
+      "edition": "Spring 2010",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "Register Today for the Mid-year Conference", "authors": [], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "Period Furniture a Hit at the NWA Woodworker's Showcase", "authors": ["Jim Altemus"], "pdf_page": 1, "printed_page": 1, "kind": "news"},
+        {"title": "President's Message", "authors": ["W. Mickey Callahan"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "Mentoring: the Gift that keeps on Giving", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+        {"title": "From the SAPFM Member Gallery: Newport dressing table", "authors": [], "pdf_page": 8, "printed_page": 8, "kind": "column"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2017-spring",
+      "card_id": 3563,
+      "edition": "Spring 2017",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Board Update", "authors": ["Joel Goodwin"], "pdf_page": 8, "printed_page": 8, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+        {"title": "Williamsburg Reflections", "authors": ["Mike Mascelli"], "pdf_page": 23, "printed_page": 23, "kind": "news"},
+        {"title": "2017 Cartouche Banquet", "authors": ["Dale Ausherman"], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Midyear 2017", "authors": ["Tom Sears", "Bob Van Dyke"], "pdf_page": 29, "printed_page": 29, "kind": "news"},
+        {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 32, "printed_page": 32, "kind": "column"},
+        {"title": "A Windsor Concerto", "authors": ["Mike Mascelli"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+        {"title": "Reclaiming History", "authors": ["Jay Stallman"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Defining Styles", "authors": ["W. Mickey Callahan"], "pdf_page": 41, "printed_page": 41, "kind": "column"},
+        {"title": "Antique Hand Tools", "authors": ["Charlie Watson"], "pdf_page": 44, "printed_page": 44, "kind": "column"},
+        {"title": "A Book Tour", "authors": ["Ken Johnson"], "pdf_page": 46, "printed_page": 46, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 48, "printed_page": 48, "kind": "column"},
+        {"title": "Period Nuggets", "authors": ["Gil Tyler"], "pdf_page": 49, "printed_page": 49, "kind": "column"},
+        {"title": "Members' Gallery", "authors": ["David Boeff"], "pdf_page": 51, "printed_page": 51, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2017-summer",
+      "card_id": 3564,
+      "edition": "Summer 2017",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Board Update", "authors": ["Jim Shapiro"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Call For Nominations", "authors": ["Jim Crammond"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "A Life Well Lived", "authors": ["Steve Latta"], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Scholarships & Grants", "authors": ["Bob Mustain"], "pdf_page": 27, "printed_page": 27, "kind": "news"},
+        {"title": "Southern Hospitality", "authors": ["Jay Stallman"], "pdf_page": 28, "printed_page": 28, "kind": "news"},
+        {"title": "New Furniture Forum", "authors": ["Charlie Driggs"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Plane Talk", "authors": ["Dan Schwank"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Scoring Wood", "authors": ["John Borley"], "pdf_page": 38, "printed_page": 38, "kind": "news"},
+        {"title": "In The Latest London Fashion", "authors": ["Mike Mascelli"], "pdf_page": 39, "printed_page": 39, "kind": "feature"},
+        {"title": "A Book Tour", "authors": ["Gil Tyler"], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+        {"title": "Hard Knox", "authors": [], "pdf_page": 43, "printed_page": 43, "kind": "column"},
+        {"title": "Behind the Velvet Ropes", "authors": [], "pdf_page": 44, "printed_page": 44, "kind": "column"},
+        {"title": "Members' Gallery", "authors": ["Ronald Young", "Doug Moulder"], "pdf_page": 45, "printed_page": 45, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2017-fall",
+      "card_id": 3565,
+      "edition": "Fall 2017",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Board Update", "authors": ["Jim Shapiro"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+        {"title": "Chapter Camaraderie", "authors": ["Arnold Moore"], "pdf_page": 18, "printed_page": 18, "kind": "news"},
+        {"title": "Woodworking Excellence", "authors": ["Megan Fitzpatrick"], "pdf_page": 20, "printed_page": 20, "kind": "news"},
+        {"title": "Is It Time to Give Back?", "authors": ["Ken Johnson"], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 27, "printed_page": 27, "kind": "column"},
+        {"title": "Sharpening Woodcarving Tools", "authors": ["Mary May"], "pdf_page": 29, "printed_page": 29, "kind": "feature"},
+        {"title": "Plane Talk", "authors": ["Dan Schwank"], "pdf_page": 33, "printed_page": 33, "kind": "feature"},
+        {"title": "Antique Hand Tools", "authors": ["Charlie Watson"], "pdf_page": 35, "printed_page": 35, "kind": "column"},
+        {"title": "It's About Time for the Kids", "authors": ["Gil Tyler"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Holiday Tea Caddies", "authors": ["Jim Shapiro"], "pdf_page": 39, "printed_page": 39, "kind": "feature"},
+        {"title": "Safety First, and...", "authors": [], "pdf_page": 41, "printed_page": 41, "kind": "column"},
+        {"title": "Members' Gallery", "authors": ["Bob Stevenson"], "pdf_page": 42, "printed_page": 42, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2018-winter",
+      "card_id": 3570,
+      "edition": "Winter 2018",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Board Update", "authors": ["Dale Ausherman"], "pdf_page": 8, "printed_page": 8, "kind": "column"},
+        {"title": "AmazonSmile", "authors": [], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 11, "printed_page": 11, "kind": "news"},
+        {"title": "Working Wood", "authors": [], "pdf_page": 19, "printed_page": 19, "kind": "news"},
+        {"title": "2019 Cartouche", "authors": ["John Borley", "Dale Ausherman"], "pdf_page": 20, "printed_page": 20, "kind": "news"},
+        {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 26, "printed_page": 26, "kind": "column"},
+        {"title": "Hey, What's Up?", "authors": ["Julian Peters"], "pdf_page": 28, "printed_page": 28, "kind": "column"},
+        {"title": "\"Golden Age\" Rifle", "authors": ["Jay Stallman"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "The Perfect Inlay", "authors": ["John Champion"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "A Book Review", "authors": ["Mike Mascelli"], "pdf_page": 40, "printed_page": 40, "kind": "column"},
+        {"title": "Video Tours", "authors": [], "pdf_page": 42, "printed_page": 42, "kind": "column"}
+      ]
+    }
+  ]
+}

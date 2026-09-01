@@ -1,0 +1,92 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2024-spring",
+      "card_id": 3591,
+      "edition": "Spring 2024",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Joel Goodwin"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 9, "printed_page": 9, "kind": "column"},
+        {"title": "A Virtual Chapter", "authors": ["Bob Lang"], "pdf_page": 13, "printed_page": 13, "kind": "news"},
+        {"title": "Winterthur Programs", "authors": ["Charlie Driggs"], "pdf_page": 14, "printed_page": 14, "kind": "news"},
+        {"title": "FWW New England", "authors": ["Mike Pekovich"], "pdf_page": 30, "printed_page": 30, "kind": "news"},
+        {"title": "Zoom With Dan Faia", "authors": ["Bob Lang"], "pdf_page": 31, "printed_page": 31, "kind": "news"},
+        {"title": "Midyear Conference", "authors": ["Sam Rhodes"], "pdf_page": 32, "printed_page": 32, "kind": "news"},
+        {"title": "Working Wood Recap", "authors": ["Dale Ausherman"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Take the Challenge", "authors": ["Bob Lang"], "pdf_page": 41, "printed_page": 41, "kind": "news"},
+        {"title": "Makers Challenge", "authors": ["Bob Lang"], "pdf_page": 42, "printed_page": 42, "kind": "news"},
+        {"title": "William and Mary Table", "authors": ["Wes Sunderland"], "pdf_page": 44, "printed_page": 44, "kind": "feature"},
+        {"title": "A Canterbury Clock", "authors": ["Julian Peters"], "pdf_page": 47, "printed_page": 47, "kind": "feature"},
+        {"title": "Newport High Chest", "authors": ["Museum of Old Newbury"], "pdf_page": 49, "printed_page": 49, "kind": "news"},
+        {"title": "A leigh_keno Moment", "authors": [], "pdf_page": 50, "printed_page": 50, "kind": "news"},
+        {"title": "Get APF Back Issues", "authors": [], "pdf_page": 51, "printed_page": 51, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2024-summer",
+      "card_id": 3592,
+      "edition": "Summer 2024",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "Letters", "authors": ["Bob Lang"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Committee Updates", "authors": ["Bob Lang"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 10, "printed_page": 10, "kind": "column"},
+        {"title": "New Online Gatherings", "authors": ["Bob Lang"], "pdf_page": 36, "printed_page": 36, "kind": "news"},
+        {"title": "Village Woodwright", "authors": ["Edward Bouvier"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Shop Notes", "authors": ["John Ogilvie"], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+        {"title": "Are You Following?", "authors": ["Joel Moskowitz"], "pdf_page": 46, "printed_page": 46, "kind": "column"},
+        {"title": "If You Missed It...", "authors": [], "pdf_page": 47, "printed_page": 47, "kind": "news"},
+        {"title": "Get APF Back Issues", "authors": [], "pdf_page": 48, "printed_page": 48, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2024-fall",
+      "card_id": 3593,
+      "edition": "Fall 2024",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Committee Updates", "authors": ["Nancy Maloney"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "SAPFM Reminders", "authors": ["Bob Lang"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 12, "printed_page": 12, "kind": "column"},
+        {"title": "Coming Events", "authors": [], "pdf_page": 31, "printed_page": 31, "kind": "news"},
+        {"title": "Midyear Conference", "authors": ["Bob Lang"], "pdf_page": 34, "printed_page": 34, "kind": "news"},
+        {"title": "Scrimshaw Primer", "authors": ["John Ogilvie"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Thomas Jefferson Bookcase", "authors": ["Kathy Gillis"], "pdf_page": 39, "printed_page": 39, "kind": "feature"},
+        {"title": "SBWI Clamp Rack", "authors": ["Steve Skornicka"], "pdf_page": 42, "printed_page": 42, "kind": "feature"},
+        {"title": "A Carving Lesson", "authors": ["Christopher Strob"], "pdf_page": 44, "printed_page": 44, "kind": "column"},
+        {"title": "A Member Shares", "authors": [], "pdf_page": 45, "printed_page": 45, "kind": "news"},
+        {"title": "Get APF Back Issues", "authors": [], "pdf_page": 46, "printed_page": 46, "kind": "news"},
+        {"title": "Best of Show Design in Wood", "authors": [], "pdf_page": 47, "printed_page": null, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2025-winter",
+      "card_id": 3597,
+      "edition": "Winter 2025",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["David Feola"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Committee Updates", "authors": ["Nancy Maloney"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "SBWI Set for Growth", "authors": ["Bob Lang"], "pdf_page": 32, "printed_page": 32, "kind": "news"},
+        {"title": "2026 Cartouche Recipient", "authors": ["Bob Lang"], "pdf_page": 33, "printed_page": 33, "kind": "news"},
+        {"title": "Zoom Series", "authors": ["Dave Redlin"], "pdf_page": 34, "printed_page": 34, "kind": "news"},
+        {"title": "Lie-Nielsen Events", "authors": ["Bob Lang"], "pdf_page": 35, "printed_page": 35, "kind": "news"},
+        {"title": "A Return to the DIA", "authors": ["Dennis Heyza"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Sharpening Floats", "authors": ["Dan Schwank"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "Line & Berry Inlay", "authors": ["Jay Stallman"], "pdf_page": 40, "printed_page": 40, "kind": "feature"},
+        {"title": "Backsaw Tuneup", "authors": ["Mark Harrell"], "pdf_page": 44, "printed_page": 44, "kind": "feature"},
+        {"title": "Get APF Back Issues", "authors": [], "pdf_page": 47, "printed_page": 47, "kind": "news"},
+        {"title": "The Cadwalader Saddle Seat Side Chair Project", "authors": [], "pdf_page": 48, "printed_page": null, "kind": "news"}
+      ]
+    }
+  ]
+}

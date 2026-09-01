@@ -1,0 +1,100 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2019-spring",
+      "card_id": 3571,
+      "edition": "Spring 2019",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Board Update", "authors": ["Dave Redlin"], "pdf_page": 9, "printed_page": 9, "kind": "column"},
+        {"title": "A Committee Update", "authors": ["Ken Johnson"], "pdf_page": 11, "printed_page": 11, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 12, "printed_page": 12, "kind": "column"},
+        {"title": "Membership Exhibition", "authors": ["Mickey Callahan"], "pdf_page": 22, "printed_page": 22, "kind": "news"},
+        {"title": "Colonial Williamsburg", "authors": ["Bob Mustain"], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Cartouche Banquet", "authors": ["Dale Ausherman"], "pdf_page": 28, "printed_page": 28, "kind": "news"},
+        {"title": "MESDA Furniture Seminar", "authors": ["Mike Mascelli"], "pdf_page": 30, "printed_page": 30, "kind": "news"},
+        {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 33, "printed_page": 33, "kind": "column"},
+        {"title": "Adjustable Drawer Stops", "authors": ["Jim Shapiro"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Not Your Average Slip Seats", "authors": ["Mike Mascelli"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Hey, What's Up?", "authors": ["Julian Peters"], "pdf_page": 40, "printed_page": 40, "kind": "column"},
+        {"title": "Workshop Beauty Tips", "authors": ["John Borley"], "pdf_page": 41, "printed_page": 41, "kind": "feature"},
+        {"title": "Do You Follow?", "authors": ["P&T Staff"], "pdf_page": 43, "printed_page": 43, "kind": "column"},
+        {"title": "Video Tours", "authors": ["P&T Staff"], "pdf_page": 45, "printed_page": 45, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2019-summer",
+      "card_id": 3572,
+      "edition": "Summer 2019",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Greg Pilotti"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Van Dyke"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "The Centenarian", "authors": ["Emily Stroud"], "pdf_page": 22, "printed_page": 22, "kind": "feature"},
+        {"title": "Chronicles", "authors": ["John Borley"], "pdf_page": 23, "printed_page": 23, "kind": "column"},
+        {"title": "Celebrating 50 Years", "authors": ["Patrick Edwards"], "pdf_page": 26, "printed_page": 26, "kind": "feature"},
+        {"title": "French Polishing", "authors": ["John Coffey"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Book Review", "authors": ["Mark Maleski"], "pdf_page": 40, "printed_page": 40, "kind": "column"},
+        {"title": "Video Tours", "authors": ["P&T Staff"], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 43, "printed_page": 43, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2019-fall",
+      "card_id": 3573,
+      "edition": "Fall 2019",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Board Update", "authors": ["Sam Rhodes"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 9, "printed_page": 9, "kind": "column"},
+        {"title": "Just Around The Corner", "authors": ["Bob Lang"], "pdf_page": 20, "printed_page": 20, "kind": "news"},
+        {"title": "Good For Bob!", "authors": ["Julian Peters"], "pdf_page": 23, "printed_page": 23, "kind": "news"},
+        {"title": "A Midyear Success", "authors": ["Dale Ausherman"], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+        {"title": "Truly An Artist", "authors": ["Mary May"], "pdf_page": 30, "printed_page": 30, "kind": "feature"},
+        {"title": "Best Traditional Piece", "authors": ["Tony Kubalak"], "pdf_page": 33, "printed_page": 33, "kind": "news"},
+        {"title": "Divided Light Doors", "authors": ["Ray Journigan"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+        {"title": "When Time Matters", "authors": ["Nicholas Vanaria"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "Hey, What's Up?", "authors": ["Julian Peters"], "pdf_page": 43, "printed_page": 43, "kind": "column"},
+        {"title": "Video Tours", "authors": ["P&T Staff"], "pdf_page": 44, "printed_page": 44, "kind": "column"},
+        {"title": "Following Instagram?", "authors": ["P&T Staff"], "pdf_page": 45, "printed_page": 45, "kind": "column"},
+        {"title": "Members' Gallery", "authors": ["Matthew Wolfe"], "pdf_page": 46, "printed_page": 46, "kind": "column"},
+        {"title": "Peter Follansbee, Night Philosopher", "authors": ["Heather Neill"], "pdf_page": 47, "printed_page": null, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2020-winter",
+      "card_id": 3578,
+      "edition": "Winter 2020",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Bob Lang"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Support Our Publications", "authors": ["Bob Lang"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "Survey Says!", "authors": ["John Rowe"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "In Recognition Of", "authors": ["Ken Johnson", "Ronnie Young"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 11, "printed_page": 11, "kind": "column"},
+        {"title": "MESDA Journal", "authors": ["Dale Ausherman"], "pdf_page": 20, "printed_page": 20, "kind": "news"},
+        {"title": "Conference Update", "authors": ["Dale Ausherman"], "pdf_page": 21, "printed_page": 21, "kind": "news"},
+        {"title": "Things That Bug Museums", "authors": ["Johanna Pinney"], "pdf_page": 23, "printed_page": 23, "kind": "news"},
+        {"title": "2021 Cartouche Recipient", "authors": ["Bob Lang"], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+        {"title": "It's Just Another Tool", "authors": ["P&T Staff"], "pdf_page": 25, "printed_page": 25, "kind": "feature"},
+        {"title": "The Gibbons Effect", "authors": ["Ray Journigan"], "pdf_page": 26, "printed_page": 26, "kind": "feature"},
+        {"title": "Time For Compromise", "authors": ["Steve Quehl"], "pdf_page": 29, "printed_page": 29, "kind": "feature"},
+        {"title": "The Safer Shaper", "authors": ["Ronnie Young"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Black vs. Brown", "authors": ["Julian Peters"], "pdf_page": 33, "printed_page": 33, "kind": "feature"},
+        {"title": "Desk-on-Frame", "authors": ["Jay Stallman"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "It's All In The Details", "authors": ["Bob Stevenson"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "A Video Tour", "authors": ["Matthew Wolfe"], "pdf_page": 41, "printed_page": 41, "kind": "column"},
+        {"title": "Following Instagram?", "authors": ["P&T Staff"], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+        {"title": "APF Revisited", "authors": ["Robert C. Whitley"], "pdf_page": 43, "printed_page": 43, "kind": "feature"}
+      ]
+    }
+  ]
+}

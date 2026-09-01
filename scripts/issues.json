@@ -1,0 +1,499 @@
+[
+ {
+  "id": 3530,
+  "year": 2008,
+  "edition": "Spring 2008",
+  "source_key": "pt-2008-spring",
+  "download_url": "/publications/pins-and-tales/2008/spring-2008.pdf"
+ },
+ {
+  "id": 3531,
+  "year": 2008,
+  "edition": "Summer 2008",
+  "source_key": "pt-2008-summer",
+  "download_url": "/publications/pins-and-tales/2008/summer-2008.pdf"
+ },
+ {
+  "id": 3532,
+  "year": 2008,
+  "edition": "Fall 2008",
+  "source_key": "pt-2008-fall",
+  "download_url": "/publications/pins-and-tales/2008/fall-2008.pdf"
+ },
+ {
+  "id": 3536,
+  "year": 2009,
+  "edition": "Winter 2009",
+  "source_key": "pt-2009-winter",
+  "download_url": "/publications/pins-and-tales/2009/winter-2009.pdf"
+ },
+ {
+  "id": 3533,
+  "year": 2009,
+  "edition": "Spring 2009",
+  "source_key": "pt-2009-spring",
+  "download_url": "/publications/pins-and-tales/2009/spring-2009.pdf"
+ },
+ {
+  "id": 3534,
+  "year": 2009,
+  "edition": "Summer 2009",
+  "source_key": "pt-2009-summer",
+  "download_url": "/publications/pins-and-tales/2009/summer-2009.pdf"
+ },
+ {
+  "id": 3535,
+  "year": 2009,
+  "edition": "Fall 2009",
+  "source_key": "pt-2009-fall",
+  "download_url": "/publications/pins-and-tales/2009/fall-2009.pdf"
+ },
+ {
+  "id": 3540,
+  "year": 2010,
+  "edition": "Winter 2010",
+  "source_key": "pt-2010-winter",
+  "download_url": "/publications/pins-and-tales/2010/winter-2010.pdf"
+ },
+ {
+  "id": 3537,
+  "year": 2010,
+  "edition": "Spring 2010",
+  "source_key": "pt-2010-spring",
+  "download_url": "/publications/pins-and-tales/2010/spring-2010.pdf"
+ },
+ {
+  "id": 3538,
+  "year": 2010,
+  "edition": "Summer 2010",
+  "source_key": "pt-2010-summer",
+  "download_url": "/publications/pins-and-tales/2010/summer-2010.pdf"
+ },
+ {
+  "id": 3539,
+  "year": 2010,
+  "edition": "Fall 2010",
+  "source_key": "pt-2010-fall",
+  "download_url": "/publications/pins-and-tales/2010/fall-2010.pdf"
+ },
+ {
+  "id": 3544,
+  "year": 2011,
+  "edition": "Winter 2011",
+  "source_key": "pt-2011-winter",
+  "download_url": "/publications/pins-and-tales/2011/winter-2011.pdf"
+ },
+ {
+  "id": 3541,
+  "year": 2011,
+  "edition": "Spring 2011",
+  "source_key": "pt-2011-spring",
+  "download_url": "/publications/pins-and-tales/2011/spring-2011.pdf"
+ },
+ {
+  "id": 3542,
+  "year": 2011,
+  "edition": "Summer 2011",
+  "source_key": "pt-2011-summer",
+  "download_url": "/publications/pins-and-tales/2011/summer-2011.pdf"
+ },
+ {
+  "id": 3543,
+  "year": 2011,
+  "edition": "Fall Winter 2011",
+  "source_key": "pt-2011-fall-winter",
+  "download_url": "/publications/pins-and-tales/2011/fall-winter-2011.pdf"
+ },
+ {
+  "id": 3545,
+  "year": 2012,
+  "edition": "Spring 2012",
+  "source_key": "pt-2012-spring",
+  "download_url": "/publications/pins-and-tales/2012/spring-2012.pdf"
+ },
+ {
+  "id": 3546,
+  "year": 2012,
+  "edition": "Summer 2012",
+  "source_key": "pt-2012-summer",
+  "download_url": "/publications/pins-and-tales/2012/summer-2012.pdf"
+ },
+ {
+  "id": 3547,
+  "year": 2012,
+  "edition": "Fall 2012",
+  "source_key": "pt-2012-fall",
+  "download_url": "/publications/pins-and-tales/2012/fall-2012.pdf"
+ },
+ {
+  "id": 3550,
+  "year": 2013,
+  "edition": "Winter 2013",
+  "source_key": "pt-2013-winter",
+  "download_url": "/publications/pins-and-tales/2013/winter-2013.pdf"
+ },
+ {
+  "id": 3548,
+  "year": 2013,
+  "edition": "Summer 2013",
+  "source_key": "pt-2013-summer",
+  "download_url": "/publications/pins-and-tales/2013/summer-2013.pdf"
+ },
+ {
+  "id": 3549,
+  "year": 2013,
+  "edition": "Fall 2013",
+  "source_key": "pt-2013-fall",
+  "download_url": "/publications/pins-and-tales/2013/fall-2013.pdf"
+ },
+ {
+  "id": 3554,
+  "year": 2014,
+  "edition": "Winter 2014",
+  "source_key": "pt-2014-winter",
+  "download_url": "/publications/pins-and-tales/2014/winter-2014.pdf"
+ },
+ {
+  "id": 3551,
+  "year": 2014,
+  "edition": "Spring 2014",
+  "source_key": "pt-2014-spring",
+  "download_url": "/publications/pins-and-tales/2014/spring-2014.pdf"
+ },
+ {
+  "id": 3552,
+  "year": 2014,
+  "edition": "Summer 2014",
+  "source_key": "pt-2014-summer",
+  "download_url": "/publications/pins-and-tales/2014/summer-2014.pdf"
+ },
+ {
+  "id": 3553,
+  "year": 2014,
+  "edition": "Fall 2014",
+  "source_key": "pt-2014-fall",
+  "download_url": "/publications/pins-and-tales/2014/fall-2014.pdf"
+ },
+ {
+  "id": 3558,
+  "year": 2015,
+  "edition": "Winter 2015",
+  "source_key": "pt-2015-winter",
+  "download_url": "/publications/pins-and-tales/2015/winter-2015.pdf"
+ },
+ {
+  "id": 3555,
+  "year": 2015,
+  "edition": "Spring 2015",
+  "source_key": "pt-2015-spring",
+  "download_url": "/publications/pins-and-tales/2015/spring-2015.pdf"
+ },
+ {
+  "id": 3556,
+  "year": 2015,
+  "edition": "Summer 2015",
+  "source_key": "pt-2015-summer",
+  "download_url": "/publications/pins-and-tales/2015/summer-2015.pdf"
+ },
+ {
+  "id": 3557,
+  "year": 2015,
+  "edition": "Fall 2015",
+  "source_key": "pt-2015-fall",
+  "download_url": "/publications/pins-and-tales/2015/fall-2015.pdf"
+ },
+ {
+  "id": 3562,
+  "year": 2016,
+  "edition": "Winter 2016",
+  "source_key": "pt-2016-winter",
+  "download_url": "/publications/pins-and-tales/2016/winter-2016.pdf"
+ },
+ {
+  "id": 3559,
+  "year": 2016,
+  "edition": "Spring 2016",
+  "source_key": "pt-2016-spring",
+  "download_url": "/publications/pins-and-tales/2016/spring-2016.pdf"
+ },
+ {
+  "id": 3560,
+  "year": 2016,
+  "edition": "Summer 2016",
+  "source_key": "pt-2016-summer",
+  "download_url": "/publications/pins-and-tales/2016/summer-2016.pdf"
+ },
+ {
+  "id": 3561,
+  "year": 2016,
+  "edition": "Fall 2016",
+  "source_key": "pt-2016-fall",
+  "download_url": "/publications/pins-and-tales/2016/fall-2016.pdf"
+ },
+ {
+  "id": 3566,
+  "year": 2017,
+  "edition": "Winter 2017",
+  "source_key": "pt-2017-winter",
+  "download_url": "/publications/pins-and-tales/2017/winter-2017.pdf"
+ },
+ {
+  "id": 3563,
+  "year": 2017,
+  "edition": "Spring 2017",
+  "source_key": "pt-2017-spring",
+  "download_url": "/publications/pins-and-tales/2017/spring-2017.pdf"
+ },
+ {
+  "id": 3564,
+  "year": 2017,
+  "edition": "Summer 2017",
+  "source_key": "pt-2017-summer",
+  "download_url": "/publications/pins-and-tales/2017/summer-2017.pdf"
+ },
+ {
+  "id": 3565,
+  "year": 2017,
+  "edition": "Fall 2017",
+  "source_key": "pt-2017-fall",
+  "download_url": "/publications/pins-and-tales/2017/fall-2017.pdf"
+ },
+ {
+  "id": 3570,
+  "year": 2018,
+  "edition": "Winter 2018",
+  "source_key": "pt-2018-winter",
+  "download_url": "/publications/pins-and-tales/2018/winter-2018.pdf"
+ },
+ {
+  "id": 3567,
+  "year": 2018,
+  "edition": "Spring 2018",
+  "source_key": "pt-2018-spring",
+  "download_url": "/publications/pins-and-tales/2018/spring-2018.pdf"
+ },
+ {
+  "id": 3568,
+  "year": 2018,
+  "edition": "Summer 2018",
+  "source_key": "pt-2018-summer",
+  "download_url": "/publications/pins-and-tales/2018/summer-2018.pdf"
+ },
+ {
+  "id": 3569,
+  "year": 2018,
+  "edition": "Fall 2018",
+  "source_key": "pt-2018-fall",
+  "download_url": "/publications/pins-and-tales/2018/fall-2018.pdf"
+ },
+ {
+  "id": 3574,
+  "year": 2019,
+  "edition": "Winter 2019",
+  "source_key": "pt-2019-winter",
+  "download_url": "/publications/pins-and-tales/2019/winter-2019.pdf"
+ },
+ {
+  "id": 3571,
+  "year": 2019,
+  "edition": "Spring 2019",
+  "source_key": "pt-2019-spring",
+  "download_url": "/publications/pins-and-tales/2019/spring-2019.pdf"
+ },
+ {
+  "id": 3572,
+  "year": 2019,
+  "edition": "Summer 2019",
+  "source_key": "pt-2019-summer",
+  "download_url": "/publications/pins-and-tales/2019/summer-2019.pdf"
+ },
+ {
+  "id": 3573,
+  "year": 2019,
+  "edition": "Fall 2019",
+  "source_key": "pt-2019-fall",
+  "download_url": "/publications/pins-and-tales/2019/fall-2019.pdf"
+ },
+ {
+  "id": 3578,
+  "year": 2020,
+  "edition": "Winter 2020",
+  "source_key": "pt-2020-winter",
+  "download_url": "/publications/pins-and-tales/2020/winter-2020.pdf"
+ },
+ {
+  "id": 3575,
+  "year": 2020,
+  "edition": "Spring 2020",
+  "source_key": "pt-2020-spring",
+  "download_url": "/publications/pins-and-tales/2020/spring-2020.pdf"
+ },
+ {
+  "id": 3576,
+  "year": 2020,
+  "edition": "Summer 2020",
+  "source_key": "pt-2020-summer",
+  "download_url": "/publications/pins-and-tales/2020/summer-2020.pdf"
+ },
+ {
+  "id": 3577,
+  "year": 2020,
+  "edition": "Fall 2020",
+  "source_key": "pt-2020-fall",
+  "download_url": "/publications/pins-and-tales/2020/fall-2020.pdf"
+ },
+ {
+  "id": 3582,
+  "year": 2021,
+  "edition": "Winter 2021",
+  "source_key": "pt-2021-winter",
+  "download_url": "/publications/pins-and-tales/2021/winter-2021.pdf"
+ },
+ {
+  "id": 3579,
+  "year": 2021,
+  "edition": "Spring 2021",
+  "source_key": "pt-2021-spring",
+  "download_url": "/publications/pins-and-tales/2021/spring-2021.pdf"
+ },
+ {
+  "id": 3580,
+  "year": 2021,
+  "edition": "Summer 2021",
+  "source_key": "pt-2021-summer",
+  "download_url": "/publications/pins-and-tales/2021/summer-2021.pdf"
+ },
+ {
+  "id": 3581,
+  "year": 2021,
+  "edition": "Fall 2021",
+  "source_key": "pt-2021-fall",
+  "download_url": "/publications/pins-and-tales/2021/fall-2021.pdf"
+ },
+ {
+  "id": 3586,
+  "year": 2022,
+  "edition": "Winter 2022",
+  "source_key": "pt-2022-winter",
+  "download_url": "/publications/pins-and-tales/2022/winter-2022.pdf"
+ },
+ {
+  "id": 3583,
+  "year": 2022,
+  "edition": "Spring 2022",
+  "source_key": "pt-2022-spring",
+  "download_url": "/publications/pins-and-tales/2022/spring-2022.pdf"
+ },
+ {
+  "id": 3584,
+  "year": 2022,
+  "edition": "Summer 2022",
+  "source_key": "pt-2022-summer",
+  "download_url": "/publications/pins-and-tales/2022/summer-2022.pdf"
+ },
+ {
+  "id": 3585,
+  "year": 2022,
+  "edition": "Fall 2022",
+  "source_key": "pt-2022-fall",
+  "download_url": "/publications/pins-and-tales/2022/fall-2022.pdf"
+ },
+ {
+  "id": 3590,
+  "year": 2023,
+  "edition": "Winter 2023",
+  "source_key": "pt-2023-winter",
+  "download_url": "/publications/pins-and-tales/2023/winter-2023.pdf"
+ },
+ {
+  "id": 3587,
+  "year": 2023,
+  "edition": "Spring 2023",
+  "source_key": "pt-2023-spring",
+  "download_url": "/publications/pins-and-tales/2023/spring-2023.pdf"
+ },
+ {
+  "id": 3588,
+  "year": 2023,
+  "edition": "Summer 2023",
+  "source_key": "pt-2023-summer",
+  "download_url": "/publications/pins-and-tales/2023/summer-2023.pdf"
+ },
+ {
+  "id": 3589,
+  "year": 2023,
+  "edition": "Fall 2023",
+  "source_key": "pt-2023-fall",
+  "download_url": "/publications/pins-and-tales/2023/fall-2023.pdf"
+ },
+ {
+  "id": 3594,
+  "year": 2024,
+  "edition": "Winter 2024",
+  "source_key": "pt-2024-winter",
+  "download_url": "/publications/pins-and-tales/2024/winter-2024.pdf"
+ },
+ {
+  "id": 3591,
+  "year": 2024,
+  "edition": "Spring 2024",
+  "source_key": "pt-2024-spring",
+  "download_url": "/publications/pins-and-tales/2024/spring-2024.pdf"
+ },
+ {
+  "id": 3592,
+  "year": 2024,
+  "edition": "Summer 2024",
+  "source_key": "pt-2024-summer",
+  "download_url": "/publications/pins-and-tales/2024/summer-2024.pdf"
+ },
+ {
+  "id": 3593,
+  "year": 2024,
+  "edition": "Fall 2024",
+  "source_key": "pt-2024-fall",
+  "download_url": "/publications/pins-and-tales/2024/fall-2024.pdf"
+ },
+ {
+  "id": 3597,
+  "year": 2025,
+  "edition": "Winter 2025",
+  "source_key": "pt-2025-winter",
+  "download_url": "/publications/pins-and-tales/2025/winter-2025.pdf"
+ },
+ {
+  "id": 3595,
+  "year": 2025,
+  "edition": "Spring 2025",
+  "source_key": "pt-2025-spring",
+  "download_url": "/publications/pins-and-tales/2025/spring-2025.pdf"
+ },
+ {
+  "id": 3623,
+  "year": 2025,
+  "edition": "Summer 2025",
+  "source_key": "pt-2025-summer",
+  "download_url": "/publications/pins-and-tales/2025/spring-2025.pdf"
+ },
+ {
+  "id": 3596,
+  "year": 2025,
+  "edition": "Fall 2025",
+  "source_key": "pt-2025-fall",
+  "download_url": "/publications/pins-and-tales/2025/fall-2025.pdf"
+ },
+ {
+  "id": 3598,
+  "year": 2026,
+  "edition": "Spring 2026",
+  "source_key": "pt-2026-spring",
+  "download_url": "/publications/pins-and-tales/2026/spring-2026.pdf"
+ },
+ {
+  "id": 3625,
+  "year": 2026,
+  "edition": "Summer 2026",
+  "source_key": "pt-2026-summer",
+  "download_url": "/publications/pins-and-tales/2026/summer-2026.pdf"
+ }
+]

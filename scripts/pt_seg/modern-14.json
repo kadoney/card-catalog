@@ -1,0 +1,30 @@
+{
+ "issues": [
+  {
+   "source_key": "pt-2026-summer",
+   "card_id": 3625,
+   "edition": "Summer 2026",
+   "masthead": "Pins & Tales",
+   "articles": [
+    {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+    {"title": "President's Message", "authors": ["David Feola"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+    {"title": "Welcome Matt Shockey", "authors": ["Matt Shockey"], "pdf_page": 5, "printed_page": 5, "kind": "news"},
+    {"title": "Committee Updates", "authors": ["Nancy Maloney"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+    {"title": "In Memory Of", "authors": ["Bob Lang"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+    {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 11, "printed_page": 11, "kind": "column"},
+    {"title": "Road Trip To Museums", "authors": ["Michael Mason"], "pdf_page": 21, "printed_page": 21, "kind": "feature"},
+    {"title": "Handworks 2026", "authors": ["Dave Redlin"], "pdf_page": 43, "printed_page": 43, "kind": "news"},
+    {"title": "2026 Annual Conference", "authors": ["Bob Van Dyke"], "pdf_page": 44, "printed_page": 44, "kind": "news"},
+    {"title": "Cartouche Nominations", "authors": ["Matt Shockey"], "pdf_page": 46, "printed_page": 46, "kind": "news"},
+    {"title": "Sounds Like A Plan", "authors": ["Bob Lang"], "pdf_page": 47, "printed_page": 47, "kind": "feature"},
+    {"title": "Write Now", "authors": ["Matt Shockey"], "pdf_page": 50, "printed_page": 50, "kind": "feature"},
+    {"title": "Alf's Substack", "authors": ["Bob Lang"], "pdf_page": 52, "printed_page": 52, "kind": "feature"},
+    {"title": "A Strong Finish", "authors": ["Chelsea Roberts"], "pdf_page": 53, "printed_page": 53, "kind": "feature"},
+    {"title": "Portsmouth Tea Caddie", "authors": ["Bob Stevenson"], "pdf_page": 57, "printed_page": 57, "kind": "feature"},
+    {"title": "Expert Interview", "authors": ["Bob Lang"], "pdf_page": 58, "printed_page": 58, "kind": "news"},
+    {"title": "Sign Up...Scan The Code", "authors": ["Dave Redlin"], "pdf_page": 59, "printed_page": 59, "kind": "news"},
+    {"title": "Get APF Back Issues", "authors": [], "pdf_page": 60, "printed_page": 60, "kind": "news"}
+   ]
+  }
+ ]
+}

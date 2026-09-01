@@ -1,0 +1,92 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2023-spring",
+      "card_id": 3587,
+      "edition": "Spring 2023",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["SAPFM Board"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Give Back To SAPFM", "authors": ["Ken Johnson"], "pdf_page": 8, "printed_page": 8, "kind": "column"},
+        {"title": "Thinking Cartouche", "authors": ["Ken Johnson"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+        {"title": "Makers Challenge", "authors": ["Bob Lang"], "pdf_page": 23, "printed_page": 23, "kind": "column"},
+        {"title": "Exhibitions & Contests", "authors": [], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+        {"title": "2023 Working Wood", "authors": ["Dale Ausherman"], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Planemakers Floats", "authors": ["Jim Creasman"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "Floating An Idea", "authors": ["Bob Lang"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Getting A Leg Up", "authors": ["Wes Sunderland"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "Shellac and Wax", "authors": [], "pdf_page": 40, "printed_page": 40, "kind": "news"},
+        {"title": "Highland Woodworker", "authors": ["Charles Brock"], "pdf_page": 41, "printed_page": 41, "kind": "news"},
+        {"title": "Follow On Social Media", "authors": ["Bob Lang"], "pdf_page": 42, "printed_page": 42, "kind": "news"},
+        {"title": "Historian and Maker", "authors": ["Christopher Storb"], "pdf_page": 43, "printed_page": 43, "kind": "column"},
+        {"title": "A Ray Of Sunshine", "authors": [], "pdf_page": 44, "printed_page": 44, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2023-summer",
+      "card_id": 3588,
+      "edition": "Summer 2023",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Joel Goodwin"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Handworks Returns", "authors": ["Bob Lang"], "pdf_page": 30, "printed_page": 30, "kind": "news"},
+        {"title": "Makers Challenge", "authors": ["Mark Maleski"], "pdf_page": 31, "printed_page": 31, "kind": "column"},
+        {"title": "New Bern Conference", "authors": ["Dale Ausherman"], "pdf_page": 32, "printed_page": 32, "kind": "news"},
+        {"title": "The Tool Box Guy", "authors": ["Wes Sunderland"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Veneer Saw Reproduction", "authors": ["Don Wood"], "pdf_page": 40, "printed_page": 40, "kind": "feature"},
+        {"title": "Queen Anne Sofa Table", "authors": ["Barry Jones"], "pdf_page": 42, "printed_page": 42, "kind": "feature"},
+        {"title": "Take A Summer Tour", "authors": [], "pdf_page": 44, "printed_page": 44, "kind": "news"},
+        {"title": "Windsor Wisdom", "authors": ["Christopher Storb"], "pdf_page": 45, "printed_page": 45, "kind": "column"},
+        {"title": "Product News (Floats)", "authors": ["Dan Schwank"], "pdf_page": 46, "printed_page": 46, "kind": "news"},
+        {"title": "Curious Objects: Podcast", "authors": ["Benjamin Miller"], "pdf_page": 48, "printed_page": 48, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2023-fall",
+      "card_id": 3589,
+      "edition": "Fall 2023",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Joel Goodwin"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Educational Grants", "authors": ["Ken Johnson"], "pdf_page": 9, "printed_page": 9, "kind": "news"},
+        {"title": "Eric & Bob's Show & Tell", "authors": [], "pdf_page": 25, "printed_page": 25, "kind": "news"},
+        {"title": "It Didn't Disappoint", "authors": ["Edward Bouvier"], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Makers Challenge", "authors": ["Mark Maleski"], "pdf_page": 28, "printed_page": 28, "kind": "column"},
+        {"title": "Journal Preview", "authors": ["Bob Lang"], "pdf_page": 29, "printed_page": 29, "kind": "news"},
+        {"title": "First and Lash", "authors": ["Bob Lang"], "pdf_page": 31, "printed_page": 31, "kind": "news"},
+        {"title": "A Wedding Box", "authors": ["Dave Upperman"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "The Boarded Stool", "authors": ["Julian Peters"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+        {"title": "A Thumbnail Edge", "authors": ["Dan Currie"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Pinnacle Layout Tools", "authors": ["Bob Lang"], "pdf_page": 38, "printed_page": 38, "kind": "column"},
+        {"title": "Tips For Better Photos", "authors": ["Bob Lang"], "pdf_page": 39, "printed_page": 39, "kind": "feature"}
+      ]
+    },
+    {
+      "source_key": "pt-2024-winter",
+      "card_id": 3594,
+      "edition": "Winter 2024",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dave Redlin"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Committee Updates", "authors": ["Nancy Maloney"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Hand Tool Events", "authors": [], "pdf_page": 30, "printed_page": 30, "kind": "news"},
+        {"title": "He Will Be Missed", "authors": ["Bob Lang"], "pdf_page": 31, "printed_page": 31, "kind": "news"},
+        {"title": "Cartouche Recipient", "authors": ["Bob Lang"], "pdf_page": 32, "printed_page": 32, "kind": "news"},
+        {"title": "Dreaming Big", "authors": ["Luke Barnett"], "pdf_page": 33, "printed_page": 33, "kind": "feature"},
+        {"title": "The Double Cabinet", "authors": ["Josh Lane"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "Out of Retirement", "authors": ["Alf Sharp"], "pdf_page": 40, "printed_page": 40, "kind": "feature"},
+        {"title": "An Oak Revival", "authors": ["Julian Peters"], "pdf_page": 43, "printed_page": 43, "kind": "feature"},
+        {"title": "Tall Case Clocks", "authors": ["Lee Henson"], "pdf_page": 44, "printed_page": 44, "kind": "feature"},
+        {"title": "Clean Armor Finish", "authors": ["Bob Lang"], "pdf_page": 46, "printed_page": 46, "kind": "news"},
+        {"title": "Life In The Shop", "authors": [], "pdf_page": 47, "printed_page": 47, "kind": "news"}
+      ]
+    }
+  ]
+}

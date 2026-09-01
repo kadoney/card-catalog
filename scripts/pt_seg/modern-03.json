@@ -1,0 +1,101 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2015-spring",
+      "card_id": 3555,
+      "edition": "Spring 2015",
+      "masthead": "Period Furniture",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "EC Update", "authors": ["Jim Shapiro"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "SAPFM Education Grant", "authors": ["Bob Mustain"], "pdf_page": 7, "printed_page": 7, "kind": "news"},
+        {"title": "Midyear Conference Update", "authors": ["Tom Sears"], "pdf_page": 10, "printed_page": 10, "kind": "news"},
+        {"title": "2015 Cartouche Banquet: SAPFM Honors Dr. E. Jeff Justis", "authors": ["Dale Ausherman"], "pdf_page": 15, "printed_page": 15, "kind": "feature"},
+        {"title": "Colonial Williamsburg: Working Wood in the 18th Century", "authors": ["Dale Ausherman"], "pdf_page": 17, "printed_page": 17, "kind": "feature"},
+        {"title": "Education Paying Off", "authors": ["Bob Mustain"], "pdf_page": 22, "printed_page": 22, "kind": "news"},
+        {"title": "SAPFM Chronicles: Doucette & Wolfe", "authors": ["John Borley"], "pdf_page": 23, "printed_page": 23, "kind": "feature"},
+        {"title": "Defining Styles: Chippendale Style, Part III", "authors": ["W. Mickey Callahan"], "pdf_page": 25, "printed_page": 25, "kind": "column"},
+        {"title": "The Studley Exhibit", "authors": ["Don Williams"], "pdf_page": 27, "printed_page": 27, "kind": "news"},
+        {"title": "Antique Hand Tools", "authors": ["Charles Watson"], "pdf_page": 28, "printed_page": 28, "kind": "column"},
+        {"title": "Outside the Box: I'm a Period Furniture Maker—But I Digress", "authors": ["Jay Stallman"], "pdf_page": 30, "printed_page": 30, "kind": "column"},
+        {"title": "Why Not Period Glue?", "authors": ["W. Patrick Edwards"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 34, "printed_page": 34, "kind": "column"},
+        {"title": "Members' Gallery: Building a Goddard Tea Table with the Help of a Mentor", "authors": ["Jeffrey Saylor"], "pdf_page": 35, "printed_page": 35, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2015-summer",
+      "card_id": 3556,
+      "edition": "Summer 2015",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "EC Update", "authors": ["Dale Ausherman"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Midyear Wrap-up", "authors": ["Bob Mustain"], "pdf_page": 15, "printed_page": 15, "kind": "news"},
+        {"title": "Grant Awarded: First McAlister Educational Grant for 2015", "authors": ["Bob Mustain"], "pdf_page": 21, "printed_page": 21, "kind": "news"},
+        {"title": "The Winterthur Forum", "authors": ["Dale Ausherman"], "pdf_page": 22, "printed_page": 22, "kind": "feature"},
+        {"title": "SAPFM Chronicles: Mike Mascelli — Lively Look at a Dying Art", "authors": ["John Borley"], "pdf_page": 26, "printed_page": 26, "kind": "feature"},
+        {"title": "Defining Styles: Chippendale Style, Part IV", "authors": ["W. Mickey Callahan"], "pdf_page": 29, "printed_page": 29, "kind": "column"},
+        {"title": "Quality Workmanship", "authors": ["Mike Mascelli"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "SAPFM and the DIA", "authors": ["Zachary Dillinger"], "pdf_page": 34, "printed_page": 34, "kind": "news"},
+        {"title": "Denatured Alcohol", "authors": ["Marion Smith"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "A Labor of Love: Re-Purposing a Legless Lady", "authors": ["Gil Tyler"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "Antique Hand Tools", "authors": ["Charles Watson"], "pdf_page": 41, "printed_page": 41, "kind": "column"},
+        {"title": "Handworks 2015", "authors": ["Mike Siemsen"], "pdf_page": 43, "printed_page": 43, "kind": "news"},
+        {"title": "A Book Tour: Chairmaker's Notebook", "authors": ["Phil Rinehart"], "pdf_page": 44, "printed_page": 44, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 45, "printed_page": 45, "kind": "column"},
+        {"title": "Members' Gallery: Philadelphia Queen Anne Side Chair", "authors": ["David Wayne Knuth"], "pdf_page": 46, "printed_page": 46, "kind": "column"},
+        {"title": "Mike Nesnidal Wins SAPFM Prize at Northern Woods Exhibition", "authors": ["Bob Mustain"], "pdf_page": 47, "printed_page": null, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2015-fall",
+      "card_id": 3557,
+      "edition": "Fall 2015",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "EC Update", "authors": ["Dale Ausherman"], "pdf_page": 6, "printed_page": 6, "kind": "column"},
+        {"title": "Call for Nominations", "authors": ["Ken Johnson", "Jim Shapiro"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "SAPFM Chronicles: Ken Carpenter", "authors": ["John Borley"], "pdf_page": 17, "printed_page": 17, "kind": "feature"},
+        {"title": "Defining Styles: The Federal Period 1785-1825", "authors": ["W. Mickey Callahan"], "pdf_page": 19, "printed_page": 19, "kind": "column"},
+        {"title": "A Labor of Love — Part II: The Legless Lady Gets Her Bones", "authors": ["Gil Tyler"], "pdf_page": 21, "printed_page": 21, "kind": "feature"},
+        {"title": "Historic Wax Finishing", "authors": ["Don Williams"], "pdf_page": 24, "printed_page": 24, "kind": "feature"},
+        {"title": "Tablesaw Joinery — Part II: Cutting Tenons Across the Edge", "authors": ["Will Neptune"], "pdf_page": 27, "printed_page": 27, "kind": "feature"},
+        {"title": "Antique Hand Tools", "authors": ["Charles Watson"], "pdf_page": 29, "printed_page": 29, "kind": "column"},
+        {"title": "A Book Tour: By Hound & Eye", "authors": ["George R. Walker"], "pdf_page": 31, "printed_page": 31, "kind": "column"},
+        {"title": "Around the Shop", "authors": ["Bob Van Dyke"], "pdf_page": 32, "printed_page": 32, "kind": "column"},
+        {"title": "Members' Gallery", "authors": ["David Boeff", "Bob Van Dyke"], "pdf_page": 33, "printed_page": 33, "kind": "column"},
+        {"title": "SAPFM Award at the San Diego County Fair, Design in Wood Exhibition", "authors": [], "pdf_page": 35, "printed_page": null, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2016-winter",
+      "card_id": 3562,
+      "edition": "Winter 2016",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Bob Van Dyke"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Dale Ausherman"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Board Update", "authors": ["Jim Shapiro"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "Chapter Support", "authors": ["Dick Reese"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "The Winterthur Library", "authors": ["Dale Ausherman"], "pdf_page": 23, "printed_page": 23, "kind": "feature"},
+        {"title": "2017 Cartouche Award: Jeffrey S. Roberts Named 2017 Cartouche Recipient", "authors": ["John Borley"], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Winterthur Special Program", "authors": ["Bert Bleckwenn"], "pdf_page": 27, "printed_page": 27, "kind": "news"},
+        {"title": "Midyear in the Works", "authors": ["Bob Van Dyke"], "pdf_page": 29, "printed_page": 29, "kind": "news"},
+        {"title": "Chronicles: Dan Schwank", "authors": ["John Borley"], "pdf_page": 30, "printed_page": 30, "kind": "feature"},
+        {"title": "The Wing Chair", "authors": ["Mike Mascelli"], "pdf_page": 32, "printed_page": 32, "kind": "feature"},
+        {"title": "Defining Styles: Duncan Phyfe (1770–1854)", "authors": ["Mickey Callahan"], "pdf_page": 35, "printed_page": 35, "kind": "column"},
+        {"title": "Reclaiming History: Queen Anne Corner Cupboard, Part 2", "authors": ["Jay Stallman"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "Antique Hand Tools", "authors": ["Charlie Watson"], "pdf_page": 40, "printed_page": 40, "kind": "column"},
+        {"title": "A Book Tour: The Woodworker — The Charles Hayward Years", "authors": ["Philip Rinehart"], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+        {"title": "Snapshots! Up Close at the Yale University Art Gallery", "authors": ["Bob Van Dyke"], "pdf_page": 43, "printed_page": 43, "kind": "column"},
+        {"title": "Members' Gallery: Two Charleston Tea Stands", "authors": ["Ronnie Young"], "pdf_page": 44, "printed_page": 44, "kind": "column"},
+        {"title": "An Inlay of Blossoms with Pinwheeling Petals", "authors": [], "pdf_page": 45, "printed_page": null, "kind": "news"}
+      ]
+    }
+  ]
+}

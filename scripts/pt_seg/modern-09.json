@@ -1,0 +1,95 @@
+{
+  "issues": [
+    {
+      "source_key": "pt-2021-spring",
+      "card_id": 3579,
+      "edition": "Spring 2021",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Joel Goodwin"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 8, "printed_page": 8, "kind": "column"},
+        {"title": "Take A Virtual Tour", "authors": [], "pdf_page": 17, "printed_page": 17, "kind": "news"},
+        {"title": "A Closer Look", "authors": ["The Whitehorne House"], "pdf_page": 18, "printed_page": 18, "kind": "news"},
+        {"title": "Remembering Phil Lowe", "authors": ["Mickey Callahan"], "pdf_page": 19, "printed_page": 19, "kind": "feature"},
+        {"title": "APF Flashback", "authors": [], "pdf_page": 20, "printed_page": 20, "kind": "feature"},
+        {"title": "Remembering Al Hudson", "authors": ["Ronnie Young"], "pdf_page": 27, "printed_page": 27, "kind": "feature"},
+        {"title": "An Updated Davenport", "authors": ["Joe Parker"], "pdf_page": 28, "printed_page": 28, "kind": "feature"},
+        {"title": "Musical Cheers", "authors": ["Steve Lash"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "The Influencers", "authors": ["Julian Peters"], "pdf_page": 33, "printed_page": 33, "kind": "feature"},
+        {"title": "What Are The Prospects?", "authors": ["John Borley"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+        {"title": "Production Challenges", "authors": ["David Heller"], "pdf_page": 37, "printed_page": 37, "kind": "feature"},
+        {"title": "Friendly Advice", "authors": ["Jeff Thompson"], "pdf_page": 41, "printed_page": 41, "kind": "column"},
+        {"title": "A Tool Review", "authors": ["Bob Lang"], "pdf_page": 42, "printed_page": 42, "kind": "column"},
+        {"title": "Delivery Dilemma", "authors": ["Bob Lang"], "pdf_page": 45, "printed_page": 45, "kind": "news"}
+      ]
+    },
+    {
+      "source_key": "pt-2021-summer",
+      "card_id": 3580,
+      "edition": "Summer 2021",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Cartouche Update", "authors": ["Ken Johnson"], "pdf_page": 8, "printed_page": 8, "kind": "news"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 9, "printed_page": 9, "kind": "column"},
+        {"title": "Indiana Chapter Zoom", "authors": ["Sam Rhodes"], "pdf_page": 14, "printed_page": 14, "kind": "news"},
+        {"title": "Collective Perspectives", "authors": ["Newport Restoration Foundation"], "pdf_page": 23, "printed_page": 23, "kind": "news"},
+        {"title": "Deerfield Blog Post", "authors": ["Philip Zea"], "pdf_page": 24, "printed_page": 24, "kind": "feature"},
+        {"title": "Windsor Institute Returns", "authors": ["Bob Lang"], "pdf_page": 25, "printed_page": 25, "kind": "news"},
+        {"title": "Antique... Vintage?", "authors": [], "pdf_page": 26, "printed_page": 26, "kind": "news"},
+        {"title": "Finding Period Furniture", "authors": ["Bill Markert"], "pdf_page": 27, "printed_page": 27, "kind": "feature"},
+        {"title": "Rice-Carved Beds", "authors": ["David Coker"], "pdf_page": 29, "printed_page": 29, "kind": "feature"},
+        {"title": "Striped Moldings", "authors": ["William Francis Brown"], "pdf_page": 31, "printed_page": 31, "kind": "feature"},
+        {"title": "Nothing Fancy Here", "authors": ["Julian Peters"], "pdf_page": 33, "printed_page": 33, "kind": "feature"},
+        {"title": "A Caddy For My Daddy", "authors": ["Steve Lash"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+        {"title": "The Banded Box", "authors": ["Bill Markert"], "pdf_page": 38, "printed_page": 38, "kind": "feature"}
+      ]
+    },
+    {
+      "source_key": "pt-2021-fall",
+      "card_id": 3581,
+      "edition": "Fall 2021",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": ["Scott Severns"], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 9, "printed_page": 9, "kind": "column"},
+        {"title": "Philadelphia Museum of Art", "authors": ["Decorative Arts Trust"], "pdf_page": 22, "printed_page": 22, "kind": "news"},
+        {"title": "Collective Perspectives", "authors": ["Newport Restoration Foundation"], "pdf_page": 23, "printed_page": 23, "kind": "news"},
+        {"title": "Looking Forward", "authors": ["Bob Lang"], "pdf_page": 24, "printed_page": 24, "kind": "news"},
+        {"title": "Phil Lowe's Drawings Archive", "authors": ["Nick Maraldo"], "pdf_page": 26, "printed_page": 26, "kind": "feature"},
+        {"title": "One Of A Kind", "authors": ["Bob Lang"], "pdf_page": 28, "printed_page": 28, "kind": "column"},
+        {"title": "The Banded Box", "authors": ["Bill Markert"], "pdf_page": 30, "printed_page": 30, "kind": "feature"},
+        {"title": "Chippen Away", "authors": ["Julian Peters"], "pdf_page": 34, "printed_page": 34, "kind": "feature"},
+        {"title": "See More Seymour", "authors": ["Tim Killen"], "pdf_page": 35, "printed_page": 35, "kind": "feature"},
+        {"title": "Preserving Byrdcliffe", "authors": ["Bob Lang"], "pdf_page": 38, "printed_page": 38, "kind": "feature"},
+        {"title": "77 Lubricite", "authors": ["Bob Lang"], "pdf_page": 40, "printed_page": 40, "kind": "column"},
+        {"title": "Recommended Reading", "authors": ["Bob Lang"], "pdf_page": 42, "printed_page": 42, "kind": "column"}
+      ]
+    },
+    {
+      "source_key": "pt-2022-winter",
+      "card_id": 3586,
+      "edition": "Winter 2022",
+      "masthead": "Pins & Tales",
+      "articles": [
+        {"title": "So What's News?", "authors": ["Robert W. Lang"], "pdf_page": 3, "printed_page": 3, "kind": "column"},
+        {"title": "President's Message", "authors": ["Scott Severns"], "pdf_page": 4, "printed_page": 4, "kind": "column"},
+        {"title": "Board Update", "authors": [], "pdf_page": 5, "printed_page": 5, "kind": "column"},
+        {"title": "Chapter News", "authors": ["Bob Lang"], "pdf_page": 7, "printed_page": 7, "kind": "column"},
+        {"title": "The Annual Conference", "authors": ["Sam Rhodes"], "pdf_page": 30, "printed_page": 30, "kind": "news"},
+        {"title": "San Diego Exhibit 2022", "authors": ["Bob Lang"], "pdf_page": 32, "printed_page": 32, "kind": "news"},
+        {"title": "History Makers", "authors": ["Bob Lang"], "pdf_page": 33, "printed_page": 33, "kind": "news"},
+        {"title": "You Have the Tools...", "authors": ["Bob Lang"], "pdf_page": 34, "printed_page": 34, "kind": "column"},
+        {"title": "Accurate Reproductions", "authors": ["Mickey Callahan"], "pdf_page": 36, "printed_page": 36, "kind": "feature"},
+        {"title": "In the 17th Century", "authors": ["Julian Peters"], "pdf_page": 40, "printed_page": 40, "kind": "feature"},
+        {"title": "In a Word, Education", "authors": [], "pdf_page": 42, "printed_page": 42, "kind": "news"}
+      ]
+    }
+  ]
+}
