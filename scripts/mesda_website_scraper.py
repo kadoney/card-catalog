@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import List, Dict, Optional
 from urllib.request import urlopen, Request
 from urllib.error import URLError
+from urllib.parse import urlparse
 import ssl
 
 try:
@@ -42,6 +43,36 @@ def fetch_html(url: str, retries: int = 3) -> Optional[str]:
             continue
     return None
 
+ARTICLE_HOST = "mesdajournal.org"
+
+
+def is_article_link(href: str) -> bool:
+    """An article link points at mesdajournal.org. Everything else on the page
+    is furniture.
+
+    Positive identification, not a blocklist. The blocklist this replaces
+    ("blurb.com" in href, title startswith "Vol.") was aimed at exactly this
+    class of junk and every real instance slipped a near miss: Blurb's links
+    are shortened to blur.by, and the archive.org row's title reads "Vol," with
+    a comma. Six rows reached D1 that way -- a print-on-demand link, a bare
+    "click here.", MESDA's craftsman-database link, an archive.org listing for
+    an unrelated 1992 issue, and the site's Cloudflare-obfuscated contact
+    address, which became a card titled "[email protected]". They were deleted
+    2026-09-04 (sql/07_remove_mesda_scrape_artifacts.sql).
+
+    Checked against the 2026-04-08 scrape: catches all 7 junk rows of 79, and
+    no real article.
+    """
+    if not href:
+        return False
+    host = urlparse(href).netloc.lower()
+    # A relative href has no host -- and on this page the only relative link is
+    # Cloudflare's /cdn-cgi/l/email-protection stub, never an article.
+    if not host:
+        return False
+    return host == ARTICLE_HOST or host.endswith("." + ARTICLE_HOST)
+
+
 def parse_articles_from_html(html: str) -> List[Dict[str, str]]:
     """Parse MESDA Journal HTML to extract article metadata."""
     soup = BeautifulSoup(html, 'html.parser')
@@ -65,8 +96,9 @@ def parse_articles_from_html(html: str) -> List[Dict[str, str]]:
             text = elem.get_text().strip()
             href = elem.get('href', '')
 
-            # Skip non-article links (Blurb, archive.org container links)
-            if not href or 'blurb.com' in href or text.startswith('Vol.'):
+            # Skip everything that is not an article on mesdajournal.org
+            # (print-on-demand links, off-site resources, the contact stub).
+            if not is_article_link(href):
                 continue
 
             # Extract author if it's in the format "Title by Author"
