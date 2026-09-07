@@ -40,6 +40,15 @@ import urllib.request
 UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36')
 
+# ⚠ Windows defaults stdout to cp1252, and this script's whole output is JSON of
+# other people's video titles -- which carry en dashes, curly quotes and accents
+# as a matter of course. Redirected to a file without this, the result is not
+# valid UTF-8 and the next tool to read it fails on a stray 0x96. Same family as
+# the CP1252 trap in RUNBOOK §3.
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, 'reconfigure'):
+        _stream.reconfigure(encoding='utf-8', errors='replace')
+
 
 def get(url: str, data: bytes | None = None) -> str:
     req = urllib.request.Request(url, data=data, headers={
