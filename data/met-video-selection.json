@@ -21,259 +21,555 @@
     "",
     "⚠ We embed and link. We never host, and we never take captions."
   ],
-  "source": "The Met",
+  "source": "Metropolitan Museum of Art — Video",
+  "source_key": "met",
   "channel": "https://www.youtube.com/@metmuseum",
   "videos": [
     {
       "id": "omMfj_wNNOw",
       "teaser": "Allan Breed turns and carves a Duncan Phyfe bedpost, filmed for the Met's 2011-12 Phyfe exhibition.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Furniture"],
-      "region": ["New York"],
-      "topic": ["Construction / Technique", "Carving / Ornament", "Makers"],
-      "makers": ["Allan Breed", "Duncan Phyfe"]
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Furniture"
+      ],
+      "region": [
+        "New York"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Carving / Ornament",
+        "Makers"
+      ],
+      "makers": [
+        "Allan Breed",
+        "Duncan Phyfe"
+      ]
     },
     {
       "id": "m2ayMP7UbEM",
       "teaser": "Allan Breed carves a bow knot and thunderbolt crest in low relief, in the Phyfe manner.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Furniture"],
-      "region": ["New York"],
-      "topic": ["Carving / Ornament", "Construction / Technique"],
-      "makers": ["Allan Breed", "Duncan Phyfe"]
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Furniture"
+      ],
+      "region": [
+        "New York"
+      ],
+      "topic": [
+        "Carving / Ornament",
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Allan Breed",
+        "Duncan Phyfe"
+      ]
     },
     {
       "id": "t_BKJwBV9kM",
       "teaser": "A close look at a Philadelphia table -- the questions a curator asks of a single piece.",
-      "period": ["Chippendale"],
-      "form": ["Tables"],
-      "region": ["Philadelphia"],
-      "topic": ["Connoisseurship", "Attribution", "Regional Style"],
+      "period": [
+        "Chippendale"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "Philadelphia"
+      ],
+      "topic": [
+        "Connoisseurship",
+        "Attribution",
+        "Regional Style"
+      ],
       "makers": []
     },
     {
       "id": "5b3gfqeHMs4",
       "teaser": "Charles-Honoré Lannuier's pier table, in the Met's MetCollects series.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Tables"],
-      "region": ["New York", "European Influence"],
-      "topic": ["Makers", "Design Sources"],
-      "makers": ["Charles-Honoré Lannuier"]
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "New York",
+        "European Influence"
+      ],
+      "topic": [
+        "Makers",
+        "Design Sources"
+      ],
+      "makers": [
+        "Charles-Honoré Lannuier"
+      ]
     },
     {
       "id": "ZMH1mhupHI8",
       "teaser": "Curator Peter Kenny on a Lannuier card table -- French training arriving in New York.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Tables"],
-      "region": ["New York", "European Influence"],
-      "topic": ["Makers", "Design Sources", "Trade / Commerce"],
-      "makers": ["Charles-Honoré Lannuier"]
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "New York",
+        "European Influence"
+      ],
+      "topic": [
+        "Makers",
+        "Design Sources",
+        "Trade / Commerce"
+      ],
+      "makers": [
+        "Charles-Honoré Lannuier"
+      ]
     },
     {
       "id": "lG0zHTBPUk4",
       "teaser": "American furniture reinstalled and reconsidered in the Met's American Wing.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Connoisseurship", "Historiography"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Connoisseurship",
+        "Historiography"
+      ],
       "makers": []
     },
     {
       "id": "3kqz76XMUts",
       "teaser": "Fine furniture-making in America then and now -- the through-line from period work to living makers.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Construction / Technique", "Makers", "Historiography"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Makers",
+        "Historiography"
+      ],
       "makers": []
     },
     {
       "id": "N2U4gZKgHmE",
       "teaser": "Robert Laurent's carved chest, and the immigrant story behind it.",
-      "period": ["Survey / Multiple"],
-      "form": ["Chest", "Case pieces"],
-      "region": ["America"],
-      "topic": ["Carving / Ornament", "Social History", "Makers"],
-      "makers": ["Robert Laurent"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Chest",
+        "Case pieces"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Carving / Ornament",
+        "Social History",
+        "Makers"
+      ],
+      "makers": [
+        "Robert Laurent"
+      ]
     },
     {
       "id": "45cVVBC8f9Q",
       "teaser": "Dismantling the Sea-Dog Table -- construction revealed by taking it apart.",
-      "period": ["Survey / Multiple"],
-      "form": ["Tables"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique", "Connoisseurship"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Connoisseurship"
+      ],
       "makers": []
     },
     {
       "id": "XVC9HOSwHl4",
       "teaser": "An 18th-century game table opened and worked, showing how its mechanism folds.",
-      "period": ["Survey / Multiple"],
-      "form": ["Tables"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "JJOIiMdML54",
       "teaser": "Curator Danielle Kisluk-Grosheide on a mechanical table by Jean-François Oeben.",
-      "period": ["Rococo"],
-      "form": ["Tables"],
-      "region": ["France"],
-      "topic": ["Construction / Technique", "Makers"],
-      "makers": ["Jean-François Oeben"]
+      "period": [
+        "Rococo"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "France"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Makers"
+      ],
+      "makers": [
+        "Jean-François Oeben"
+      ]
     },
     {
       "id": "_3NUecGzOCc",
       "teaser": "Hidden doors and secret drawers -- the Roentgens' mechanical furniture, the set's overview.",
-      "period": ["Baroque"],
-      "form": ["Case pieces", "Cabinet"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique", "Makers", "Design Sources"],
-      "makers": ["Abraham Roentgen", "David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Case pieces",
+        "Cabinet"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Makers",
+        "Design Sources"
+      ],
+      "makers": [
+        "Abraham Roentgen",
+        "David Roentgen"
+      ]
     },
     {
       "id": "MKikHxKeodA",
       "teaser": "The Roentgens' Berlin secretary cabinet -- arguably the most elaborate case piece the Met holds.",
-      "period": ["Baroque"],
-      "form": ["Cabinet", "Case pieces"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique", "Carving / Ornament", "Makers"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Cabinet",
+        "Case pieces"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Carving / Ornament",
+        "Makers"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "DPyREzrBekg",
       "teaser": "The Roentgens' rolltop desk, introduced.",
-      "period": ["Baroque"],
-      "form": ["Case pieces"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique", "Makers"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Makers"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "bG8aDJPlSLU",
       "teaser": "The Roentgen rolltop desk demonstrated -- every mechanism worked in turn.",
-      "period": ["Baroque"],
-      "form": ["Case pieces"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "oxNILgEbXP8",
       "teaser": "The same rolltop desk animated, so the internal movements can be seen at once.",
-      "period": ["Baroque"],
-      "form": ["Case pieces"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "ziQijKhpCLY",
       "teaser": "The Roentgens' dressing table (poudreuse).",
-      "period": ["Baroque"],
-      "form": ["Tables"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique", "Makers"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Makers"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "53zzt2SVde4",
       "teaser": "The poudreuse demonstrated -- its fittings opened and used.",
-      "period": ["Baroque"],
-      "form": ["Tables"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "dQRX24IrfSw",
       "teaser": "Reading, Writing, and Roentgen -- the writing furniture in context.",
-      "period": ["Baroque"],
-      "form": ["Case pieces"],
-      "region": ["European Influence"],
-      "topic": ["Social History", "Makers"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Social History",
+        "Makers"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "2OMoo3y5WIQ",
       "teaser": "Roentgen's automaton of Marie Antoinette, the dulcimer player -- cabinetmaking and mechanism together.",
-      "period": ["Baroque"],
-      "form": ["Survey / Multiple"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique", "Makers"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Makers"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "nITEU4fsqCU",
       "teaser": "The dulcimer-player automaton demonstrated in motion.",
-      "period": ["Baroque"],
-      "form": ["Survey / Multiple"],
-      "region": ["European Influence"],
-      "topic": ["Construction / Technique"],
-      "makers": ["David Roentgen"]
+      "period": [
+        "Baroque"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "European Influence"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "David Roentgen"
+      ]
     },
     {
       "id": "Z2Icc3ei8T8",
       "teaser": "Conserving the Worsham-Rockefeller dressing room -- an interior taken on as a whole.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New York"],
-      "topic": ["Materials", "Social History"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New York"
+      ],
+      "topic": [
+        "Materials",
+        "Social History"
+      ],
       "makers": []
     },
     {
       "id": "BnT599w3O2c",
       "teaser": "Inside the Met's Frank Lloyd Wright room, furniture and interior designed as one.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Design Sources", "Social History"],
-      "makers": ["Frank Lloyd Wright"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Design Sources",
+        "Social History"
+      ],
+      "makers": [
+        "Frank Lloyd Wright"
+      ]
     },
     {
       "id": "kUj4k59YXrw",
       "teaser": "A Dutch dwelling room from Albany County in the American Wing -- early New York interiors.",
-      "period": ["Colonial"],
-      "form": ["Survey / Multiple"],
-      "region": ["New York"],
-      "topic": ["Regional Style", "Social History"],
+      "period": [
+        "Colonial"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New York"
+      ],
+      "topic": [
+        "Regional Style",
+        "Social History"
+      ],
       "makers": []
     },
     {
       "id": "HNxkxoky36w",
       "teaser": "How the American Wing's period rooms are researched and reinterpreted from period documents.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Historiography", "Connoisseurship"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Historiography",
+        "Connoisseurship"
+      ],
       "makers": []
     },
     {
       "id": "i31W5koVuYo",
       "teaser": "A French longcase clock -- the case as cabinetwork.",
-      "period": ["Rococo"],
-      "form": ["Case pieces"],
-      "region": ["France"],
-      "topic": ["Carving / Ornament", "Materials"],
+      "period": [
+        "Rococo"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "France"
+      ],
+      "topic": [
+        "Carving / Ornament",
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "vL_smKjB1v4",
       "teaser": "How eighteenth-century French decorative arts were made to move -- mechanism as design.",
-      "period": ["Rococo"],
-      "form": ["Survey / Multiple"],
-      "region": ["France"],
-      "topic": ["Construction / Technique", "Design Sources"],
+      "period": [
+        "Rococo"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "France"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Design Sources"
+      ],
       "makers": []
     },
     {
       "id": "wK9x1NIzxNs",
       "teaser": "The American Wing at 100 -- what a century of collecting American furniture has assembled.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Historiography"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Historiography"
+      ],
       "makers": []
     }
   ]

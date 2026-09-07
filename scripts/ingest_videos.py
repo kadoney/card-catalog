@@ -29,6 +29,15 @@ TWO THINGS THAT WILL BITE
     breaks, the card still works as a link. Never build a card whose only route
     to the video is the embed.
 
+    ⚠ `source_key` IS THE INSTITUTION GROUPING KEY, NOT A PER-CARD ID.
+    'chipstone' (307 cards), 'mesda' (72), 'met' (44) — RUNBOOK §3 says so. The
+    first version of this script wrote 'youtube:<id>' into it, which gave every
+    video its own private source and dropped all 72 out of the Card Catalog's
+    source facet: semantic search returned them perfectly and BROWSING the Met
+    showed nothing. `source` matters for the same reason — it must match a
+    SOURCE_GROUPS pattern in sapfm-catalog-api or the card lands in "Other
+    Sources". Both now come from the selection file, and identity is view_url.
+
     ⚠ DESCRIPTIONS ARRIVE JSON-ESCAPED, NOT UNICODE-ESCAPED. `shortDescription`
     is a JSON string literal; decoding it with `unicode_escape` turns
     "Charles-Honoré" into "Charles-HonorÃ©" -- the same CP1252 double-decode the
@@ -103,7 +112,7 @@ def fetch_metadata(video_id: str) -> dict:
 
 # --------------------------------------------------------------------- SQL ---
 
-def build_row(meta: dict, sel: dict, source: str) -> tuple:
+def build_row(meta: dict, sel: dict, source: str, source_key: str) -> tuple:
     """One row as (sql, params) for the D1 REST API.
 
     ⚠ PARAMETER-BOUND, AND NOT VIA `wrangler d1 execute --file`, WHICH THIS
@@ -128,7 +137,7 @@ def build_row(meta: dict, sel: dict, source: str) -> tuple:
         'CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)'
     )
     params = [
-        meta['title'], '[]', year, source, 'youtube:' + meta['id'], CARD_TYPE,
+        meta['title'], '[]', year, source, source_key, CARD_TYPE,
         f'{mins} min' if mins else None,
         meta['description'], sel.get('teaser'),
         json.dumps(sel.get('period') or []), json.dumps(sel.get('form') or []),
@@ -168,11 +177,13 @@ def d1(sql: str, params: list | None = None) -> dict:
         return json.loads(r.read().decode('utf-8'))
 
 
-def existing_keys() -> set:
-    res = d1("SELECT source_key FROM library_cards WHERE card_type = ?1", [CARD_TYPE])
+def existing_urls() -> set:
+    """Identity is the watch URL. ⚠ NOT source_key — that is the institution
+    grouping column and is the same value for every card from one source."""
+    res = d1("SELECT view_url FROM library_cards WHERE card_type = ?1", [CARD_TYPE])
     if not res.get('success'):
         sys.exit(f'D1 read failed: {res.get("errors")}')
-    return {row['source_key'] for row in res['result'][0]['results']}
+    return {row['view_url'] for row in res['result'][0]['results'] if row['view_url']}
 
 
 # -------------------------------------------------------------------- main ---
@@ -185,15 +196,16 @@ def main():
 
     sel = json.load(open(args.selection, encoding='utf-8'))
     source = sel['source']
+    source_key = sel['source_key']
     videos = sel['videos']
     need_cf_env()
 
-    have = existing_keys()
+    have = existing_urls()
     print(f'{len(videos)} selected · {len(have)} {CARD_TYPE} cards already on file\n')
 
     pending, skipped, unembeddable = [], [], []
     for v in videos:
-        if 'youtube:' + v['id'] in have:
+        if f'https://www.youtube.com/watch?v={v["id"]}' in have:
             skipped.append(v['id'])
             continue
         meta = fetch_metadata(v['id'])
@@ -227,7 +239,7 @@ def main():
 
     written = 0
     for meta, v in pending:
-        sql, params = build_row(meta, v, source)
+        sql, params = build_row(meta, v, source, source_key)
         res = d1(sql, params)
         if not res.get('success'):
             sys.exit(f'insert FAILED on {meta["id"]}: {res.get("errors")}')

@@ -33,402 +33,802 @@
     "subject map found between our own two publications."
   ],
   "source": "Fine Woodworking",
+  "source_key": "fine-woodworking",
   "channel": "https://www.youtube.com/@finewoodworking",
   "videos": [
     {
       "id": "VS6WFuQOQjk",
       "teaser": "Allan Breed at the bench — the same carver the Met filmed working in the Phyfe manner.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Makers", "Carving / Ornament", "Biography / Shops"],
-      "makers": ["Allan Breed"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Makers",
+        "Carving / Ornament",
+        "Biography / Shops"
+      ],
+      "makers": [
+        "Allan Breed"
+      ]
     },
     {
       "id": "iUl0BgemZko",
       "teaser": "The specialty planes Allan Breed reaches for, and what each one is for.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Construction / Technique", "Materials"],
-      "makers": ["Allan Breed"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Materials"
+      ],
+      "makers": [
+        "Allan Breed"
+      ]
     },
     {
       "id": "0AgfSsTgAqo",
       "teaser": "A Queen Anne lowboy, introduced as a build.",
-      "period": ["Queen Anne"],
-      "form": ["Case pieces", "Tables"],
-      "region": ["America"],
-      "topic": ["Construction / Technique"],
+      "period": [
+        "Queen Anne"
+      ],
+      "form": [
+        "Case pieces",
+        "Tables"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "oj-ViwLJWKs",
       "teaser": "Bill Pavlak on 18th-century joinery, from Fine Woodworking Live 2025.",
-      "period": ["Colonial", "Chippendale"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Bill Pavlak"]
+      "period": [
+        "Colonial",
+        "Chippendale"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Bill Pavlak"
+      ]
     },
     {
       "id": "Z0nMoTThpYQ",
       "teaser": "The joinery behind a period side table.",
-      "period": ["Survey / Multiple"],
-      "form": ["Tables"],
-      "region": ["America"],
-      "topic": ["Construction / Technique"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "MqB9l76T0MQ",
       "teaser": "Dan Faia on the 5-7 rule — proportion as period makers used it.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Design Sources", "Connoisseurship"],
-      "makers": ["Dan Faia"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Design Sources",
+        "Connoisseurship"
+      ],
+      "makers": [
+        "Dan Faia"
+      ]
     },
     {
       "id": "RNpbiEUDxEk",
       "teaser": "The cabriole leg, worked and reconsidered.",
-      "period": ["Queen Anne"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Design Sources", "Carving / Ornament"],
+      "period": [
+        "Queen Anne"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Design Sources",
+        "Carving / Ornament"
+      ],
       "makers": []
     },
     {
       "id": "3EtVnuLn66M",
       "teaser": "Phil Lowe builds a workbench, part 1. SAPFM holds his library.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Philip C. Lowe"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Philip C. Lowe"
+      ]
     },
     {
       "id": "YsI80BjmAn8",
       "teaser": "Phil Lowe, part 2 — mortise and tenon joinery.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Philip C. Lowe"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Philip C. Lowe"
+      ]
     },
     {
       "id": "yau8WQUvNs4",
       "teaser": "Phil Lowe, part 3 — sliding dovetail partitions.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Philip C. Lowe"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Philip C. Lowe"
+      ]
     },
     {
       "id": "8MDfXTPDpgU",
       "teaser": "Phil Lowe, part 4 — the base glue-up.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Philip C. Lowe"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Philip C. Lowe"
+      ]
     },
     {
       "id": "sg90Vx2jXdY",
       "teaser": "Phil Lowe, part 5 — the benchtop.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Philip C. Lowe"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Philip C. Lowe"
+      ]
     },
     {
       "id": "4bLex48P9xA",
       "teaser": "Phil Lowe, part 6 — dovetailed drawers.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Philip C. Lowe"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Philip C. Lowe"
+      ]
     },
     {
       "id": "dJncqwGf3yQ",
       "teaser": "Phil Lowe, part 7 — the frame and panel door.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Philip C. Lowe"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Philip C. Lowe"
+      ]
     },
     {
       "id": "ieEsXltQQN4",
       "teaser": "Christian Becksvoort turns a Shaker leg.",
-      "period": ["Shaker"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Christian Becksvoort"]
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Christian Becksvoort"
+      ]
     },
     {
       "id": "TyV85eQEWQE",
       "teaser": "Turning a Shaker drawer pull.",
-      "period": ["Shaker"],
-      "form": ["Case pieces"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "3j0ImrfyQPs",
       "teaser": "Bending wood for Shaker boxes.",
-      "period": ["Shaker"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique", "Materials"],
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "THb-F5qk5Ao",
       "teaser": "How Shaker boxes accommodate wood movement.",
-      "period": ["Shaker"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique", "Materials"],
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "oEk3YkHw_t0",
       "teaser": "A Shaker design principle, stated plainly.",
-      "period": ["Shaker"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Design Sources", "Social History"],
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Design Sources",
+        "Social History"
+      ],
       "makers": []
     },
     {
       "id": "-AJxcCCVuco",
       "teaser": "A Shaker dresser, episode 1 — settling the design details.",
-      "period": ["Shaker"],
-      "form": ["Case pieces"],
-      "region": ["New England"],
-      "topic": ["Design Sources"],
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Design Sources"
+      ],
       "makers": []
     },
     {
       "id": "nOmeNwgfFSQ",
       "teaser": "Shaker dresser, episode 2 — lumber selection and milling.",
-      "period": ["Shaker"],
-      "form": ["Case pieces"],
-      "region": ["New England"],
-      "topic": ["Materials", "Construction / Technique"],
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Materials",
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "2rCjzJTbHYo",
       "teaser": "Shaker dresser, episode 3 — dovetailing by machine and by hand.",
-      "period": ["Shaker"],
-      "form": ["Case pieces"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
+      "period": [
+        "Shaker"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "7qDWkbyZEZQ",
       "teaser": "Christian Becksvoort cuts dovetails, start to finish.",
-      "period": ["Survey / Multiple"],
-      "form": ["Case pieces"],
-      "region": ["New England"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Christian Becksvoort"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Christian Becksvoort"
+      ]
     },
     {
       "id": "eglDAEhAzZU",
       "teaser": "Cutting tall dovetails, where the usual approach stops working.",
-      "period": ["Survey / Multiple"],
-      "form": ["Case pieces"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Case pieces"
+      ],
       "region": [],
-      "topic": ["Construction / Technique"],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "73Neq8EoQdY",
       "teaser": "Chisel technique for hand-cut joinery.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
       "region": [],
-      "topic": ["Construction / Technique"],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "kQ8UWR5cVWE",
       "teaser": "Mario Rodriguez on the screw joint — period tabletop attachment.",
-      "period": ["Survey / Multiple"],
-      "form": ["Tables"],
-      "region": ["America"],
-      "topic": ["Construction / Technique"],
-      "makers": ["Mario Rodriguez"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Mario Rodriguez"
+      ]
     },
     {
       "id": "RPUzkSghqhg",
       "teaser": "Making snipe hinges — period hardware you cannot buy.",
-      "period": ["Colonial"],
-      "form": ["Case pieces"],
-      "region": ["America"],
-      "topic": ["Construction / Technique", "Materials"],
+      "period": [
+        "Colonial"
+      ],
+      "form": [
+        "Case pieces"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "ojCf9ClE0iQ",
       "teaser": "Tapering a furniture leg.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Survey / Multiple"],
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
       "region": [],
-      "topic": ["Construction / Technique"],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "on-FxIRSRuE",
       "teaser": "Turning pulls without a lathe.",
-      "period": ["Survey / Multiple"],
-      "form": ["Case pieces"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Case pieces"
+      ],
       "region": [],
-      "topic": ["Construction / Technique"],
+      "topic": [
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "i5jVuw4yE5Q",
       "teaser": "Creating a custom cove molding.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
       "region": [],
-      "topic": ["Carving / Ornament", "Construction / Technique"],
+      "topic": [
+        "Carving / Ornament",
+        "Construction / Technique"
+      ],
       "makers": []
     },
     {
       "id": "eOQ4bdZXLQw",
       "teaser": "Duncan Gowdy on illustrative carving.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Carving / Ornament"],
-      "makers": ["Duncan Gowdy"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Carving / Ornament"
+      ],
+      "makers": [
+        "Duncan Gowdy"
+      ]
     },
     {
       "id": "c-_tkdX0fW8",
       "teaser": "Getting started in marquetry.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Survey / Multiple"],
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
       "region": [],
-      "topic": ["Carving / Ornament", "Materials"],
+      "topic": [
+        "Carving / Ornament",
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "jRXrzJWIcOo",
       "teaser": "Silas Kopf, marquetry — one of the Masters of the Craft films.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Makers", "Carving / Ornament", "Biography / Shops"],
-      "makers": ["Silas Kopf"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Makers",
+        "Carving / Ornament",
+        "Biography / Shops"
+      ],
+      "makers": [
+        "Silas Kopf"
+      ]
     },
     {
       "id": "OQJydZIWjZk",
       "teaser": "Bob Van Dyke mocks up tabletop inlay using mirrors.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Tables"],
-      "region": ["America"],
-      "topic": ["Carving / Ornament", "Design Sources"],
-      "makers": ["Bob Van Dyke"]
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Carving / Ornament",
+        "Design Sources"
+      ],
+      "makers": [
+        "Bob Van Dyke"
+      ]
     },
     {
       "id": "o4eTkWjuVFQ",
       "teaser": "Vacuum press technique for veneering.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Survey / Multiple"],
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
       "region": [],
-      "topic": ["Construction / Technique", "Materials"],
+      "topic": [
+        "Construction / Technique",
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "wiyLFAaDYbI",
       "teaser": "The finishing schedule for Greene and Greene work.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["California"],
-      "topic": ["Materials"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "California"
+      ],
+      "topic": [
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "1OFsr-MuBpM",
       "teaser": "Using traditional milk paint.",
-      "period": ["Colonial"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Materials"],
+      "period": [
+        "Colonial"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "4Cqn6iX1MLg",
       "teaser": "Choosing a furniture finish, and why.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
       "region": [],
-      "topic": ["Materials"],
+      "topic": [
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "k4_sIrEfdKM",
       "teaser": "Canned shellac versus mixing your own.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
       "region": [],
-      "topic": ["Materials"],
+      "topic": [
+        "Materials"
+      ],
       "makers": []
     },
     {
       "id": "gFie69v2svU",
       "teaser": "Peter Follansbee, who works 17th-century joinery with 17th-century methods.",
-      "period": ["Colonial"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Makers", "Biography / Shops", "Construction / Technique"],
-      "makers": ["Peter Follansbee"]
+      "period": [
+        "Colonial"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Makers",
+        "Biography / Shops",
+        "Construction / Technique"
+      ],
+      "makers": [
+        "Peter Follansbee"
+      ]
     },
     {
       "id": "eH5b65xOao8",
       "teaser": "Steve Latta, on inlay and Federal work.",
-      "period": ["Federal / Neoclassical"],
-      "form": ["Survey / Multiple"],
-      "region": ["America"],
-      "topic": ["Makers", "Carving / Ornament", "Biography / Shops"],
-      "makers": ["Steve Latta"]
+      "period": [
+        "Federal / Neoclassical"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Makers",
+        "Carving / Ornament",
+        "Biography / Shops"
+      ],
+      "makers": [
+        "Steve Latta"
+      ]
     },
     {
       "id": "tifUXEJykd8",
       "teaser": "Garrett Hack on his work and his tools.",
-      "period": ["Survey / Multiple"],
-      "form": ["Survey / Multiple"],
-      "region": ["New England"],
-      "topic": ["Makers", "Biography / Shops"],
-      "makers": ["Garrett Hack"]
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Survey / Multiple"
+      ],
+      "region": [
+        "New England"
+      ],
+      "topic": [
+        "Makers",
+        "Biography / Shops"
+      ],
+      "makers": [
+        "Garrett Hack"
+      ]
     },
     {
       "id": "FwrrYr2C5Bk",
       "teaser": "The hayrake table, introduced — an English vernacular form.",
-      "period": ["Survey / Multiple"],
-      "form": ["Tables"],
-      "region": ["England"],
-      "topic": ["Construction / Technique", "Design Sources"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "England"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Design Sources"
+      ],
       "makers": []
     },
     {
       "id": "HT-LiuwOvDM",
       "teaser": "An Arts and Crafts coffee table, introduced as a build.",
-      "period": ["Survey / Multiple"],
-      "form": ["Tables"],
-      "region": ["America"],
-      "topic": ["Construction / Technique", "Design Sources"],
+      "period": [
+        "Survey / Multiple"
+      ],
+      "form": [
+        "Tables"
+      ],
+      "region": [
+        "America"
+      ],
+      "topic": [
+        "Construction / Technique",
+        "Design Sources"
+      ],
       "makers": []
     }
   ]
